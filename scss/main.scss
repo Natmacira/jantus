@@ -1,0 +1,63 @@
+/**
+ * Main Styles for theme.
+ */
+
+// sass --watch main.scss ../style.min.css --style=compressed
+
+$breakpoint-mobile: 340px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
+$breakpoint-wide: 1500px;
+
+$theme-main-color: #0038A8;
+$theme-main-font: 'Poppins', sans-serif;
+
+/* Max-width */
+$max-width-1: 700px;
+$max-width-2: 1200px;
+
+$img-directory: "img/";
+
+/* Mixins */
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Media queries */
+@mixin media-mobile {
+    @media screen and(max-width: $breakpoint-mobile) {
+        @content;
+    }
+}
+
+@mixin media-tablet{
+    @media screen and (min-width: $breakpoint-tablet) {
+        @content;
+    }
+}
+
+@mixin media-desktop{
+    @media screen and (min-width: $breakpoint-desktop) {
+        @content;
+    }
+}
+
+@mixin media-wide{
+    @media screen and (min-width: $breakpoint-wide) {
+        @content;
+    }
+}
+
+
+@import 'normalize';
+@import 'fonts';
+@import 'skeleton';
+@import 'body-changes';
+@import 'header';
+@import 'footer';
+@import 'pages';
+@import 'single';
+@import 'home';
