@@ -4,18 +4,18 @@
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package Empty_Theme
+ * @package Jantus_Theme
  */
 
-if ( ! defined( 'EMPTY_BASE_VERSION' ) ) {
-	define( 'EMPTY_BASE_VERSION', '0.0.2' );
+if ( ! defined( 'JANTUS_VERSION' ) ) {
+	define( 'JANTUS_VERSION', '0.0.2' );
 }
 
 add_action(
 	'wp_enqueue_scripts',
 	function() {
-		wp_enqueue_style( 'empty_base', get_stylesheet_directory_uri() . '/style.min.css', array(), EMPTY_BASE_VERSION );
-		wp_enqueue_script( 'empty_base', get_stylesheet_directory_uri() . '/js/main.js', array(), EMPTY_BASE_VERSION, true );
+		wp_enqueue_style( 'jantus', get_stylesheet_directory_uri() . '/style.min.css', array(), JANTUS_VERSION );
+		wp_enqueue_script( 'jantus', get_stylesheet_directory_uri() . '/js/main.js', array(), JANTUS_VERSION );
 	}
 );
 
@@ -60,7 +60,7 @@ add_action(
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
 		 */
-		load_theme_textdomain( 'empty-base', get_template_directory() . '/languages' );
+		load_theme_textdomain( 'jantus', get_template_directory() . '/languages' );
 
 		/*
 		 * Let WordPress manage the document title.
@@ -83,9 +83,9 @@ add_action(
 
 		register_nav_menus(
 			array(
-				'header'    => esc_html__( 'Header Menu', 'empty-base' ),
-				'hamburger' => esc_html__( 'Hamburger Menu (Mobile)', 'empty-base' ),
-				'footer'    => esc_html__( 'Footer Menu', 'empty-base' ),
+				'header'    => esc_html__( 'Header Menu', 'jantus' ),
+				'hamburger' => esc_html__( 'Hamburger Menu (Mobile)', 'jantus' ),
+				'footer'    => esc_html__( 'Footer Menu', 'jantus' ),
 			)
 		);
 	}
@@ -107,9 +107,9 @@ add_action(
 		register_sidebar(
 			array(
 				'name'          => 'Empty Base',
-				'id'            => 'empty-base',
+				'id'            => 'jantus',
 				'class'         => '',
-				'before_widget' => '<div class="widget empty-base">',
+				'before_widget' => '<div class="widget jantus">',
 				'after_widget'  => '</div>',
 				'before_title'  => '<h3>',
 				'after_title'   => '</h3>',
@@ -135,7 +135,7 @@ if ( $disable_gutenberg ) {
  *
  * @return array The menu.
  */
-function empty_base_get_menu( $location ) {
+function jantus_get_menu( $location ) {
 	global $wp;
 	$menu = null;
 
@@ -192,7 +192,7 @@ function empty_base_get_menu( $location ) {
  *
  * @return string Post excerpt.
  */
-function empty_base_get_excerpt( $post, $num_words = 55 ) {
+function jantus_get_excerpt( $post, $num_words = 55 ) {
 	if ( ! empty( $post->post_excerpt ) ) {
 		$excerpt = $post->post_excerpt;
 	} else {
@@ -208,7 +208,7 @@ function empty_base_get_excerpt( $post, $num_words = 55 ) {
 /**
  * Prints the menu body class.
  */
-function empty_base_print_body_class() {
+function jantus_print_body_class() {
 	global $wp_query;
 
 	$classes = array();
@@ -275,13 +275,13 @@ function empty_base_print_body_class() {
  *
  * @param int $menu_id The ID identifying the menu.
  */
-function empty_base_print_menu( $menu_id ) {
-	$menu   = empty_base_get_menu( $menu_id );
+function jantus_print_menu( $menu_id ) {
+	$menu   = jantus_get_menu( $menu_id );
 	$output = '';
 
 	if ( $menu ) {
 		$output  = '<nav id="menu-' . esc_attr( $menu_id ) . '">';
-		$output .= empty_base_print_menu_object( $menu );
+		$output .= jantus_print_menu_object( $menu );
 	}
 
 	$output .= '</nav>';
@@ -298,7 +298,7 @@ function empty_base_print_menu( $menu_id ) {
  *
  * @return string The HTML representing the menu.
  */
-function empty_base_print_menu_object( $menu ) {
+function jantus_print_menu_object( $menu ) {
 	$output = '<ul>';
 
 	foreach ( $menu as $item ) {
@@ -323,7 +323,7 @@ function empty_base_print_menu_object( $menu ) {
 		}
 
 		if ( ! empty( $item['submenu'] ) ) {
-			$output .= empty_base_print_menu_object( $item['submenu'] );
+			$output .= jantus_print_menu_object( $item['submenu'] );
 		}
 
 		$output .= '</li>';
@@ -350,7 +350,7 @@ function empty_base_print_menu_object( $menu ) {
  * @return void|string The HTML representing the post if $atts['output'] is
  *                     true.
  */
-function empty_base_print_post( $post_id = null, $atts = array() ) {
+function jantus_print_post( $post_id = null, $atts = array() ) {
 	$html = '';
 
 	$atts = shortcode_atts(
@@ -409,10 +409,10 @@ function empty_base_print_post( $post_id = null, $atts = array() ) {
 			if ( $post->post_excerpt ) {
 				$html .= '<div class="content">';
 
-				$html .= empty_base_print_excerpt( $post, 100, false );
+				$html .= jantus_print_excerpt( $post, 100, false );
 
 				$html .= '<a href="' . esc_url( $link ) . '" title="' . esc_attr( $title ) . '" class="read-more">';
-				$html .= esc_html__( 'More', 'empty-base' ) . '</a>';
+				$html .= esc_html__( 'More', 'jantus' ) . '</a>';
 				$html .= '</div>';
 			} elseif ( $post->post_content ) {
 				$html .= '<div class="content">';
@@ -420,7 +420,7 @@ function empty_base_print_post( $post_id = null, $atts = array() ) {
 				$html .= wp_kses_post( apply_filters( 'the_content', $post->post_content ) );
 
 				$html .= '<a href="' . esc_url( $link ) . '" title="' . esc_attr( $title ) . '" class="read-more">';
-				$html .= esc_html__( 'More', 'empty-base' ) . '</a>';
+				$html .= esc_html__( 'More', 'jantus' ) . '</a>';
 				$html .= '</div>';
 			}
 		}
@@ -446,11 +446,11 @@ function empty_base_print_post( $post_id = null, $atts = array() ) {
  *
  * @return void|string Post excerpt if $output is true.
  */
-function empty_base_print_excerpt( $post, $num_words = 100, $output = true ) {
+function jantus_print_excerpt( $post, $num_words = 100, $output = true ) {
 	if ( $output ) {
-		echo esc_html( empty_base_get_excerpt( $post, $num_words ) );
+		echo esc_html( jantus_get_excerpt( $post, $num_words ) );
 	} else {
-		return esc_html( empty_base_get_excerpt( $post, $num_words ) );
+		return esc_html( jantus_get_excerpt( $post, $num_words ) );
 	}
 }
 

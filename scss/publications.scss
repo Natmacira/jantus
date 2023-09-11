@@ -1,0 +1,16 @@
+body {
+	&.page-publications {
+		div.book-title {
+			padding-top: 20px ;
+		}
+		div.book-content {
+			height: 0;
+			transition: 1s;
+			overflow: hidden;
+
+			&.book-open {
+				height: 200px;
+			}
+		}
+	}
+}

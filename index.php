@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Empty_Base
+ * @package Jantus
  */
 
 wp_safe_redirect( home_url() );
