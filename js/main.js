@@ -3,6 +3,9 @@ window.addEventListener( 'load', function() {
 	const bookContent = document.querySelectorAll( '.book-content')
 	const bookTitle = document.querySelectorAll( '.book-title')
 
+	console.log (bookContent);
+	console.log (bookTitle);
+
 	
 	bookTitle.addEventListener( 'click', function() {
 		bookContent.classList.add( 'book-open' );
