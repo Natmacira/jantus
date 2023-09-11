@@ -1,8 +1,6 @@
 body {
 	&.page-publications {
-		div.three-book-title {
-			padding-top: 20px ;
-		}
+		
 		div.one-book-content,
 		div.two-book-content,
 		div.three-book-content,
@@ -15,11 +13,22 @@ body {
 			height: 0;
 			transition: 1s;
 			overflow: hidden;
-
 			&.book-open {
-				height: 200px;
-				background-color: red;
+				height: 330px;
+				background-color: $theme-yellow;
 			}
+		}
+
+		div.one-book-title,
+		div.two-book-title,
+		div.three-book-title,
+		div.four-book-title,
+		div.five-book-title,
+		div.six-book-title,
+		div.seven-book-title,
+		div.eight-book-title,
+		div.nine-book-title {
+			border: solid 1px;
 		}
 	}
 }

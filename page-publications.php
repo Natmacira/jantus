@@ -31,7 +31,7 @@ require_once 'header.php';
             <p>test<br> 2018</p>
         </div>
         <div class="two-book-title">
-             <p><span>18</span> contemporary art curator</p>
+            <p><span>22</span> contemporary art curator</p>
         </div>
     </article>
 
@@ -40,11 +40,11 @@ require_once 'header.php';
         <div class="three-book-content">
             <h3>LA RADIO BARCELONA</h3>
             <span>full interview</span>
-            <iframe src="" frameborder="0"></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Ya-qrLbSLAc?si=PQhRmsf0kZB6THp9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             <p>BARCELONA. <br> 2018</p>
         </div>
         <div class="three-book-title">
-             <p><span>18</span> LA RADIO BARCELONA</p>
+            <p><span>18</span> LA RADIO BARCELONA</p>
         </div>
     </article>
 
@@ -57,7 +57,7 @@ require_once 'header.php';
             <p>BARCELONA. <br> 2018</p>
         </div>
         <div class="four-book-title">
-             <p><span>18</span>artsy</p>
+            <p><span>18</span>artsy</p>
         </div>
     </article>
 
@@ -70,7 +70,7 @@ require_once 'header.php';
             <p>BARCELONA. <br> 2018</p>
         </div>
         <div class="five-book-title">
-             <p><span>18</span> ARTQOL</p>
+            <p><span>19</span> ARTQOL</p>
         </div>
     </article>
 
@@ -83,7 +83,7 @@ require_once 'header.php';
             <p>BARCELONA. <br> 2018</p>
         </div>
         <div class="six-book-title">
-             <p><span>18</span>Kirjasta-kirjaan</p>
+            <p><span>18</span>Kirjasta-kirjaan</p>
         </div>
     </article>
 
@@ -96,7 +96,7 @@ require_once 'header.php';
             <p>BARCELONA. <br> 2018</p>
         </div>
         <div class="seven-book-title">
-             <p><span>18</span>diffuse reality </p>
+            <p><span>21</span>diffuse reality </p>
         </div>
     </article>
 
@@ -109,11 +109,11 @@ require_once 'header.php';
             <p>BARCELONA. <br> 2018</p>
         </div>
         <div class="eight-book-title">
-             <p><span>18</span>chasama </p>
+            <p><span>19</span>chasama </p>
         </div>
     </article>
-   
-   
+
+
     <article class="library-inner-element">
         <div class="nine-book-content">
             <h3>LA RADIO BARCELONA</h3>
@@ -122,7 +122,7 @@ require_once 'header.php';
             <p>BARCELONA. <br> 2018</p>
         </div>
         <div class="nine-book-title">
-             <p><span>18</span>flamantes #12</p>
+            <p><span>18</span>flamantes #12</p>
         </div>
     </article>
 </section>
