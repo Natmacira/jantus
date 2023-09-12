@@ -9,12 +9,16 @@ require_once 'header.php';
     <h1>Cutre Lux Jantus</h1>
     <h2>PUBLICATIONS</h2>
 </section>
+<section class="back-btn"><a href="javascript:history.back()"><img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/iconos/Atras.svg'); ?>" alt="Botón para volver atrás"></a></section>
+
 <section class="library">
     <article class="library-inner-element">
         <div class="one-book-content">
             <h3>BONART</h3>
             <span>full interview</span>
-            <iframe src="" frameborder="0"></iframe>
+            <div class="iframe-container">
+                <iframe src="" frameborder="0"></iframe>
+            </div>
             <p>test<br> 2018</p>
         </div>
         <div class="one-book-title">
@@ -27,7 +31,9 @@ require_once 'header.php';
         <div class="two-book-content">
             <h3>contemporary art curator</h3>
             <span>full interview</span>
-            <iframe src="" frameborder="0"></iframe>
+            <div class="iframe-container">
+                <iframe src="" frameborder="0"></iframe>
+            </div>
             <p>test<br> 2018</p>
         </div>
         <div class="two-book-title">
@@ -40,7 +46,9 @@ require_once 'header.php';
         <div class="three-book-content">
             <h3>LA RADIO BARCELONA</h3>
             <span>full interview</span>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/Ya-qrLbSLAc?si=PQhRmsf0kZB6THp9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="iframe-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Ya-qrLbSLAc?si=PQhRmsf0kZB6THp9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
             <p>BARCELONA. <br> 2018</p>
         </div>
         <div class="three-book-title">
@@ -53,7 +61,9 @@ require_once 'header.php';
         <div class="four-book-content">
             <h3>LA RADIO BARCELONA</h3>
             <span>full interview</span>
-            <iframe src="" frameborder="0"></iframe>
+            <div class="iframe-container">
+                <iframe src="" frameborder="0"></iframe>
+            </div>
             <p>BARCELONA. <br> 2018</p>
         </div>
         <div class="four-book-title">
@@ -66,7 +76,9 @@ require_once 'header.php';
         <div class="five-book-content">
             <h3>LA RADIO BARCELONA</h3>
             <span>full interview</span>
-            <iframe src="" frameborder="0"></iframe>
+            <div class="iframe-container">
+                <iframe src="" frameborder="0"></iframe>
+            </div>
             <p>BARCELONA. <br> 2018</p>
         </div>
         <div class="five-book-title">
@@ -79,7 +91,9 @@ require_once 'header.php';
         <div class="six-book-content">
             <h3>LA RADIO BARCELONA</h3>
             <span>full interview</span>
-            <iframe src="" frameborder="0"></iframe>
+            <div class="iframe-container">
+                <iframe src="" frameborder="0"></iframe>
+            </div>
             <p>BARCELONA. <br> 2018</p>
         </div>
         <div class="six-book-title">
@@ -92,7 +106,9 @@ require_once 'header.php';
         <div class="seven-book-content">
             <h3>LA RADIO BARCELONA</h3>
             <span>full interview</span>
-            <iframe src="" frameborder="0"></iframe>
+            <div class="iframe-container">
+                <iframe src="" frameborder="0"></iframe>
+            </div>
             <p>BARCELONA. <br> 2018</p>
         </div>
         <div class="seven-book-title">
@@ -105,7 +121,9 @@ require_once 'header.php';
         <div class="eight-book-content">
             <h3>LA RADIO BARCELONA</h3>
             <span>full interview</span>
-            <iframe src="" frameborder="0"></iframe>
+            <div class="iframe-container">
+                <iframe src="" frameborder="0"></iframe>
+            </div>
             <p>BARCELONA. <br> 2018</p>
         </div>
         <div class="eight-book-title">
@@ -118,7 +136,9 @@ require_once 'header.php';
         <div class="nine-book-content">
             <h3>LA RADIO BARCELONA</h3>
             <span>full interview</span>
-            <iframe src="" frameborder="0"></iframe>
+            <div class="iframe-container">
+                <iframe src="" frameborder="0"></iframe>
+            </div>
             <p>BARCELONA. <br> 2018</p>
         </div>
         <div class="nine-book-title">
