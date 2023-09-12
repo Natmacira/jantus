@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Jantus Theme functions and definitions
  *
@@ -7,60 +8,143 @@
  * @package Jantus_Theme
  */
 
-if ( ! defined( 'JANTUS_VERSION' ) ) {
-	define( 'JANTUS_VERSION', '0.0.2' );
+if (!defined('JANTUS_VERSION')) {
+	define('JANTUS_VERSION', '0.0.2');
 }
 
 add_action(
 	'wp_enqueue_scripts',
-	function() {
-		wp_enqueue_style( 'jantus', get_stylesheet_directory_uri() . '/style.min.css', array(), JANTUS_VERSION );
-		wp_enqueue_script( 'jantus', get_stylesheet_directory_uri() . '/js/main.js', array(), JANTUS_VERSION );
+	function () {
+		wp_enqueue_style('jantus', get_stylesheet_directory_uri() . '/style.min.css', array(), JANTUS_VERSION);
+		wp_enqueue_script('jantus', get_stylesheet_directory_uri() . '/js/main.js', array(), JANTUS_VERSION);
 	}
 );
 
 add_action(
 	'init',
-	function() {
+	function () {
 		// all actions related to emojis.
-		remove_action( 'admin_print_styles', 'print_emoji_styles' );
-		remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
-		remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
-		remove_action( 'wp_print_styles', 'print_emoji_styles' );
+		remove_action('admin_print_styles', 'print_emoji_styles');
+		remove_action('wp_head', 'print_emoji_detection_script', 7);
+		remove_action('admin_print_scripts', 'print_emoji_detection_script');
+		remove_action('wp_print_styles', 'print_emoji_styles');
 
-		remove_filter( 'wp_mail', 'wp_staticize_emoji_for_email' );
-		remove_filter( 'the_content_feed', 'wp_staticize_emoji' );
-		remove_filter( 'comment_text_rss', 'wp_staticize_emoji' );
+		remove_filter('wp_mail', 'wp_staticize_emoji_for_email');
+		remove_filter('the_content_feed', 'wp_staticize_emoji');
+		remove_filter('comment_text_rss', 'wp_staticize_emoji');
 
 		// filter to remove TinyMCE emojis.
 		add_filter(
 			'tiny_mce_plugins',
-			function( $plugins ) {
-				if ( is_array( $plugins ) ) {
-					return array_diff( $plugins, array( 'wpemoji' ) );
+			function ($plugins) {
+				if (is_array($plugins)) {
+					return array_diff($plugins, array('wpemoji'));
 				} else {
 					return array();
 				}
 			}
 		);
+
+		// add action to create a custom post type
+		register_post_type(
+			'painting',
+			array(
+				'labels'      => array(
+					'name'          => __('Paintings', 'textdomain'),
+					'singular_name' => __('Painting', 'textdomain'),
+				),
+				'public'      => true,
+				'has_archive' => true,
+				'supports'    => array(
+					'title',
+					'thumbnail'
+				),
+				//create meta box
+				'register_meta_box_cb' => function () {
+					add_meta_box(
+						'year',                 	// Unique ID
+						'Year',      				// Box title
+						function($post){
+							$year = get_post_meta($post->ID, 'year', true);
+							?><input type="text" name="year" id="year" class="postbox" value="<?php echo(esc_attr($year))?>"><?php
+						},			
+						'painting' 					// Post type
+					);
+					add_meta_box(
+						'technique',                 	// Unique ID
+						'Technique',      				// Box title
+						function($post){
+							$technique = get_post_meta($post->ID, 'technique', true);
+							?><input type="text" name="technique" id="technique" class="postbox" value="<?php echo(esc_attr($technique))?>"><?php
+						},			
+						'painting' 					// Post type
+					);
+					add_meta_box(
+						'size',                 	// Unique ID
+						'Size',      				// Box title
+						function($post){
+							$size = get_post_meta($post->ID, 'size', true);
+							?><input type="text" name="size" id="size" class="postbox" value="<?php echo(esc_attr($size))?>"><?php
+						},			
+						'painting' 					// Post type
+					);
+				
+				}
+			)
+		);
 	}
 );
 
+add_action( 'save_post', function($post_id) {
+	if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) {
+		return;
+	}
+
+	if ( defined( 'DOING_AJAX' ) && DOING_AJAX ) {
+		return;
+	}
+
+	if ( ! current_user_can( 'edit_post', $post_id ) ) {
+		return;
+	}
+
+	if ( 'painting' !== get_post_type( $post_id ) ) {
+		return;
+	}
+
+	if ( isset( $_POST['year'] ) ) {
+		$year = sanitize_text_field($_POST['year'] );
+
+		update_post_meta( $post_id, 'year', $year );
+	}
+	if ( isset( $_POST['technique'] ) ) {
+		$technique = sanitize_text_field($_POST['technique'] );
+
+		update_post_meta( $post_id, 'technique', $technique );
+	}
+	if ( isset( $_POST['size'] ) ) {
+		$size = sanitize_text_field($_POST['size'] );
+
+		update_post_meta( $post_id, 'size', $size );
+	}
+} );
+
+
 add_action(
 	'after_setup_theme',
-	function() {
+	function () {
 		/*
 		 * Enable support for Post Thumbnails on posts and pages.
 		 *
 		 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 		 */
-		add_theme_support( 'post-thumbnails' );
+		add_theme_support('post-thumbnails');
 
 		/*
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
 		 */
-		load_theme_textdomain( 'jantus', get_template_directory() . '/languages' );
+		load_theme_textdomain('jantus', get_template_directory() . '/languages');
 
 		/*
 		 * Let WordPress manage the document title.
@@ -68,24 +152,24 @@ add_action(
 		 * hard-coded <title> tag in the document head, and expect WordPress to
 		 * provide it for us.
 		 */
-		add_theme_support( 'title-tag' );
-		
+		add_theme_support('title-tag');
+
 		/**
 		 * Declare Woocommerce compatibilty.
 		 */
-		add_theme_support( 'woocommerce' );
+		add_theme_support('woocommerce');
 
-		add_theme_support( 'wc-product-gallery-zoom' );
+		add_theme_support('wc-product-gallery-zoom');
 
-		add_theme_support( 'wc-product-gallery-lightbox' );
+		add_theme_support('wc-product-gallery-lightbox');
 
-		add_theme_support( 'wc-product-gallery-slider' );
+		add_theme_support('wc-product-gallery-slider');
 
 		register_nav_menus(
 			array(
-				'header'    => esc_html__( 'Header Menu', 'jantus' ),
-				'hamburger' => esc_html__( 'Hamburger Menu (Mobile)', 'jantus' ),
-				'footer'    => esc_html__( 'Footer Menu', 'jantus' ),
+				'header'    => esc_html__('Header Menu', 'jantus'),
+				'hamburger' => esc_html__('Hamburger Menu (Mobile)', 'jantus'),
+				'footer'    => esc_html__('Footer Menu', 'jantus'),
 			)
 		);
 	}
@@ -97,13 +181,13 @@ add_action(
 add_action(
 	'template_redirect',
 	function () {
-		remove_filter( 'the_content', 'wpautop' );
+		remove_filter('the_content', 'wpautop');
 	}
 );
 
 add_action(
 	'widgets_init',
-	function() {
+	function () {
 		register_sidebar(
 			array(
 				'name'          => 'Jantus',
@@ -123,8 +207,8 @@ add_action(
  */
 $disable_gutenberg = false;
 
-if ( $disable_gutenberg ) {
-	add_filter( 'use_block_editor_for_post', '__return_false' );
+if ($disable_gutenberg) {
+	add_filter('use_block_editor_for_post', '__return_false');
 }
 
 
@@ -135,23 +219,26 @@ if ( $disable_gutenberg ) {
  *
  * @return array The menu.
  */
-function jantus_get_menu( $location ) {
+function jantus_get_menu($location)
+{
 	global $wp;
 	$menu = null;
 
-	if ( $location ) {
+	if ($location) {
 		$locations = get_nav_menu_locations();
 
-		if ( $locations &&
-			isset( $locations[ $location ] ) ) {
-			$object = wp_get_nav_menu_object( $locations[ $location ] );
+		if (
+			$locations &&
+			isset($locations[$location])
+		) {
+			$object = wp_get_nav_menu_object($locations[$location]);
 
-			if ( $object ) {
-				$items = wp_get_nav_menu_items( $object->term_id );
+			if ($object) {
+				$items = wp_get_nav_menu_items($object->term_id);
 				$menu  = array();
 
-				if ( ! empty( $items ) ) {
-					foreach ( $items as $item ) {
+				if (!empty($items)) {
+					foreach ($items as $item) {
 						$menu_item = array();
 
 						$menu_item['item_id'] = $item->ID;
@@ -163,16 +250,16 @@ function jantus_get_menu( $location ) {
 
 						$menu_item['classes'][] = 'menu-item';
 
-						if ( ( home_url( $wp->request ) . '/' ) === $item->url ) {
+						if ((home_url($wp->request) . '/') === $item->url) {
 							$menu_item['classes'][] = 'current-menu-item';
 						}
-						
+
 						$menu_item['submenu'] = array();
 
-						if ( isset( $menu[ $menu_item['parent'] ] ) ) {
-							$menu[ $menu_item['parent'] ]['submenu'][ $item->ID ] = $menu_item;
+						if (isset($menu[$menu_item['parent']])) {
+							$menu[$menu_item['parent']]['submenu'][$item->ID] = $menu_item;
 						} else {
-							$menu[ $item->ID ] = $menu_item;
+							$menu[$item->ID] = $menu_item;
 						}
 					}
 				}
@@ -192,15 +279,16 @@ function jantus_get_menu( $location ) {
  *
  * @return string Post excerpt.
  */
-function jantus_get_excerpt( $post, $num_words = 55 ) {
-	if ( ! empty( $post->post_excerpt ) ) {
+function jantus_get_excerpt($post, $num_words = 55)
+{
+	if (!empty($post->post_excerpt)) {
 		$excerpt = $post->post_excerpt;
 	} else {
-		$excerpt = strip_shortcodes( $post->post_content );
-		$excerpt = wp_strip_all_tags( $excerpt );
+		$excerpt = strip_shortcodes($post->post_content);
+		$excerpt = wp_strip_all_tags($excerpt);
 	}
 
-	$excerpt = wp_trim_words( $excerpt, $num_words );
+	$excerpt = wp_trim_words($excerpt, $num_words);
 
 	return $excerpt;
 }
@@ -208,7 +296,8 @@ function jantus_get_excerpt( $post, $num_words = 55 ) {
 /**
  * Prints the menu body class.
  */
-function jantus_print_body_class() {
+function jantus_print_body_class()
+{
 	global $wp_query;
 
 	$classes = array();
@@ -216,57 +305,57 @@ function jantus_print_body_class() {
 	/* 
 	*	is_home returns true if it's the blog page
 	*/
-	if ( is_home() ) {
+	if (is_home()) {
 		$classes[] = 'page blog-page';
 	}
 
-	if ( is_category() ) {
+	if (is_category()) {
 		$cat = $wp_query->get_queried_object();
 
-		if ( isset( $cat->term_id ) ) {
-			$classes[] = 'category-' . sanitize_html_class( $cat->slug );
+		if (isset($cat->term_id)) {
+			$classes[] = 'category-' . sanitize_html_class($cat->slug);
 		}
 	}
 
-	if ( is_archive() ) {
+	if (is_archive()) {
 		$classes[] = 'archive';
 
-		if ( is_post_type_archive() ) {
-			$post_type = get_query_var( 'post_type' );
+		if (is_post_type_archive()) {
+			$post_type = get_query_var('post_type');
 
-			if ( is_array( $post_type ) ) {
-				$post_type = reset( $post_type );
+			if (is_array($post_type)) {
+				$post_type = reset($post_type);
 			}
 
-			$classes[] = 'archive-' . sanitize_html_class( $post_type );
+			$classes[] = 'archive-' . sanitize_html_class($post_type);
 		}
 	}
 
-	if ( is_page() || is_singular( 'page_es_es' ) ) {
+	if (is_page() || is_singular('page_es_es')) {
 		global $post;
 
-		$classes[] = 'page page-' . sanitize_html_class( $post->post_name );
+		$classes[] = 'page page-' . sanitize_html_class($post->post_name);
 	}
 
-	if ( is_single() ) {
+	if (is_single()) {
 		global $post;
 
 		$classes[] = 'single';
 
-		if ( isset( $post->post_type ) ) {
-			$classes[] = 'single-' . sanitize_html_class( $post->post_type, $post->ID );
+		if (isset($post->post_type)) {
+			$classes[] = 'single-' . sanitize_html_class($post->post_type, $post->ID);
 		}
 	}
 
-	if ( is_search() ) {
+	if (is_search()) {
 		$classes[] = 'search-results';
 	}
 
-	if ( is_404() ) {
+	if (is_404()) {
 		$classes[] = 'page error404';
 	}
 
-	echo 'class="' . esc_attr( join( ' ', $classes ) ) . '"';
+	echo 'class="' . esc_attr(join(' ', $classes)) . '"';
 }
 
 /**
@@ -275,18 +364,19 @@ function jantus_print_body_class() {
  *
  * @param int $menu_id The ID identifying the menu.
  */
-function jantus_print_menu( $menu_id ) {
-	$menu   = jantus_get_menu( $menu_id );
+function jantus_print_menu($menu_id)
+{
+	$menu   = jantus_get_menu($menu_id);
 	$output = '';
 
-	if ( $menu ) {
-		$output  = '<nav id="menu-' . esc_attr( $menu_id ) . '">';
-		$output .= jantus_print_menu_object( $menu );
+	if ($menu) {
+		$output  = '<nav id="menu-' . esc_attr($menu_id) . '">';
+		$output .= jantus_print_menu_object($menu);
 	}
 
 	$output .= '</nav>';
 
-	echo wp_kses_post( $output );
+	echo wp_kses_post($output);
 }
 
 /**
@@ -298,32 +388,33 @@ function jantus_print_menu( $menu_id ) {
  *
  * @return string The HTML representing the menu.
  */
-function jantus_print_menu_object( $menu ) {
+function jantus_print_menu_object($menu)
+{
 	$output = '<ul>';
 
-	foreach ( $menu as $item ) {
+	foreach ($menu as $item) {
 		$output .= '<li';
 
-		if ( ! empty( $item['classes'] ) ) {
-			$output .= ' class="' . esc_attr( implode( ' ', $item['classes'] ) ) . '"';
+		if (!empty($item['classes'])) {
+			$output .= ' class="' . esc_attr(implode(' ', $item['classes'])) . '"';
 		}
 
 		$output .= '>';
 
-		if ( ! empty( $item['url'] ) ) {
-			$output .= '<a href="' . esc_url( $item['url'] ) . '"';
+		if (!empty($item['url'])) {
+			$output .= '<a href="' . esc_url($item['url']) . '"';
 
-			if ( ! empty( $item['target'] ) ) {
-				$output .= ' target="' . esc_attr( $item['target'] ) . '"';
+			if (!empty($item['target'])) {
+				$output .= ' target="' . esc_attr($item['target']) . '"';
 			}
 
-			$output .= '>' . esc_html( $item['title'] ) . '</a>';
+			$output .= '>' . esc_html($item['title']) . '</a>';
 		} else {
-			$output .= esc_html( $item['title'] );
+			$output .= esc_html($item['title']);
 		}
 
-		if ( ! empty( $item['submenu'] ) ) {
-			$output .= jantus_print_menu_object( $item['submenu'] );
+		if (!empty($item['submenu'])) {
+			$output .= jantus_print_menu_object($item['submenu']);
 		}
 
 		$output .= '</li>';
@@ -350,7 +441,8 @@ function jantus_print_menu_object( $menu ) {
  * @return void|string The HTML representing the post if $atts['output'] is
  *                     true.
  */
-function jantus_print_post( $post_id = null, $atts = array() ) {
+function jantus_print_post($post_id = null, $atts = array())
+{
 	$html = '';
 
 	$atts = shortcode_atts(
@@ -361,21 +453,21 @@ function jantus_print_post( $post_id = null, $atts = array() ) {
 		$atts
 	);
 
-	if ( empty( $post_id ) ) {
+	if (empty($post_id)) {
 		$post_id = get_the_ID();
 	}
 
-	$post = get_post( $post_id );
+	$post = get_post($post_id);
 
-	if ( $post ) {
+	if ($post) {
 		/* $image = get_the_post_thumbnail( $post_id, $atts['thumbnail_size'] ); */
-		$link  = get_permalink( $post_id );
+		$link  = get_permalink($post_id);
 		$title = $post->post_title;
-		$date  = get_the_date( get_option( 'date_format' ), $post_id );
+		$date  = get_the_date(get_option('date_format'), $post_id);
 
-		$html .= '<article id="article-' . esc_attr( $post_id ) . '">';
+		$html .= '<article id="article-' . esc_attr($post_id) . '">';
 
-	/* 	if ( ! empty( $image ) ) {
+		/* 	if ( ! empty( $image ) ) {
 			if ( ! is_single() ) {
 				$html .= '<a href="' . esc_url( $link ) . '" title="' . esc_attr( $title ) . '">' . wp_kses_post( $image ) . '</a>';
 			} else {
@@ -385,42 +477,42 @@ function jantus_print_post( $post_id = null, $atts = array() ) {
 			}
 		} */
 
-		if ( ! is_single() ) {
-			$html .= '<h2><a href="' . esc_url( $link ) . '" title="' . esc_attr( $title ) . '">' . esc_html( $title ) . '</a></h2>';
+		if (!is_single()) {
+			$html .= '<h2><a href="' . esc_url($link) . '" title="' . esc_attr($title) . '">' . esc_html($title) . '</a></h2>';
 		}
 
-		if ( get_post_type( $post_id ) === 'post' ) {
+		if (get_post_type($post_id) === 'post') {
 			$html .= '<div class="toolbar">';
-			$html .= '<p> ' . esc_html( $date ) . '</p>';
+			$html .= '<p> ' . esc_html($date) . '</p>';
 			$html .= '</div>';
 		}
 
-		if ( is_singular( array( 'post' ) ) ) {
+		if (is_singular(array('post'))) {
 			$html .= '<div class="content">';
 
-			$html .= wp_kses_post( apply_filters( 'the_content', $post->post_content ) );
+			$html .= wp_kses_post(apply_filters('the_content', $post->post_content));
 
 			$html .= '</div>';
 			$html .= '<div class="tags">';
 
-			the_tags( '', '' );
+			the_tags('', '');
 			$html .= '</div>';
 		} else {
-			if ( $post->post_excerpt ) {
+			if ($post->post_excerpt) {
 				$html .= '<div class="content">';
 
-				$html .= jantus_print_excerpt( $post, 100, false );
+				$html .= jantus_print_excerpt($post, 100, false);
 
-				$html .= '<a href="' . esc_url( $link ) . '" title="' . esc_attr( $title ) . '" class="read-more">';
-				$html .= esc_html__( 'More', 'jantus' ) . '</a>';
+				$html .= '<a href="' . esc_url($link) . '" title="' . esc_attr($title) . '" class="read-more">';
+				$html .= esc_html__('More', 'jantus') . '</a>';
 				$html .= '</div>';
-			} elseif ( $post->post_content ) {
+			} elseif ($post->post_content) {
 				$html .= '<div class="content">';
 
-				$html .= wp_kses_post( apply_filters( 'the_content', $post->post_content ) );
+				$html .= wp_kses_post(apply_filters('the_content', $post->post_content));
 
-				$html .= '<a href="' . esc_url( $link ) . '" title="' . esc_attr( $title ) . '" class="read-more">';
-				$html .= esc_html__( 'More', 'jantus' ) . '</a>';
+				$html .= '<a href="' . esc_url($link) . '" title="' . esc_attr($title) . '" class="read-more">';
+				$html .= esc_html__('More', 'jantus') . '</a>';
 				$html .= '</div>';
 			}
 		}
@@ -428,8 +520,8 @@ function jantus_print_post( $post_id = null, $atts = array() ) {
 		$html .= '</article>';
 	}
 
-	if ( $atts['output'] ) {
-		echo wp_kses_post( $html );
+	if ($atts['output']) {
+		echo wp_kses_post($html);
 	} else {
 		return $html;
 	}
@@ -446,18 +538,19 @@ function jantus_print_post( $post_id = null, $atts = array() ) {
  *
  * @return void|string Post excerpt if $output is true.
  */
-function jantus_print_excerpt( $post, $num_words = 100, $output = true ) {
-	if ( $output ) {
-		echo esc_html( jantus_get_excerpt( $post, $num_words ) );
+function jantus_print_excerpt($post, $num_words = 100, $output = true)
+{
+	if ($output) {
+		echo esc_html(jantus_get_excerpt($post, $num_words));
 	} else {
-		return esc_html( jantus_get_excerpt( $post, $num_words ) );
+		return esc_html(jantus_get_excerpt($post, $num_words));
 	}
 }
 
 add_filter(
 	'wp_kses_allowed_html',
-	function( $allowed, $context ) {
-		if ( 'post' === $context ) {
+	function ($allowed, $context) {
+		if ('post' === $context) {
 			$allowed['select']   = array(
 				'name'     => true,
 				'id'       => true,

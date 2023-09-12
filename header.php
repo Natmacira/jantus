@@ -21,7 +21,5 @@
 </head>
 
 <body class="<?php echo $body_class ?>">
-	<header>
-
-	</header>
+	
 	<main>

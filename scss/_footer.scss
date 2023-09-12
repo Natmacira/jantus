@@ -1,14 +1,15 @@
 /*mobile first*/
 footer {
-	height: 80px;
-	width: 100%;
-	
-	.theme-author {
-		font-size: 16px;
-		@include flex-center;
-
-		img {
-			margin-left: 8px;
+	font-family: "Chivo Mono", monospace;
+	ul {
+		padding: 40px;
+		padding-top: 0;
+		li {
+			font-size: 18px;
+			font-weight: 200;
+		}
+		li:hover {
+			font-weight: 800;
 		}
 	}
 }
