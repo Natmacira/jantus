@@ -92,6 +92,52 @@ add_action(
 				}
 			)
 		);
+		register_post_type(
+			'cloth',
+			array(
+				'labels'      => array(
+					'name'          => __('Clothes', 'textdomain'),
+					'singular_name' => __('Clothes', 'textdomain'),
+				),
+				'public'      => true,
+				'has_archive' => true,
+				'supports'    => array(
+					'title',
+					'thumbnail'
+				),
+				//create meta box
+				'register_meta_box_cb' => function () {
+					add_meta_box(
+						'author',                 	// Unique ID
+						'Author',      				// Box title
+						function($post){
+							$author = get_post_meta($post->ID, 'author', true);
+							?><input type="text" name="author" id="author" class="postbox" value="<?php echo(esc_attr($author))?>"><?php
+						},			
+						'cloth' 					// Post type
+					);
+					add_meta_box(
+						'year',                 	// Unique ID
+						'Year',      				// Box title
+						function($post){
+							$year = get_post_meta($post->ID, 'year', true);
+							?><input type="text" name="year" id="year" class="postbox" value="<?php echo(esc_attr($year))?>"><?php
+						},			
+						'cloth' 					// Post type
+					);
+					add_meta_box(
+						'code',                 	// Unique ID
+						'Code',      				// Box title
+						function($post){
+							$code = get_post_meta($post->ID, 'code', true);
+							?><input type="text" name="code" id="code" class="postbox" value="<?php echo(esc_attr($code))?>"><?php
+						},			
+						'cloth' 					// Post type
+					);
+				
+				}
+			)
+		);
 	}
 );
 
@@ -126,6 +172,52 @@ add_action( 'save_post', function($post_id) {
 		$size = sanitize_text_field($_POST['size'] );
 
 		update_post_meta( $post_id, 'size', $size );
+	}
+	
+} );
+
+
+
+
+
+
+
+
+
+add_action( 'save_post', function($post_id) {
+	if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) {
+		return;
+	}
+
+	if ( defined( 'DOING_AJAX' ) && DOING_AJAX ) {
+		return;
+	}
+
+	if ( ! current_user_can( 'edit_post', $post_id ) ) {
+		return;
+	}
+
+	
+	if ( 'cloth' !== get_post_type( $post_id ) ) {
+		return;
+	}
+
+	if ( isset( $_POST['year'] ) ) {
+		$year = sanitize_text_field($_POST['year'] );
+
+		update_post_meta( $post_id, 'year', $year );
+	}
+
+	if ( isset( $_POST['code'] ) ) {
+		$code = sanitize_text_field($_POST['code'] );
+
+		update_post_meta( $post_id, 'code', $code );
+	}
+	
+	if ( isset( $_POST['author'] ) ) {
+		$author = sanitize_text_field($_POST['author'] );
+
+		update_post_meta( $post_id, 'author', $author );
 	}
 } );
 
