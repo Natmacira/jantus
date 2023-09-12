@@ -164,3 +164,9 @@ require_once 'header.php';
         </div>
     </article>
 </section>
+
+<?php
+
+require_once 'footer.php';
+
+?>

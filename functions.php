@@ -1,6 +1,6 @@
 <?php
 /**
- * Empty Base Theme functions and definitions
+ * Jantus Theme functions and definitions
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
@@ -106,7 +106,7 @@ add_action(
 	function() {
 		register_sidebar(
 			array(
-				'name'          => 'Empty Base',
+				'name'          => 'Jantus',
 				'id'            => 'jantus',
 				'class'         => '',
 				'before_widget' => '<div class="widget jantus">',
