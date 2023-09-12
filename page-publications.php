@@ -14,8 +14,10 @@ require_once 'header.php';
 <section class="library">
     <article class="library-inner-element">
         <div class="one-book-content">
-            <h3>BONART</h3>
-            <span>full interview</span>
+            <div class="titles-inner-container">
+                <h3>BONART</h3>
+                <span>full interview</span>
+            </div>
             <div class="iframe-container">
                 <iframe src="" frameborder="0"></iframe>
             </div>
@@ -29,8 +31,10 @@ require_once 'header.php';
 
     <article class="library-inner-element">
         <div class="two-book-content">
-            <h3>contemporary art curator</h3>
-            <span>full interview</span>
+            <div class="titles-inner-container">
+                <h3>contemporary art curator</h3>
+                <span>full interview</span>
+            </div>
             <div class="iframe-container">
                 <iframe src="" frameborder="0"></iframe>
             </div>
@@ -44,8 +48,10 @@ require_once 'header.php';
 
     <article class="library-inner-element">
         <div class="three-book-content">
-            <h3>LA RADIO BARCELONA</h3>
-            <span>full interview</span>
+            <div class="titles-inner-container">
+                <h3>LA RADIO <br> BARCELONA</h3>
+                <span>full interview</span>
+            </div>
             <div class="iframe-container">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/Ya-qrLbSLAc?si=PQhRmsf0kZB6THp9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
@@ -59,8 +65,10 @@ require_once 'header.php';
 
     <article class="library-inner-element">
         <div class="four-book-content">
-            <h3>LA RADIO BARCELONA</h3>
-            <span>full interview</span>
+            <div class="titles-inner-container">
+                <h3>LA RADIO BARCELONA</h3>
+                <span>full interview</span>
+            </div>
             <div class="iframe-container">
                 <iframe src="" frameborder="0"></iframe>
             </div>
@@ -74,8 +82,10 @@ require_once 'header.php';
 
     <article class="library-inner-element">
         <div class="five-book-content">
-            <h3>LA RADIO BARCELONA</h3>
-            <span>full interview</span>
+            <div class="titles-inner-container">
+                <h3>LA RADIO BARCELONA</h3>
+                <span>full interview</span>
+            </div>
             <div class="iframe-container">
                 <iframe src="" frameborder="0"></iframe>
             </div>
@@ -89,8 +99,10 @@ require_once 'header.php';
 
     <article class="library-inner-element">
         <div class="six-book-content">
-            <h3>LA RADIO BARCELONA</h3>
-            <span>full interview</span>
+            <div class="titles-inner-container">
+                <h3>LA RADIO BARCELONA</h3>
+                <span>full interview</span>
+            </div>
             <div class="iframe-container">
                 <iframe src="" frameborder="0"></iframe>
             </div>
@@ -104,8 +116,10 @@ require_once 'header.php';
 
     <article class="library-inner-element">
         <div class="seven-book-content">
-            <h3>LA RADIO BARCELONA</h3>
-            <span>full interview</span>
+            <div class="titles-inner-container">
+                <h3>LA RADIO BARCELONA</h3>
+                <span>full interview</span>
+            </div>
             <div class="iframe-container">
                 <iframe src="" frameborder="0"></iframe>
             </div>
@@ -119,8 +133,10 @@ require_once 'header.php';
 
     <article class="library-inner-element">
         <div class="eight-book-content">
-            <h3>LA RADIO BARCELONA</h3>
-            <span>full interview</span>
+            <div class="titles-inner-container">
+                <h3>LA RADIO BARCELONA</h3>
+                <span>full interview</span>
+            </div>
             <div class="iframe-container">
                 <iframe src="" frameborder="0"></iframe>
             </div>
@@ -134,8 +150,10 @@ require_once 'header.php';
 
     <article class="library-inner-element">
         <div class="nine-book-content">
-            <h3>LA RADIO BARCELONA</h3>
-            <span>full interview</span>
+            <div class="titles-inner-container">
+                <h3>LA RADIO BARCELONA</h3>
+                <span>full interview</span>
+            </div>
             <div class="iframe-container">
                 <iframe src="" frameborder="0"></iframe>
             </div>

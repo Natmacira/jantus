@@ -35,9 +35,36 @@ body {
 			height: 0;
 			transition: 1s;
 			overflow: hidden;
+			border: solid 1px;
+			border-bottom: none;
+			padding-left: 10px;
+			padding-right: 10px;
 			&.book-open {
-				height: 330px;
+				height: 352px;
 				background-color: $theme-yellow;
+			}
+			div.titles-inner-container {
+				display: flex;
+				align-items: end;
+				justify-content: space-between;
+				padding-top: 18px;
+				padding-bottom: 10px;
+				text-transform: uppercase;
+				h3 {
+					font-size: 24px;
+					font-weight: 400;
+				}
+				span {
+					font-size: 14px;
+					font-weight: 400px;
+				}
+			}
+
+			p {
+				text-align: right;
+				font-size: 18px;
+				font-weight: 200;
+				padding: 16px 0 28px;
 			}
 		}
 
@@ -74,12 +101,11 @@ body {
 
 		.iframe-container {
 			position: relative;
-			width: 90%; /* Ajusta el ancho del contenedor del video según tus necesidades */
+			width: 100%; /* Ajusta el ancho del contenedor del video según tus necesidades */
 			padding-bottom: 56.25%; /* Proporción 16:9 para un video de YouTube */
-			margin-left: 20px;
 			margin: 0 auto;
 		}
-		
+
 		.iframe-container iframe {
 			position: absolute;
 			top: 0;
