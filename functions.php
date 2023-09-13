@@ -190,14 +190,6 @@ add_action( 'save_post', function($post_id) {
 	
 } );
 
-
-
-
-
-
-
-
-
 add_action( 'save_post', function($post_id) {
 	if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) {
 		return;

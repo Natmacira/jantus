@@ -7,7 +7,38 @@
  * @package Jantus
  */
 
-/**
- * It uses the same layout that the home page.
- */
-require 'home.php';
+get_header();
+
+while (have_posts()) {
+    the_post();
+    ?>
+
+
+
+    <section class="section-product">
+        <article>
+            <p>Name:</p>
+            <p> <?php echo esc_html(get_the_title()); ?> </p>
+        </article>
+        <article>
+            <p>Year:</p>
+            <p> <?php echo esc_html(get_post_meta(get_the_ID(), 'year', true)); ?> </p>
+        </article>
+        <article>
+            <p>Technique:</p>
+            <p> <?php echo esc_html(get_post_meta(get_the_ID(), 'technique', true)); ?> </p>
+        </article>
+        <article>
+            <p>Size:</p>
+            <p> <?php echo esc_html(get_post_meta(get_the_ID(), 'size', true)); ?> </p>
+        </article>
+        <article>
+            <?php the_post_thumbnail('thumbnail', array('class' => 'painting-img')); ?>
+        </article>
+    </section>
+
+    <?php
+}
+
+get_footer();
+?>

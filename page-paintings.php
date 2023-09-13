@@ -9,27 +9,14 @@ $query = new WP_Query(array('post_type' => 'painting'));
 foreach ($query->posts as $painting) {
 
 ?>
-    <section>
+    <section class="card-product">
         <article>
-            <p>Name:</p>
-            <p> <?php echo esc_html($painting->post_title); ?> </p>
-        </article>
-        <article>
-            <p>Year:</p>
-            <p> <?php echo esc_html(get_post_meta($painting->ID, 'year', true)); ?> </p>
-        </article>
-        <article>
-            <p>Technique:</p>
-            <p> <?php echo esc_html(get_post_meta($painting->ID, 'technique', true)); ?> </p>
-        </article>
-        <article>
-            <p>Size:</p>
-            <p> <?php echo esc_html(get_post_meta($painting->ID, 'size', true)); ?>
-        </article>
-        <article>
-            <?php
-            echo get_the_post_thumbnail($painting->ID, 'thumbnail', array('class' => 'painting-img'));
-            ?>
+            <a href="<?php echo get_permalink($painting->ID) ?>">
+                <?php echo get_the_post_thumbnail($painting->ID, 'thumbnail', array('class' => 'painting-img'));
+                ?>
+                <p> <?php echo esc_html($painting->post_title); ?> </p>
+
+            </a>
         </article>
     </section>
 <?php
