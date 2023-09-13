@@ -3,12 +3,20 @@
 $body_class = "page-paintings";
 require_once 'header.php';
 
+?>
+<section class="titles">
+<h1>Cutre Lux Jantus</h1>
+<h2>Paintings</h2>
+</section>
+
+<?php
 
 // <!-- traeme el post type paintings  -->
 $query = new WP_Query(array('post_type' => 'painting'));
 foreach ($query->posts as $painting) {
 
 ?>
+  
     <section class="card-product">
         <article>
             <a href="<?php echo get_permalink($painting->ID) ?>">

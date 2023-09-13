@@ -6,19 +6,7 @@ body {
 		}
 
 		section.titles {
-			text-align: center;
-			margin-top: 21px;
-			margin-bottom: 43px;
-			h1 {
-				font-size: 28px;
-				margin-bottom: 0;
-				font-weight: 400;
-				text-transform: uppercase;
-			}
-			h2 {
-				font-size: 18px;
-				font-weight: 200;
-			}
+			@include titles-pages;
 		}
 
 		section.back-btn {

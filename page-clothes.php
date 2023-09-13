@@ -10,29 +10,18 @@ $query = new WP_Query(array('post_type' => 'cloth'));
 foreach ($query->posts as $cloth) {
 
 ?>
-    <section>
-            <article>
-                <p>Author:</p>
-                <p> <?php echo esc_html(get_post_meta($cloth->ID, 'author', true)); ?> </p>
-            </article>
-            <article>
-                <p>Title:</p>
+
+    <section class="card-product">
+        <article>
+            <a href="<?php echo get_permalink($cloth->ID) ?>">
+                <?php echo get_the_post_thumbnail($cloth->ID, 'thumbnail', array('class' => 'cloth-img'));
+                ?>
                 <p> <?php echo esc_html($cloth->post_title); ?> </p>
-            </article>
-            <article>
-                <p>Year:</p>
-                <p> <?php echo esc_html(get_post_meta($cloth->ID, 'year', true)); ?> </p>
-            </article>
-            <article>
-                <p>Code:</p>
-                <p> <?php echo esc_html(get_post_meta($cloth->ID, 'code', true)); ?>
-            </article>
-            <article>
-            <?php
-            echo get_the_post_thumbnail($cloth->ID, 'thumbnail', array('class' => 'cloth-img'));
-            ?>
-            </article>
+
+            </a>
+        </article>
     </section>
+
 <?php
 }
 

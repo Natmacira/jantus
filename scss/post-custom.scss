@@ -1,0 +1,25 @@
+body.page-paintings,
+body.page-clothes {
+    font-family: "Chivo Mono", monospace;
+    main {
+        margin-top: -40px;
+
+        section.titles {
+            @include titles-pages;
+        }
+        section.card-product {
+            width: 300px;
+            height: 420px;
+            margin: 0 auto;
+            margin-bottom: 60px;
+            p {
+                font-size: 32px;
+                padding-top: 24px;
+                text-align: center;
+            }
+            img.painting-img.wp-post-image {
+                width: 100%;
+            }
+        }
+    }
+}
