@@ -2,10 +2,12 @@ body.page-paintings,
 body.page-clothes {
     font-family: "Chivo Mono", monospace;
     main {
-        margin-top: -40px;
-
         section.titles {
             @include titles-pages;
+        }
+
+        section.back-btn {
+            @include back-btn();
         }
         section.card-product {
             width: 300px;
@@ -19,6 +21,26 @@ body.page-clothes {
             }
             img.painting-img.wp-post-image {
                 width: 100%;
+            }
+            @media (min-width: 1200px) {
+                filter: blur(1.5rem);
+            }
+        }
+        section.card-product:hover {
+            @media (min-width: 1200px) {
+                filter: blur(0);
+            }
+        }
+
+
+        div.cards-inner-container {
+            @media (min-width: 1200px) {
+                width: 948px;
+                margin: auto;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: space-between;
             }
         }
     }

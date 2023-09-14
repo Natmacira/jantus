@@ -10,8 +10,7 @@ body {
 		}
 
 		section.back-btn {
-			margin-left: 30px;
-			margin-bottom: 36px;
+			@include back-btn();
 		}
 
 		div.one-book-content,

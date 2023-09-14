@@ -1,15 +1,23 @@
 @mixin titles-pages() {
-        text-align: center;
-        margin-top: 21px;
-        margin-bottom: 43px;
-        h1 {
-            font-size: 28px;
-            margin-bottom: 0;
-            font-weight: 400;
-            text-transform: uppercase;
-        }
-        h2 {
-            font-size: 18px;
-            font-weight: 200;
+    text-align: center;
+    margin-top: 21px;
+    margin-bottom: 43px;
+    h1 {
+        font-size: 24px;
+        margin-bottom: 0;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+    h2 {
+        font-size: 18px;
+        font-weight: 200;
+    }
+}
+
+@mixin back-btn() {
+    margin-left: 30px;
+    margin-bottom: 36px;
+    @media (min-width:1200px) {
+    display: none;
     }
 }

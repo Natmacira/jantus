@@ -8,6 +8,12 @@ require_once 'header.php';
 <h1>Cutre Lux Jantus</h1>
 <h2>Paintings</h2>
 </section>
+<section class="back-btn"><a href="javascript:history.back()"><img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/iconos/Atras.svg'); ?>" alt="Botón para volver atrás"></a></section>
+
+<?php
+?>
+
+<div class="cards-inner-container"> 
 
 <?php
 
@@ -29,7 +35,9 @@ foreach ($query->posts as $painting) {
     </section>
 <?php
 }
-
+?>
+</div>
+<?php
 require_once 'footer.php';
 
 ?>
