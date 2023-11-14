@@ -7,12 +7,12 @@
  * @package Jantus
  */
 
-get_header();
+ require_once 'header-singles.php';
 
 while (have_posts()) {
     the_post();
     ?>
-
+    
     <section class="section-product">
         <article>
             <?php the_post_thumbnail('thumbnail', array('class' => 'painting-img')); ?>

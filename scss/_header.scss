@@ -1,0 +1,10 @@
+header {
+    section.titles {
+        @include titles-pages;
+    }
+
+    section.back-btn {
+        @include back-btn();
+    }
+}
+    

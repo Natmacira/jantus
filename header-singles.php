@@ -24,7 +24,16 @@
 	<header>
 		<section class="titles">
 			<h1>Cutre Lux Jantus</h1>
-			<h2><?php echo esc_html(get_the_title()); ?></h2>
+			<?php
+			$post_type = get_post_type(); // Obtiene el nombre del tipo de entrada personalizada del post actual
+			$post_type_object = get_post_type_object($post_type); // Obtiene el objeto del tipo de entrada personalizada
+
+			// Verifica si se encontró el objeto del tipo de entrada personalizada
+			if ($post_type_object) {
+				$post_type_name = $post_type_object->labels->name; // Obtiene el nombre del tipo de entrada personalizada
+				echo '<h2>' . esc_html($post_type_name) . '</h2>';
+			}
+			?>
 		</section>
 		<section class="back-btn"><a href="javascript:history.back()"><img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/iconos/Atras.svg'); ?>" alt="Botón para volver atrás"></a></section>
 

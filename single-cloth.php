@@ -1,5 +1,5 @@
 <?php
-get_header();
+require_once 'header-singles.php';
 
 while (have_posts()) {
     the_post();
