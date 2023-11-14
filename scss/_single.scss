@@ -2,7 +2,12 @@
     Styles for Single
 */
 
-body.single.single-post {
-    
-
+body.single {
+    main {
+        section.section-product {
+            img {
+                width: 100%;
+            }
+        }
+    }
 }
