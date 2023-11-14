@@ -6,7 +6,7 @@ while (have_posts()) {
     the_post();
 ?>
 
-    <section>
+    <section class="section-product">
         <article>
             <?php
             echo get_the_post_thumbnail(get_the_ID(), 'thumbnail', array('class' => 'cloth-img'));
