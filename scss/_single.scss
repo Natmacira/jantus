@@ -41,11 +41,33 @@ body.single {
                         border-bottom: solid 1px;
                     }
                 }
+                @media (min-width: 1200px) {
+                    min-width: 460px;
+                    padding-right: 100px;
+                    margin-bottom: 81px;
+                }
             }
+            @media (min-width: 1200px) {
+                display: flex;
+                flex-direction: row-reverse;
+                align-items: self-end;
+                justify-content: center;
+            }
+
+          
         }
     }
 
     footer {
         position: relative;
+        @media (min-width: 1200px) {
+            // position: fixed;
+            // background-color: transparent;
+        }
     }
+}
+
+
+header section.back-btn {
+    display: block; 
 }

@@ -12,9 +12,6 @@ while (have_posts()) {
             echo get_the_post_thumbnail(get_the_ID(), 'thumbnail', array('class' => 'cloth-img'));
             ?>
         </article>
-        <article>
-            <a href="">ZOOM IN</a>
-        </article>
         <div class="inner-data-container">
             <article>
                 <p>Author:</p>
