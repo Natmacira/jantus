@@ -50,7 +50,8 @@ body.single {
             @media (min-width: 1200px) {
                 display: flex;
                 flex-direction: row-reverse;
-                align-items: self-end;
+                // align-items: self-end;
+                align-items: center;
                 justify-content: center;
             }
 
@@ -61,7 +62,7 @@ body.single {
     footer {
         position: relative;
         @media (min-width: 1200px) {
-            // position: fixed;
+            position: fixed;
             // background-color: transparent;
         }
     }
