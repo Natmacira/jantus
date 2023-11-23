@@ -1,0 +1,36 @@
+body.page-exhibitions {
+	.main-exhibitions {
+		.mobile {
+			padding: 0 10px;
+			margin: 0 auto;
+			max-width: 360px;
+			img {
+				position: relative;
+				&.extra {
+					top: 10px;
+					left: -18px;
+				}
+				&.arg {
+					top: -50px;
+					left: -28px;	
+				}
+				&.br {
+					top: -62px;
+					left: 19px;
+				}
+				&.uk {
+					top: -80px;
+					left: -1px;
+				}
+				&.finlandia {
+					top: -242px;
+					left: 242px;
+				}
+				&.spain {
+					top: -168px;
+					left: 213px;
+				}
+			}
+		}
+	}
+}

@@ -7,24 +7,11 @@
  * @package Jantus
  */
 
-get_header();
+ $body_class = "page-home";
+ require_once 'header.php';
 ?>
+<section class="home">
 
-<h1 class="page-title"><?php single_post_title(); ?></h1>
-
-<section id="posts">
-<?php
-
-while ( have_posts() ) {
-	the_post();
-
-	jantus_print_post();
-
-}
-
-the_posts_navigation();
-
-?>
 </section>
 
 <?php
