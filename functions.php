@@ -9,7 +9,7 @@
  */
 
 if (!defined('JANTUS_VERSION')) {
-	define('JANTUS_VERSION', '0.0.3');
+	define('JANTUS_VERSION', '0.0.4');
 }
 
 add_action(
