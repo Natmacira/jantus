@@ -1,4 +1,17 @@
 window.addEventListener( 'load', function() {
+
+	//functionality for submenu work
+
+	const openWorkMenu 	 = document.querySelector( '.work-open')
+	const openWorkMenuUl = document.querySelector( '.work-open-close')
+
+	console.log(openWorkMenu, openWorkMenuUl);
+
+	openWorkMenu.addEventListener( 'click', function() {
+		document.body.classList.toggle( 'work-open-open' );
+	} );
+
+	//functionality for publications books to open
 	
 	const oneBookContent = document.querySelector( '.one-book-content')
 	const oneBookTitle = document.querySelector( '.one-book-title')
@@ -64,5 +77,9 @@ window.addEventListener( 'load', function() {
 	nineBookTitle.addEventListener( 'click', function() {
 		nineBookContent.classList.toggle( 'book-open' );
 	} );
+
+
+
+
 } );
 	

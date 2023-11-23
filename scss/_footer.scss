@@ -2,9 +2,9 @@
 footer {
 	font-family: "Chivo Mono", monospace;
 	position: fixed;
-    bottom: 0;
-    width: 100%;
-    padding-top: 15px;
+	bottom: 0;
+	width: 100%;
+	padding-top: 15px;
 	ul {
 		padding: 40px;
 		padding-top: 0;
@@ -14,6 +14,35 @@ footer {
 		}
 		li:hover {
 			font-weight: 800;
+		}
+	}
+
+	.work-open-close {
+		display: none;
+	}
+}
+
+body.work-open-open {
+	footer {
+		display: flex;
+		align-items: self-end;
+		ul.work-open-close {
+			display: block;
+			padding-left: 0;
+			li a {
+				@include titles-pages;
+				text-transform: uppercase;
+			}
+		}
+		ul.main-menu {
+			li {
+				color: #b8b8b8;
+			}
+
+			li:first-child {
+				color: black;
+				font-weight: bold;
+			}
 		}
 	}
 }
