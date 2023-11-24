@@ -33,4 +33,98 @@ body.page-exhibitions {
 			}
 		}
 	}
+
+	.modals-inner-container {
+		.modal-japan {
+			display: none;
+		}
+		.modal-kr {
+			display: none;
+		}
+		.modal-usa {
+			display: none;
+		}
+		.modal-extra {
+			display: none;
+		}
+		.modal-br {
+			display: none;
+		}
+		.modal-uk {
+			display: none;
+		}
+		.modal-arg {
+			display: none;
+		}
+		.modal-finlandia {
+			display: none;
+		}
+		.modal-spain {
+			display: none;
+		}
+	}
+
+	&.modal-japan-open {
+		.modals-inner-container {
+			.modal-japan {
+				display: block;
+			}
+		}
+	}
+	&.modal-kr-open {
+		.modals-inner-container {
+			.modal-kr {
+				display: block;
+			}
+		}
+	}
+	&.modal-usa-open {
+		.modals-inner-container {
+			.modal-usa {
+				display: block;
+			}
+		}
+	}
+	&.modal-extra-open {
+		.modals-inner-container {
+			.modal-extra {
+				display: block;
+			}
+		}
+	}
+	&.modal-br-open {
+		.modals-inner-container {
+			.modal-br {
+				display: block;
+			}
+		}
+	}
+	&.modal-uk-open {
+		.modals-inner-container {
+			.modal-uk {
+				display: block;
+			}
+		}
+	}
+	&.modal-arg-open {
+		.modals-inner-container {
+			.modal-arg {
+				display: block;
+			}
+		}
+	}
+	&.modal-finlandia-open {
+		.modals-inner-container {
+			.modal-finlandia {
+				display: block;
+			}
+		}
+	}
+	&.modal-spain-open {
+		.modals-inner-container {
+			.modal-spain {
+				display: block;
+			}
+		}
+	}
 }
