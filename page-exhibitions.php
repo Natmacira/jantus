@@ -22,31 +22,31 @@ require_once 'header.php';
 
     <article class="modals-inner-container">
         <div class="modal-japan">
-            <p>japón</p> <button class="close-japan">x</button>
+            <p>japón</p> <button class="close-japan"><?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/mobile/close-map-location.svg'); ?></button>
         </div>
         <div class="modal-kr">
-            <p>kr</p> <button class="close-kr">x</button>
+            <p>kr</p> <button class="close-kr"><?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/mobile/close-map-location.svg'); ?></button>
         </div>
         <div class="modal-usa">
-            <p>usa</p> <button class="close-usa">x</button>
+            <p>usa</p> <button class="close-usa"><?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/mobile/close-map-location.svg'); ?></button>
         </div>
         <div class="modal-extra">
-            <p>extra</p> <button class="close-extra">x</button>
+            <p>extra</p> <button class="close-extra"><?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/mobile/close-map-location.svg'); ?></button>
         </div>
         <div class="modal-br">
-            <p>br</p> <button class="close-br">x</button>
+            <p>br</p> <button class="close-br"><?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/mobile/close-map-location.svg'); ?></button>
         </div>
         <div class="modal-uk">
-            <p>uk</p> <button class="close-uk">x</button>
+            <p>uk</p> <button class="close-uk"><?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/mobile/close-map-location.svg'); ?></button>
         </div>
         <div class="modal-arg">
-            <p>arg</p> <button class="close-arg">x</button>
+            <p>arg</p> <button class="close-arg"><?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/mobile/close-map-location.svg'); ?></button>
         </div>
         <div class="modal-finlandia">
-            <p>finlandia</p> <button class="close-finlandia">x</button>
+            <p>finlandia</p> <button class="close-finlandia"><?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/mobile/close-map-location.svg'); ?></button>
         </div>
         <div class="modal-spain">
-            <p>spain</p> <button class="close-spain">x</button>
+            <p>spain</p> <button class="close-spain"><?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/mobile/close-map-location.svg'); ?></button>
         </div>
     </article>
 
