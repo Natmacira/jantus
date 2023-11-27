@@ -42,16 +42,7 @@ window.addEventListener( 'load', function() {
 	closeUsa.addEventListener( 'click', function() {
 		document.body.classList.toggle( 'modal-usa-open' );
 	} );
-	//extra
-	const mapextra 	 = document.querySelector( '.extra')
-	const closeextra = document.querySelector( '.close-extra')
 
-	mapextra.addEventListener( 'click', function() {
-		document.body.classList.toggle( 'modal-extra-open' );
-	} );
-	closeextra.addEventListener( 'click', function() {
-		document.body.classList.toggle( 'modal-extra-open' );
-	} );
 	//br
 	const mapbr 	 = document.querySelector( '.br')
 	const closebr = document.querySelector( '.close-br')

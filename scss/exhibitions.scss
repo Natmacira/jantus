@@ -35,30 +35,13 @@ body.page-exhibitions {
 	}
 
 	.modals-inner-container {
-		.modal-japan {
-			display: none;
-		}
-		.modal-kr {
-			display: none;
-		}
-		.modal-usa {
-			display: none;
-		}
-		.modal-extra {
-			display: none;
-		}
-		.modal-br {
-			display: none;
-		}
-		.modal-uk {
-			display: none;
-		}
-		.modal-arg {
-			display: none;
-		}
-		.modal-finlandia {
-			display: none;
-		}
+		.modal-japan,
+		.modal-kr,
+		.modal-usa,
+		.modal-br,
+		.modal-uk,
+		.modal-arg,
+		.modal-finlandia,
 		.modal-spain {
 			display: none;
 		}
@@ -68,6 +51,7 @@ body.page-exhibitions {
 		.modals-inner-container {
 			.modal-japan {
 				display: block;
+				background-color: white;
 			}
 		}
 	}
@@ -75,6 +59,7 @@ body.page-exhibitions {
 		.modals-inner-container {
 			.modal-kr {
 				display: block;
+				background-color: white;
 			}
 		}
 	}
@@ -82,20 +67,16 @@ body.page-exhibitions {
 		.modals-inner-container {
 			.modal-usa {
 				display: block;
+				background-color: white;
 			}
 		}
 	}
-	&.modal-extra-open {
-		.modals-inner-container {
-			.modal-extra {
-				display: block;
-			}
-		}
-	}
+
 	&.modal-br-open {
 		.modals-inner-container {
 			.modal-br {
 				display: block;
+				background-color: white;
 			}
 		}
 	}
@@ -103,6 +84,7 @@ body.page-exhibitions {
 		.modals-inner-container {
 			.modal-uk {
 				display: block;
+				background-color: white;
 			}
 		}
 	}
@@ -110,6 +92,7 @@ body.page-exhibitions {
 		.modals-inner-container {
 			.modal-arg {
 				display: block;
+				background-color: white;
 			}
 		}
 	}
@@ -117,6 +100,7 @@ body.page-exhibitions {
 		.modals-inner-container {
 			.modal-finlandia {
 				display: block;
+				background-color: white;
 			}
 		}
 	}
@@ -124,6 +108,7 @@ body.page-exhibitions {
 		.modals-inner-container {
 			.modal-spain {
 				display: block;
+				background-color: white;
 			}
 		}
 	}
