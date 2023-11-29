@@ -23,12 +23,12 @@ require_once 'header.php';
     <article class="modals-inner-container">
         <div class="modal-japan">
             <div class="modal-title">
-                <button class="close-japan"><img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/mobile/close-map-location.svg'); ?>"></button>
-                <p>japón</p>
+                <button class="close-japan"><img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/close-map-location.svg'); ?>"></button>
+                <p>jpn</p>
             </div>
             <div class="modal-youtube">
-                <a href=""><img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/mobile/youtube-player.svg'); ?>" alt="youtube player"></a>
-                <p>WATCH SOME OF
+                <a href="https://www.youtube.com/"><img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/youtube-player.svg'); ?>" alt="youtube player"></a>
+                <p>WATCH SOME OF <br>
                     MY MEMORIES</p>
             </div>
             <div class="modal-info">
@@ -48,110 +48,110 @@ require_once 'header.php';
         </div>
         <div class="modal-kr">
             <div class="modal-title">
-                <p>kr</p> <button class="close-kr"><img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/mobile/close-map-location.svg'); ?>"></button>
-                <p>japón</p>
+                <button class="close-kr"><img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/close-map-location.svg'); ?>"></button>
+                <p>kr</p>
             </div>
             <div class="modal-youtube">
-                <a href=""><img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/mobile/youtube-player.svg'); ?>" alt="youtube player"></a>
-                <p>WATCH SOME OF
-                    MY MEMORIES</p>
+
             </div>
             <div class="modal-info">
                 <div class="modal-inner-info">
-                    <span></span>
-                    <strong></strong>
-                    <p></p>
-                    <p></p>
-                </div>
-                <div class="modal-inner-info">
-                    <span></span>
-                    <strong></strong>
-                    <p></p>
-                    <p></p>
-                </div>
-                <div class="modal-inner-info">
-                    <span></span>
-                    <strong></strong>
-                    <p></p>
-                    <p></p>
+                    <span>What We Eat and Wear</span>
+                    <strong>CICA Museum</strong>
+                    <p>Gimpo, Corea del Sur.</p>
+                    <p>/ 2019</p>
                 </div>
             </div>
         </div>
+
         <div class="modal-usa">
             <div class="modal-title">
-                <p>usa</p> <button class="close-usa">
-                    <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/mobile/close-map-location.svg'); ?>"></button>
-                <p>japón</p>
-                <div class="modal-youtube">
-                    <a href=""><img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/mobile/youtube-player.svg'); ?>" alt="youtube player"></a>
-                    <p>WATCH SOME OF
-                        MY MEMORIES</p>
+                <button class="close-usa">
+                    <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/close-map-location.svg'); ?>"></button>
+                <p>usa</p>
+            </div>
+            <div class="modal-youtube">
+                <a href="https://www.youtube.com/"><img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/youtube-player.svg'); ?>" alt="youtube player"></a>
+                <p>WATCH SOME OF <br>
+                    MY MEMORIES</p>
+            </div>
+
+            <div class="modal-info">
+                <div class="modal-inner-info">
+                    <span>New York Art</span>
+                    <strong>104 Gallery, Nueva York,</strong>
+                    <p>Estados Unidos.</p>
+                    <p>/ 2019</p>
                 </div>
-                <div class="modal-info">
-                    <div class="modal-inner-info">
-                        <span></span>
-                        <strong></strong>
-                        <p></p>
-                        <p></p>
-                    </div>
-                    <div class="modal-inner-info">
-                        <span></span>
-                        <strong></strong>
-                        <p></p>
-                        <p></p>
-                    </div>
-                    <div class="modal-inner-info">
-                        <span></span>
-                        <strong></strong>
-                        <p></p>
-                        <p></p>
-                    </div>
+                <div class="modal-inner-info">
+                    <span>Greenpoint Gallery</span>
+                    <strong>Nueva York,</strong>
+                    <p>Estados Unidos.</p>
+                    <p>/ 2019</p>
+                </div>
+                <div class="modal-inner-info">
+                    <span>ArtExpo New York</span>
+                    <strong>Nueva York,</strong>
+                    <p>Estados Unidos.</p>
+                    <p>/ 2019</p>
+                </div>
+                <div class="modal-inner-info">
+                    <span>“30 Under 30”</span>
+                    <strong>Viridian Gallery, Nueva York,</strong>
+                    <p>Estados Unidos.</p>
+                    <p>/ 2019</p>
                 </div>
             </div>
         </div>
-     
+        </div>
+
         <div class="modal-br">
             <div class="modal-title">
-
-                <p>br</p> <button class="close-br">
-                    <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/mobile/close-map-location.svg'); ?>"></button>
-                <p>japón</p>
+                <button class="close-br">
+                    <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/close-map-location.svg'); ?>"></button>
+                <p>br</p>
             </div>
             <div class="modal-youtube">
-                <a href=""><img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/mobile/youtube-player.svg'); ?>" alt="youtube player"></a>
-                <p>WATCH SOME OF
+                <a href="https://www.youtube.com/"><img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/youtube-player.svg'); ?>" alt="youtube player"></a>
+                <p>WATCH SOME OF <br>
                     MY MEMORIES</p>
             </div>
             <div class="modal-info">
                 <div class="modal-inner-info">
-                    <span></span>
-                    <strong></strong>
-                    <p></p>
-                    <p></p>
+                    <span>New York Art</span>
+                    <strong>104 Gallery, Nueva York,</strong>
+                    <p>Estados Unidos.</p>
+                    <p>/2019</p>
                 </div>
                 <div class="modal-inner-info">
-                    <span></span>
-                    <strong></strong>
-                    <p></p>
-                    <p></p>
+                    <span>Greenpoint Gallery</span>
+                    <strong>Nueva York,</strong>
+                    <p>Estados Unidos.</p>
+                    <p>/2019</p>
                 </div>
                 <div class="modal-inner-info">
-                    <span></span>
-                    <strong></strong>
-                    <p></p>
-                    <p></p>
+                    <span>ArtExpo New York</span>
+                    <strong>Nueva York,</strong>
+                    <p>Estados Unidos.</p>
+                    <p>/2019</p>
+                </div>
+                <div class="modal-inner-info">
+                    <span>“30 Under 30”</span>
+                    <strong>Viridian Gallery, Nueva York,</strong>
+                    <p>Estados Unidos.</p>
+                    <p>/2019</p>
                 </div>
             </div>
         </div>
         <div class="modal-uk">
             <div class="modal-title">
-                <p>uk</p> <button class="close-uk">
-                    <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/mobile/close-map-location.svg'); ?>"></button>
-                <p>japón</p>
+                <button class="close-uk">
+                    <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/close-map-location.svg'); ?>"></button>
+                <p>uk</p>
             </div>
             <div class="modal-youtube">
-                <a href=""><img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/mobile/youtube-player.svg'); ?>" alt="youtube player"></a>
-                <p>WATCH SOME OF
+                <a href="https://www.youtube.com/"><img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/youtube-player.svg'); ?>" alt="youtube player"></a>
+                <p>WATCH SOME OF <br>
                     MY MEMORIES</p>
             </div>
             <div class="modal-info">
@@ -177,14 +177,13 @@ require_once 'header.php';
         </div>
         <div class="modal-arg">
             <div class="modal-title">
-
-                <p>arg</p> <button class="close-arg">
-                    <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/mobile/close-map-location.svg'); ?>"></button>
-                <p>japón</p>
+                <button class="close-arg">
+                    <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/close-map-location.svg'); ?>"></button>
+                <p>arg</p>
             </div>
             <div class="modal-youtube">
-                <a href=""><img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/mobile/youtube-player.svg'); ?>" alt="youtube player"></a>
-                <p>WATCH SOME OF
+                <a href="https://www.youtube.com/"><img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/youtube-player.svg'); ?>" alt="youtube player"></a>
+                <p>WATCH SOME OF <br>
                     MY MEMORIES</p>
             </div>
             <div class="modal-info">
@@ -210,14 +209,13 @@ require_once 'header.php';
         </div>
         <div class="modal-finlandia">
             <div class="modal-title">
-
-                <p>finlandia</p> <button class="close-finlandia">
-                    <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/mobile/close-map-location.svg'); ?>"></button>
-                <p>japón</p>
+                <button class="close-finlandia">
+                    <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/close-map-location.svg'); ?>"></button>
+                <p>fi</p>
             </div>
             <div class="modal-youtube">
-                <a href=""><img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/mobile/youtube-player.svg'); ?>" alt="youtube player"></a>
-                <p>WATCH SOME OF
+                <a href="https://www.youtube.com/"><img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/youtube-player.svg'); ?>" alt="youtube player"></a>
+                <p>WATCH SOME OF <br>
                     MY MEMORIES</p>
             </div>
             <div class="modal-info">
@@ -243,14 +241,13 @@ require_once 'header.php';
         </div>
         <div class="modal-spain">
             <div class="modal-title">
-
-                <p>spain</p> <button class="close-spain">
-                    <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/mobile/close-map-location.svg'); ?>"></button>
-                <p>japón</p>
+                <button class="close-spain">
+                    <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/close-map-location.svg'); ?>"></button>
+                <p>spn</p>
             </div>
             <div class="modal-youtube">
-                <a href=""><img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/mobile/youtube-player.svg'); ?>" alt="youtube player"></a>
-                <p>WATCH SOME OF
+                <a href="https://www.youtube.com/"><img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/youtube-player.svg'); ?>" alt="youtube player"></a>
+                <p>WATCH SOME OF <br>
                     MY MEMORIES</p>
             </div>
             <div class="modal-info">

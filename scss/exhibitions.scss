@@ -12,7 +12,7 @@ body.page-exhibitions {
 				}
 				&.arg {
 					top: -50px;
-					left: -28px;	
+					left: -28px;
 				}
 				&.br {
 					top: -62px;
@@ -44,6 +44,54 @@ body.page-exhibitions {
 		.modal-finlandia,
 		.modal-spain {
 			display: none;
+			position: absolute;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 2;
+			padding-left: 25px;
+			padding-right: 9px;
+			.modal-title {
+				p {
+					font-size: 98px;
+					color: white;
+					font-weight: bold;
+					text-align: right;
+					padding-right: 30px;
+					margin-top: -35px;
+				}
+				button {
+					background: transparent;
+					border: none;
+					padding-top: 25px;
+					padding-bottom: 0;
+				}
+			}
+			.modal-youtube {
+				min-height: 99.2px;
+				p {
+					font-size: 14px;
+					color: white;
+					padding-top: 13px;
+					font-weight: 400;
+				}
+			}
+			.modal-inner-info {
+				margin-bottom: 25px;
+
+			}
+			.modal-info {
+				padding-left: 27px;
+				color: white;
+				border-left: solid 1px white;
+				margin-top: 34px;
+				font-size: 14px;
+				span {
+					font-size: 25px;
+					padding-bottom: 20px;
+					display: block;
+				}
+			}
 		}
 	}
 
@@ -51,7 +99,7 @@ body.page-exhibitions {
 		.modals-inner-container {
 			.modal-japan {
 				display: block;
-				background-color: white;
+				background-color: $theme-japon;
 			}
 		}
 	}
@@ -59,7 +107,7 @@ body.page-exhibitions {
 		.modals-inner-container {
 			.modal-kr {
 				display: block;
-				background-color: white;
+				background-color: $theme-korea;
 			}
 		}
 	}
@@ -67,7 +115,8 @@ body.page-exhibitions {
 		.modals-inner-container {
 			.modal-usa {
 				display: block;
-				background-color: white;
+				background-color: $theme-usa;
+				height: auto;
 			}
 		}
 	}
@@ -76,7 +125,8 @@ body.page-exhibitions {
 		.modals-inner-container {
 			.modal-br {
 				display: block;
-				background-color: white;
+				background-color: $theme-brasil;
+				height: auto;
 			}
 		}
 	}
@@ -84,7 +134,7 @@ body.page-exhibitions {
 		.modals-inner-container {
 			.modal-uk {
 				display: block;
-				background-color: white;
+				background-color: $theme-uk;
 			}
 		}
 	}
@@ -92,7 +142,7 @@ body.page-exhibitions {
 		.modals-inner-container {
 			.modal-arg {
 				display: block;
-				background-color: white;
+				background-color: $theme-argentina;
 			}
 		}
 	}
@@ -100,7 +150,7 @@ body.page-exhibitions {
 		.modals-inner-container {
 			.modal-finlandia {
 				display: block;
-				background-color: white;
+				background-color: $theme-finlandia;
 			}
 		}
 	}
@@ -108,7 +158,7 @@ body.page-exhibitions {
 		.modals-inner-container {
 			.modal-spain {
 				display: block;
-				background-color: white;
+				background-color: $theme-espana;
 			}
 		}
 	}
