@@ -6,9 +6,11 @@ body.page-exhibitions {
 			max-width: 360px;
 			img {
 				position: relative;
+				cursor: pointer;
 				&.extra {
 					top: 10px;
 					left: -18px;
+					cursor: auto;
 				}
 				&.arg {
 					top: -50px;
@@ -65,6 +67,7 @@ body.page-exhibitions {
 					border: none;
 					padding-top: 25px;
 					padding-bottom: 0;
+					cursor: pointer;
 				}
 			}
 			.modal-youtube {
@@ -143,6 +146,7 @@ body.page-exhibitions {
 			.modal-arg {
 				display: block;
 				background-color: $theme-argentina;
+				height: auto;
 			}
 		}
 	}

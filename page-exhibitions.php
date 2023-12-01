@@ -150,28 +150,14 @@ require_once 'header.php';
                 <p>uk</p>
             </div>
             <div class="modal-youtube">
-                <a href="https://www.youtube.com/"><img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/youtube-player.svg'); ?>" alt="youtube player"></a>
-                <p>WATCH SOME OF <br>
-                    MY MEMORIES</p>
+             
             </div>
             <div class="modal-info">
                 <div class="modal-inner-info">
-                    <span></span>
-                    <strong></strong>
-                    <p></p>
-                    <p></p>
-                </div>
-                <div class="modal-inner-info">
-                    <span></span>
-                    <strong></strong>
-                    <p></p>
-                    <p></p>
-                </div>
-                <div class="modal-inner-info">
-                    <span></span>
-                    <strong></strong>
-                    <p></p>
-                    <p></p>
+                    <span>Parallax Art Fair 2018</span>
+                    <strong>Kensington Town Hall</strong>
+                    <p>Londres, Reino Unido.</p>
+                    <p>/2018</p>
                 </div>
             </div>
         </div>
@@ -188,22 +174,52 @@ require_once 'header.php';
             </div>
             <div class="modal-info">
                 <div class="modal-inner-info">
-                    <span></span>
-                    <strong></strong>
-                    <p></p>
-                    <p></p>
+                    <span>“Beluga”</span>
+                    <strong>Elsi del Río</strong>
+                    <p>Buenos Aires, Argentina.</p>
+                    <p>/2013</p>
                 </div>
                 <div class="modal-inner-info">
-                    <span></span>
-                    <strong></strong>
-                    <p></p>
-                    <p></p>
+                    <span>MAJO 2022</span>
+                    <strong>Museo Fundación Romulo Raggio</strong>
+                    <p>Buenos Aires, Argentina.</p>
+                    <p>/2022</p>
                 </div>
                 <div class="modal-inner-info">
-                    <span></span>
+                    <span>MAJO 2019</span>
+                    <strong>Museo Fundación Romulo Raggio</strong>
+                    <p>Buenos Aires, Argentina.</p>
+                    <p>/2019</p>
+                </div>
+                <div class="modal-inner-info">
+                    <span>MAJO</span>
+                    <strong>Museo Fundación Romulo Raggio</strong>
+                    <p>Buenos Aires, Argentina.</p>
+                    <p>/2017</p>
+                </div>
+                <div class="modal-inner-info">
+                    <span>“Anábasis”</span>
+                    <strong>Galería Buenos Aires Sur</strong>
+                    <p>Buenos Aires, Argentina.</p>
+                    <p>/2020</p>
+                </div>
+                <div class="modal-inner-info">
+                    <span>Espacio Cultural Fraternitas</span>
                     <strong></strong>
-                    <p></p>
-                    <p></p>
+                    <p>Rosario, Argentina.</p>
+                    <p>/2019</p>
+                </div>
+                <div class="modal-inner-info">
+                    <span>Salón Manuel Belgrano</span>
+                    <strong>Museo Eduardo Sívori</strong>
+                    <p>Buenos Aires, Argentina.</p>
+                    <p>/2014</p>
+                </div>
+                <div class="modal-inner-info">
+                    <span>“Ausdrücke”</span>
+                    <strong>Amuleto,</strong>
+                    <p>Buenos Aires, Argentina.</p>
+                    <p>/2019</p>
                 </div>
             </div>
         </div>
@@ -214,28 +230,14 @@ require_once 'header.php';
                 <p>fi</p>
             </div>
             <div class="modal-youtube">
-                <a href="https://www.youtube.com/"><img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/youtube-player.svg'); ?>" alt="youtube player"></a>
-                <p>WATCH SOME OF <br>
-                    MY MEMORIES</p>
+                
             </div>
             <div class="modal-info">
                 <div class="modal-inner-info">
-                    <span></span>
-                    <strong></strong>
-                    <p></p>
-                    <p></p>
-                </div>
-                <div class="modal-inner-info">
-                    <span></span>
-                    <strong></strong>
-                    <p></p>
-                    <p></p>
-                </div>
-                <div class="modal-inner-info">
-                    <span></span>
-                    <strong></strong>
-                    <p></p>
-                    <p></p>
+                    <span>BELA Biennial 2018</span>
+                    <strong>Kaapelitehdas</strong>
+                    <p>Helsinki, Finlandia</p>
+                    <p>/ 2018</p>
                 </div>
             </div>
         </div>
@@ -252,22 +254,16 @@ require_once 'header.php';
             </div>
             <div class="modal-info">
                 <div class="modal-inner-info">
-                    <span></span>
-                    <strong></strong>
-                    <p></p>
-                    <p></p>
+                    <span>“Jantus face a face Rose Madone”</span>
+                    <strong>Galería Cor (Amuleto), Barcelona,</strong>
+                    <p>España</p>
+                    <p>/ 2018</p>
                 </div>
                 <div class="modal-inner-info">
-                    <span></span>
-                    <strong></strong>
-                    <p></p>
-                    <p></p>
-                </div>
-                <div class="modal-inner-info">
-                    <span></span>
-                    <strong></strong>
-                    <p></p>
-                    <p></p>
+                    <span>Porta'ns l’art</span>
+                    <strong>Centre Civic Can Verdaguer, BCN,</strong>
+                    <p>España</p>
+                    <p>/ 2018</p>
                 </div>
             </div>
         </div>
