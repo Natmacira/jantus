@@ -38,6 +38,9 @@ body.page-exhibitions {
 					top: 0;
 					left: 30.81470588%;
 					width: 29.41176471%;
+					&.solo {
+						z-index: 3;
+					}
 				}
 
 				&.extra {
@@ -89,6 +92,7 @@ body.page-exhibitions {
 					top: 45.588235%;
 					left: 80.647059%;
 					width: 18.52941176%;
+
 				}
 			}
 
@@ -160,9 +164,11 @@ body.page-exhibitions {
 		.modal-uk,
 		.modal-arg,
 		.modal-finlandia,
-		.modal-spain {
+		.modal-spain,
+		.modal-usa-solo, 
+		.modal-spain-solo {
 			display: none;
-			position: absolute;
+			position: fixed;
 			top: 0;
 			width: 100%;
 			height: 100%;
@@ -234,7 +240,17 @@ body.page-exhibitions {
 			.modal-usa {
 				display: block;
 				background-color: $theme-usa;
+				position: absolute;
 				height: auto;
+			}
+		}
+	}
+	&.modal-usa-solo-open {
+		.modals-inner-container {
+			.modal-usa-solo {
+				display: block;
+				background-color: $theme-usa;
+				z-index: 4;
 			}
 		}
 	}
@@ -244,6 +260,7 @@ body.page-exhibitions {
 			.modal-br {
 				display: block;
 				background-color: $theme-brasil;
+				position: absolute;
 				height: auto;
 			}
 		}
@@ -261,6 +278,7 @@ body.page-exhibitions {
 			.modal-arg {
 				display: block;
 				background-color: $theme-argentina;
+				position: absolute;
 				height: auto;
 			}
 		}
@@ -278,6 +296,15 @@ body.page-exhibitions {
 			.modal-spain {
 				display: block;
 				background-color: $theme-espana;
+			}
+		}
+	}
+	&.modal-spain-solo-open {
+		.modals-inner-container {
+			.modal-spain-solo {
+				display: block;
+				background-color: $theme-espana;
+				z-index: 4;
 			}
 		}
 	}

@@ -20,9 +20,9 @@ require_once 'header.php';
 
     </article>
     <article class="mobile solo">
-        <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/mobile/USA.svg'); ?>" alt="Clickeable map usa" class="usa">
+        <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/mobile/USA.svg'); ?>" alt="Clickeable map usa" class="usa solo">
         <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/mobile/extra-big-mobile.svg'); ?>" alt="empty map" class="extra-big">
-        <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/mobile/Spain.svg'); ?>" alt="Clickeable map spain" class="spain">
+        <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/mobile/Spain.svg'); ?>" alt="Clickeable map spain" class="spain solo">
 
     </article>
 
@@ -114,7 +114,29 @@ require_once 'header.php';
                 </div>
             </div>
         </div>
+
+        <div class="modal-usa-solo">
+            <div class="modal-title">
+                <button class="close-usa-solo">
+                    <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/close-map-location.svg'); ?>"></button>
+                <p>usa</p>
+            </div>
+            <div class="modal-youtube">
+                <a href="https://www.youtube.com/"><img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/youtube-player.svg'); ?>" alt="youtube player"></a>
+                <p>WATCH SOME OF <br>
+                    MY MEMORIES</p>
+            </div>
+
+            <div class="modal-info">
+                <div class="modal-inner-info">
+                    <span>L´enfant Brut</span>
+                    <strong>Chashama , Nueva York,</strong>
+                    <p>Estados Unidos.</p>
+                    <p>/ 2018</p>
+                </div>
+            </div>
         </div>
+        
 
         <div class="modal-br">
             <div class="modal-title">
@@ -265,14 +287,28 @@ require_once 'header.php';
             </div>
             <div class="modal-info">
                 <div class="modal-inner-info">
-                    <span>“Jantus face a face Rose Madone”</span>
-                    <strong>Galería Cor (Amuleto), Barcelona,</strong>
+                    <span>Porta'ns l’art</span>
+                    <strong>Centre Civic Can Verdaguer, BCN,</strong>
                     <p>España</p>
                     <p>/ 2018</p>
                 </div>
+            </div>
+        </div>
+        <div class="modal-spain-solo">
+            <div class="modal-title">
+                <button class="close-spain-solo">
+                    <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/close-map-location.svg'); ?>"></button>
+                <p>spn</p>
+            </div>
+            <div class="modal-youtube">
+                <a href="https://www.youtube.com/"><img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/youtube-player.svg'); ?>" alt="youtube player"></a>
+                <p>WATCH SOME OF <br>
+                    MY MEMORIES</p>
+            </div>
+            <div class="modal-info">
                 <div class="modal-inner-info">
-                    <span>Porta'ns l’art</span>
-                    <strong>Centre Civic Can Verdaguer, BCN,</strong>
+                    <span>Jantus</span>
+                    <strong>Galería Cor (Amuleto), Barcelona,</strong>
                     <p>España</p>
                     <p>/ 2018</p>
                 </div>
