@@ -1,37 +1,99 @@
 body.page-exhibitions {
+	ul.main-menu {
+		padding-top: 80px;
+		li:nth-child(2) {
+			font-weight: bold;
+		}
+	}
 	.main-exhibitions {
+		max-width: 750px;
+		margin: 0 auto;
 		.mobile {
 			padding: 0 10px;
 			margin: 0 auto;
 			max-width: 360px;
+			position: relative;
+			width: 100%;
+			max-width: none;
+			height: 0;
+			padding-top: 59.69411765%;
+
 			img {
-				position: relative;
+				position: absolute;
 				cursor: pointer;
+
+				&.japan {
+					top: 27.811765%;
+					left: 4px;
+					width: 17.05882353%;
+				}
+
+				&.kr {
+					top: 11.047059%;
+					left: 18.523529%;
+					width: 10.58823529%;
+				}
+
+				&.usa {
+					top: 0;
+					left: 30.81470588%;
+					width: 29.41176471%;
+				}
+
 				&.extra {
+					width: 37.05882353%;
 					top: 10px;
+					top: 2.941176471%;
 					left: -18px;
+					left: 56%;
+					cursor: auto;
+				}
+				&.extra-big {
+					width: 97%;
+					top: -0.058824%;
+					left: 2%;
 					cursor: auto;
 				}
 				&.arg {
 					top: -50px;
+					top: -14.70588235%;
+					top: 29.294118%;
 					left: -28px;
+					left: 40%;
+					width: 42.64705882%;
 				}
 				&.br {
 					top: -62px;
+					top: 54.523529%;
 					left: 19px;
+					left: 6.941176%;
+					width: 28.29705882%;
 				}
 				&.uk {
 					top: -80px;
 					left: -1px;
+					top: 60.470588%;
+					left: 30.705882%;
+					width: 17.35294118%;
 				}
 				&.finlandia {
+					width: 18.52941176%;
 					top: -242px;
 					left: 242px;
+					top: 23.823529%;
+					left: 71.17647059%;
 				}
 				&.spain {
 					top: -168px;
 					left: 213px;
+					top: 45.588235%;
+					left: 80.647059%;
+					width: 18.52941176%;
 				}
+			}
+
+			&.solo {
+				display: none;
 			}
 		}
 	}
@@ -81,7 +143,6 @@ body.page-exhibitions {
 			}
 			.modal-inner-info {
 				margin-bottom: 25px;
-
 			}
 			.modal-info {
 				padding-left: 27px;
@@ -163,6 +224,17 @@ body.page-exhibitions {
 			.modal-spain {
 				display: block;
 				background-color: $theme-espana;
+			}
+		}
+	}
+
+	&.solo-mode {
+		.main-exhibitions {
+			.mobile.group {
+				display: none;
+			}
+			.mobile.solo {
+				display: block;
 			}
 		}
 	}

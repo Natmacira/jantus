@@ -94,6 +94,14 @@ window.addEventListener( 'load', function() {
 		document.body.classList.toggle( 'modal-spain-open' );
 	} );
 
+	// functionality for switch button solo group
+
+	const switchBtn 	 = document.querySelector( '.switch-btn')
+
+	switchBtn.addEventListener( 'click', function() {
+		document.body.classList.toggle( 'solo-mode' );
+	} );
+
 	//functionality for publications books to open
 	
 	const oneBookContent = document.querySelector( '.one-book-content')

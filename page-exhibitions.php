@@ -7,7 +7,7 @@ require_once 'header.php';
 
 <section class="main-exhibitions">
 
-    <article class="mobile">
+    <article class="mobile group">
         <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/mobile/japan.svg'); ?>" alt="Clickeable map Japan" class="japan">
         <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/mobile/Kr.svg'); ?>" alt="Clickeable map Kr" class="kr">
         <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/mobile/USA.svg'); ?>" alt="Clickeable map usa" class="usa">
@@ -18,6 +18,17 @@ require_once 'header.php';
         <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/mobile/Finland.svg'); ?>" alt="Clickeable map finland" class="finlandia">
         <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/mobile/Spain.svg'); ?>" alt="Clickeable map spain" class="spain">
 
+    </article>
+    <article class="mobile solo">
+        <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/mobile/USA.svg'); ?>" alt="Clickeable map usa" class="usa">
+        <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/mobile/extra-big-mobile.svg'); ?>" alt="empty map" class="extra-big">
+        <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/mobile/Spain.svg'); ?>" alt="Clickeable map spain" class="spain">
+
+    </article>
+
+    <article class="switch-btn">
+        <button>Solo</button>
+        <button>Group</button>
     </article>
 
     <article class="modals-inner-container">
