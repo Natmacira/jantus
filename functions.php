@@ -9,7 +9,7 @@
  */
 
 if (!defined('JANTUS_VERSION')) {
-	define('JANTUS_VERSION', '0.0.5');
+	define('JANTUS_VERSION', '0.0.6');
 }
 
 add_action(
@@ -17,6 +17,7 @@ add_action(
 	function () {
 		wp_enqueue_style('jantus', get_stylesheet_directory_uri() . '/style.min.css', array(), JANTUS_VERSION);
 		wp_enqueue_script('jantus', get_stylesheet_directory_uri() . '/js/main.js', array(), JANTUS_VERSION);
+		wp_enqueue_script('jantus-publications', get_stylesheet_directory_uri() . '/js/publications.js', array(), JANTUS_VERSION);
 	}
 );
 
