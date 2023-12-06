@@ -1,13 +1,4 @@
 window.addEventListener('load', function () {
-
-	// functionality for switch button solo group
-
-	const switchBtn = document.querySelector('.switch-btn')
-
-	switchBtn.addEventListener('click', function () {
-		document.body.classList.toggle('solo-mode');
-	});
-
 	//functionality for submenu work
 
 	const openWorkMenu = document.querySelector('.work-open')
@@ -18,6 +9,17 @@ window.addEventListener('load', function () {
 	openWorkMenu.addEventListener('click', function () {
 		document.body.classList.toggle('work-open-open');
 	});
+
+	
+	// functionality for switch button solo group
+
+	const switchBtn = document.querySelector('.switch-btn')
+
+	switchBtn.addEventListener('click', function () {
+		document.body.classList.toggle('solo-mode');
+	});
+
+
 
 	// functionality for modals maps
 	//JAPAN
