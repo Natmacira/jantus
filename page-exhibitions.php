@@ -75,16 +75,16 @@ require_once 'header.php';
             </div>
             <div class="modal-info">
                 <div class="modal-inner-info">
-                    <span>Tokyo International Art Fair 2018</span>
-                    <strong>Bellesalle Ropong</strong>
-                    <p>Tokio, Japón.</p>
-                    <p>/ 2018</p>
+                    <span>Enokojima Art, Culture and Creative Center</span>
+                    <strong></strong>
+                    <p>Osaka, Japan.</p>
+                    <p>/ 2022</p>
                 </div>
                 <div class="modal-inner-info">
-                    <span>AVA Art Festival</span>
-                    <strong>Enoco,</strong>
-                    <p>Osaka, Japón.</p>
-                    <p>/ 2019</p>
+                    <span>Tokyo International Art Fair 2018</span>
+                    <strong>Bellesalle Ropong</strong>
+                    <p>Tokio, Japan.</p>
+                    <p>/ 2018</p>
                 </div>
             </div>
         </div>
@@ -100,7 +100,7 @@ require_once 'header.php';
                 <div class="modal-inner-info">
                     <span>What We Eat and Wear</span>
                     <strong>CICA Museum</strong>
-                    <p>Gimpo, Corea del Sur.</p>
+                    <p>Gyeonggi-do, South Korea.</p>
                     <p>/ 2019</p>
                 </div>
             </div>
@@ -120,28 +120,28 @@ require_once 'header.php';
 
             <div class="modal-info">
                 <div class="modal-inner-info">
-                    <span>New York Art</span>
-                    <strong>104 Gallery, Nueva York,</strong>
-                    <p>Estados Unidos.</p>
-                    <p>/ 2019</p>
+                    <span>Art Lab (Tucker Eason)</span>
+                    <strong></strong>
+                    <p>Nueva York, USA.</p>
+                    <p>/ 2018</p>
                 </div>
                 <div class="modal-inner-info">
                     <span>Greenpoint Gallery</span>
-                    <strong>Nueva York,</strong>
-                    <p>Estados Unidos.</p>
-                    <p>/ 2019</p>
+                    <strong></strong>
+                    <p>Nueva York, USA.</p>
+                    <p>/ 2018</p>
                 </div>
                 <div class="modal-inner-info">
                     <span>ArtExpo New York</span>
-                    <strong>Nueva York,</strong>
-                    <p>Estados Unidos.</p>
-                    <p>/ 2019</p>
+                    <strong>Pier 95</strong>
+                    <p>Nueva York, USA.</p>
+                    <p>/ 2018</p>
                 </div>
                 <div class="modal-inner-info">
-                    <span>“30 Under 30”</span>
-                    <strong>Viridian Gallery, Nueva York,</strong>
-                    <p>Estados Unidos.</p>
-                    <p>/ 2019</p>
+                    <span>30 Under 30</span>
+                    <strong>Viridian Artists</strong>
+                    <p>Nueva York, USA.</p>
+                    <p>/ 2018</p>
                 </div>
             </div>
         </div>
@@ -161,8 +161,8 @@ require_once 'header.php';
             <div class="modal-info">
                 <div class="modal-inner-info">
                     <span>L´enfant Brut</span>
-                    <strong>Chashama , Nueva York,</strong>
-                    <p>Estados Unidos.</p>
+                    <strong>Chashama</strong>
+                    <p>Nueva York, USA.</p>
                     <p>/ 2018</p>
                 </div>
             </div>
@@ -182,27 +182,27 @@ require_once 'header.php';
             </div>
             <div class="modal-info">
                 <div class="modal-inner-info">
-                    <span>New York Art</span>
-                    <strong>104 Gallery, Nueva York,</strong>
-                    <p>Estados Unidos.</p>
+                    <span>Fabrica Bhering</span>
+                    <strong></strong>
+                    <p>Rio de Janeiro, Brazil</p>
+                    <p>/2022</p>
+                </div>
+                <div class="modal-inner-info">
+                    <span>BELA Biennial</span>
+                    <strong>Cidade das Artes</strong>
+                    <p>Rio de Janeiro, Brazil</p>
                     <p>/2019</p>
                 </div>
                 <div class="modal-inner-info">
-                    <span>Greenpoint Gallery</span>
-                    <strong>Nueva York,</strong>
-                    <p>Estados Unidos.</p>
+                    <span>Casa França Brasil</span>
+                    <strong></strong>
+                    <p>Rio de Janeiro, Brazil</p>
                     <p>/2019</p>
                 </div>
                 <div class="modal-inner-info">
-                    <span>ArtExpo New York</span>
-                    <strong>Nueva York,</strong>
-                    <p>Estados Unidos.</p>
-                    <p>/2019</p>
-                </div>
-                <div class="modal-inner-info">
-                    <span>“30 Under 30”</span>
-                    <strong>Viridian Gallery, Nueva York,</strong>
-                    <p>Estados Unidos.</p>
+                    <span>Centro Cultural dos Correios</span>
+                    <strong></strong>
+                    <p>Rio de Janeiro, Brazil</p>
                     <p>/2019</p>
                 </div>
             </div>
@@ -220,7 +220,7 @@ require_once 'header.php';
                 <div class="modal-inner-info">
                     <span>Parallax Art Fair 2018</span>
                     <strong>Kensington Town Hall</strong>
-                    <p>Londres, Reino Unido.</p>
+                    <p>London, United Kingdom.</p>
                     <p>/2018</p>
                 </div>
             </div>
@@ -238,55 +238,51 @@ require_once 'header.php';
             </div>
             <div class="modal-info">
                 <div class="modal-inner-info">
-                    <span>“Beluga”</span>
-                    <strong>Elsi del Río</strong>
-                    <p>Buenos Aires, Argentina.</p>
-                    <p>/2013</p>
-                </div>
-                <div class="modal-inner-info">
-                    <span>MAJO 2022</span>
+                    <span>Muestra de Arte Joven</span>
                     <strong>Museo Fundación Romulo Raggio</strong>
                     <p>Buenos Aires, Argentina.</p>
                     <p>/2022</p>
                 </div>
                 <div class="modal-inner-info">
-                    <span>MAJO 2019</span>
+                    <span>Anábasis</span>
+                    <strong>Galería Buenos Aires Sur & pantanosumpf</strong>
+                    <p>Buenos Aires, Argentina.</p>
+                    <p>/2020</p>
+                </div>
+                <div class="modal-inner-info">
+                    <span>Muestra de Arte Joven</span>
                     <strong>Museo Fundación Romulo Raggio</strong>
                     <p>Buenos Aires, Argentina.</p>
                     <p>/2019</p>
                 </div>
                 <div class="modal-inner-info">
-                    <span>MAJO</span>
+                    <span>Ausdrücke</span>
+                    <strong>Amuleto & pantanosumpf</strong>
+                    <p>Buenos Aires, Argentina.</p>
+                    <p>/2019</p>
+                </div>
+                <div class="modal-inner-info">
+                    <span>Muestra de Arte Joven </span>
                     <strong>Museo Fundación Romulo Raggio</strong>
                     <p>Buenos Aires, Argentina.</p>
                     <p>/2017</p>
                 </div>
                 <div class="modal-inner-info">
-                    <span>“Anábasis”</span>
-                    <strong>Galería Buenos Aires Sur</strong>
-                    <p>Buenos Aires, Argentina.</p>
-                    <p>/2020</p>
-                </div>
-                <div class="modal-inner-info">
-                    <span>Espacio Cultural Fraternitas</span>
-                    <strong></strong>
-                    <p>Rosario, Argentina.</p>
-                    <p>/2019</p>
-                </div>
-                <div class="modal-inner-info">
-                    <span>Salón Manuel Belgrano</span>
+                    <span>LIX Salón de Artes Plásticas Manuel Belgrano </span>
                     <strong>Museo Eduardo Sívori</strong>
                     <p>Buenos Aires, Argentina.</p>
                     <p>/2014</p>
                 </div>
                 <div class="modal-inner-info">
-                    <span>“Ausdrücke”</span>
-                    <strong>Amuleto,</strong>
+                    <span>“Beluga”</span>
+                    <strong>Elsi del Río</strong>
                     <p>Buenos Aires, Argentina.</p>
-                    <p>/2019</p>
+                    <p>/2013</p>
                 </div>
             </div>
         </div>
+
+
         <div class="modal-finlandia">
             <div class="modal-title">
                 <button class="close-finlandia">
@@ -298,13 +294,22 @@ require_once 'header.php';
             </div>
             <div class="modal-info">
                 <div class="modal-inner-info">
-                    <span>BELA Biennial 2018</span>
-                    <strong>Kaapelitehdas</strong>
-                    <p>Helsinki, Finlandia</p>
-                    <p>/ 2018</p>
+                    <span>Varkaus stadsbibliotek</span>
+                    <strong></strong>
+                    <p>Varkaus, Finland</p>
+                    <p>/ 2022</p>
+                </div>
+                <div class="modal-inner-info">
+                    <span>Kaapelitehdas</span>
+                    <strong></strong>
+                    <p>Helsinki, Finland</p>
+                    <p>/ 2019</p>
                 </div>
             </div>
         </div>
+
+
+
         <div class="modal-spain">
             <div class="modal-title">
                 <button class="close-spain">
@@ -319,12 +324,14 @@ require_once 'header.php';
             <div class="modal-info">
                 <div class="modal-inner-info">
                     <span>Porta'ns l’art</span>
-                    <strong>Centre Civic Can Verdaguer, BCN,</strong>
-                    <p>España</p>
+                    <strong>Centre Civic Can Verdaguer</strong>
+                    <p>Barcelona, Spain</p>
                     <p>/ 2018</p>
                 </div>
             </div>
         </div>
+
+
         <div class="modal-spain-solo">
             <div class="modal-title">
                 <button class="close-spain-solo">
@@ -339,8 +346,8 @@ require_once 'header.php';
             <div class="modal-info">
                 <div class="modal-inner-info">
                     <span>Jantus</span>
-                    <strong>Galería Cor (Amuleto), Barcelona,</strong>
-                    <p>España</p>
+                    <strong>Amuleto Gallery</strong>
+                    <p>Barcelona, Spain</p>
                     <p>/ 2018</p>
                 </div>
             </div>

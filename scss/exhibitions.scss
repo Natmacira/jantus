@@ -158,7 +158,7 @@ body.page-exhibitions {
 					height: 154px;
 					top: 365px;
 					left: 312px;
-					z-index: 6;
+					z-index: 2;
 				}
 				&.container-arg {
 					width: 434px;
@@ -179,8 +179,6 @@ body.page-exhibitions {
 					top: 276px;
 				}
 			}
-
-			
 		}
 		.switch-btn {
 			border-color: #3f3f3f;
@@ -323,7 +321,9 @@ body.page-exhibitions {
 				display: block;
 				background-color: $theme-usa;
 				position: absolute;
+				top: -197px;
 				height: auto;
+				min-height: 1000px;
 			}
 		}
 	}
@@ -343,7 +343,10 @@ body.page-exhibitions {
 				display: block;
 				background-color: $theme-brasil;
 				position: absolute;
+				top: -197px;
 				height: auto;
+				min-height: 1000px;
+
 			}
 		}
 	}
@@ -361,7 +364,9 @@ body.page-exhibitions {
 				display: block;
 				background-color: $theme-argentina;
 				position: absolute;
+				top: -197px;
 				height: auto;
+				min-height: 1000px;
 			}
 		}
 	}
