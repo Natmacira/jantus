@@ -17,7 +17,6 @@ require_once 'header.php';
         <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/mobile/Arg.svg'); ?>" alt="Clickeable map argentina" class="arg">
         <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/mobile/Finland.svg'); ?>" alt="Clickeable map finland" class="finlandia">
         <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/mobile/Spain.svg'); ?>" alt="Clickeable map spain" class="spain">
-
     </article>
     <article class="mobile solo">
         <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/mobile/USA.svg'); ?>" alt="Clickeable map usa" class="usa solo">
@@ -25,6 +24,38 @@ require_once 'header.php';
         <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/mobile/Spain.svg'); ?>" alt="Clickeable map spain" class="spain solo">
 
     </article>
+
+    <article class="desktop group-dk">
+        <div class="container-jpn">
+            <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/desktop/japan.svg'); ?>" alt="Clickeable map Japan" class="japan dkp">
+        </div>
+        <div class="container-kr">
+            <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/desktop/Kr.svg'); ?>" alt="Clickeable map Kr" class="kr dkp">
+        </div>
+        <div class="container-usa">
+            <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/desktop/USA.svg'); ?>" alt="Clickeable map usa" class="usa dkp">
+        </div>
+        <div class="container-extra">
+            <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/desktop/Extra.svg'); ?>" alt="empty map" class="extra dkp">
+        </div>
+        <div class="container-br">
+            <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/desktop/Br.svg'); ?>" alt="Clickeable map br" class="br dkp">
+        </div>
+        <div class="container-uk">
+            <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/desktop/Uk.svg'); ?>" alt="Clickeable map U K" class="uk dkp">
+        </div>
+        <div class="container-arg">
+            <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/desktop/Arg.svg'); ?>" alt="Clickeable map argentina" class="arg dkp">
+        </div>
+        <div class="container-fin">
+            <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/desktop/Finland.svg'); ?>" alt="Clickeable map finland" class="finlandia dkp">
+        </div>
+        <div class="container-spn">
+            <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/desktop/Spain.svg'); ?>" alt="Clickeable map spain" class="spain dkp">
+        </div>
+    </article>
+
+
 
     <article class="switch-btn">
         <button>Solo</button>
@@ -136,7 +167,7 @@ require_once 'header.php';
                 </div>
             </div>
         </div>
-        
+
 
         <div class="modal-br">
             <div class="modal-title">
@@ -183,7 +214,7 @@ require_once 'header.php';
                 <p>uk</p>
             </div>
             <div class="modal-youtube">
-             
+
             </div>
             <div class="modal-info">
                 <div class="modal-inner-info">
@@ -263,7 +294,7 @@ require_once 'header.php';
                 <p>fi</p>
             </div>
             <div class="modal-youtube">
-                
+
             </div>
             <div class="modal-info">
                 <div class="modal-inner-info">

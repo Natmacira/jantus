@@ -6,9 +6,11 @@ body.page-exhibitions {
 		}
 	}
 	.main-exhibitions {
-		max-width: 750px;
+		max-width: 1020px;
 		margin: 0 auto;
-		.mobile {
+		position: relative;
+		.mobile,
+		.desktop {
 			padding: 0 10px;
 			margin: 0 auto;
 			max-width: 360px;
@@ -92,13 +94,141 @@ body.page-exhibitions {
 					top: 45.588235%;
 					left: 80.647059%;
 					width: 18.52941176%;
-
 				}
 			}
 
 			&.solo {
 				display: none;
 			}
+		}
+
+		.desktop.group-dk {
+			display: none;
+			@media (min-width: 1200px) {
+				display: block;
+				position: absolute;
+				top: 0;
+			}
+			img {
+				width: 100%;
+				top: 0;
+				left: 0;
+			}
+
+			div {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 1px;
+				height: 1px;
+				cursor: pointer;
+				&:hover {
+					img {
+						display: none;
+					}
+				}
+			}
+
+			div {
+				&.container-jpn {
+					top: 166px;
+					left: 2px;
+					width: 177px;
+					height: 145px;
+				}
+				&.container-kr {
+					width: 107px;
+					top: 65px;
+					left: 189px;
+					height: 250px;
+				}
+				&.container-usa {
+					width: 296px;
+					height: 316px;
+					left: 317px;
+				}
+				&.container-br {
+					width: 288px;
+					height: 231px;
+					top: 335px;
+					left: 70px;
+				}
+				&.container-uk {
+					width: 180px;
+					height: 154px;
+					top: 365px;
+					left: 312px;
+					z-index: 6;
+				}
+				&.container-arg {
+					width: 434px;
+					top: 178px;
+					left: 408px;
+					height: 436px;
+				}
+				&.container-fin {
+					width: 190px;
+					height: 121px;
+					left: 729px;
+					top: 144px;
+				}
+				&.container-spn {
+					width: 192px;
+					height: 207px;
+					left: 822px;
+					top: 276px;
+				}
+			}
+
+			// img {
+			// 	&.kr.dkp {
+			// 		&:hover {
+			// 			display: none;
+			// 		}
+			// 	}
+
+			// 	&.usa.dkp {
+			// 		&:hover {
+			// 			display: none;
+			// 		}
+			// 	}
+
+			// 	&.extra.dkp {
+			// 		&:hover {
+			// 			display: none;
+			// 		}
+			// 	}
+			// 	&.extra-big.dkp {
+			// 		&:hover {
+			// 			display: none;
+			// 		}
+			// 	}
+			// 	&.arg.dkp {
+			// 		&:hover {
+			// 			display: none;
+			// 		}
+			// 	}
+			// 	&.br.dkp {
+			// 		&:hover {
+			// 			display: none;
+			// 		}
+			// 	}
+			// 	&.uk.dkp {
+			// 		&:hover {
+			// 			display: none;
+			// 		}
+			// 	}
+			// 	&.finlandia.dkp {
+			// 		&:hover {
+			// 			display: none;
+			// 		}
+			// 	}
+			// 	&.spain.dkp {
+			// 		&:hover {
+			// 			display: none;
+			// 		}
+			// 	}
+			// }
 		}
 		.switch-btn {
 			border-color: #3f3f3f;
@@ -165,7 +295,7 @@ body.page-exhibitions {
 		.modal-arg,
 		.modal-finlandia,
 		.modal-spain,
-		.modal-usa-solo, 
+		.modal-usa-solo,
 		.modal-spain-solo {
 			display: none;
 			position: fixed;
