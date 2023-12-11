@@ -26,6 +26,16 @@ require_once 'header.php';
     </article>
 
     <article class="desktop group-dk">
+        <ul class="menu-countrys">
+            <li class="usa">usa</li>
+            <li class="spain">spain</li>
+            <li class="arg">argentina</li>
+            <li class="japan">japan</li>
+            <li class="kr">korea</li>
+            <li class="br">brazil</li>
+            <li class="finlandia">finland</li>
+            <li class="uk">uk</li>
+        </ul>
         <div class="container-jpn japan">
             <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/desktop/japan.svg'); ?>" alt="Clickeable map Japan" class="japan dkp">
         </div>
@@ -61,6 +71,7 @@ require_once 'header.php';
         <button>Solo</button>
         <button>Group</button>
     </article>
+
 
     <article class="modals-inner-container">
         <div class="modal-japan">

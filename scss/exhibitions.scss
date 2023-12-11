@@ -5,6 +5,7 @@ body.page-exhibitions {
 			font-weight: bold;
 		}
 	}
+
 	.main-exhibitions {
 		max-width: 1020px;
 		margin: 0 auto;
@@ -179,6 +180,31 @@ body.page-exhibitions {
 					top: 276px;
 				}
 			}
+			ul.menu-countrys {
+				display: none;
+				@media (min-width: 1200px) {
+					display: block;
+					position: absolute;
+					top: 0;
+				}
+				li {
+					cursor: pointer;
+					&:hover {
+						font-weight: bold;
+					}
+
+					&.arg {
+						&:hover {
+							background-color: red;
+							&.container-arg {
+								img {
+									display: none;
+								}
+							}
+						}
+					}
+				}
+			}
 		}
 		.switch-btn {
 			border-color: #3f3f3f;
@@ -206,6 +232,7 @@ body.page-exhibitions {
 				}
 			}
 		}
+	
 	}
 
 	&.solo-mode {
