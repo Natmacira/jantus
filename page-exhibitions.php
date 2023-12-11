@@ -26,31 +26,31 @@ require_once 'header.php';
     </article>
 
     <article class="desktop group-dk">
-        <div class="container-jpn">
+        <div class="container-jpn japan">
             <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/desktop/japan.svg'); ?>" alt="Clickeable map Japan" class="japan dkp">
         </div>
-        <div class="container-kr">
+        <div class="container-kr kr">
             <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/desktop/Kr.svg'); ?>" alt="Clickeable map Kr" class="kr dkp">
         </div>
-        <div class="container-usa">
+        <div class="container-usa usa">
             <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/desktop/USA.svg'); ?>" alt="Clickeable map usa" class="usa dkp">
         </div>
         <div class="container-extra">
             <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/desktop/Extra.svg'); ?>" alt="empty map" class="extra dkp">
         </div>
-        <div class="container-br">
+        <div class="container-br br">
             <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/desktop/Br.svg'); ?>" alt="Clickeable map br" class="br dkp">
         </div>
-        <div class="container-uk">
+        <div class="container-uk uk">
             <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/desktop/Uk.svg'); ?>" alt="Clickeable map U K" class="uk dkp">
         </div>
-        <div class="container-arg">
+        <div class="container-arg arg">
             <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/desktop/Arg.svg'); ?>" alt="Clickeable map argentina" class="arg dkp">
         </div>
-        <div class="container-fin">
+        <div class="container-fin finlandia">
             <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/desktop/Finland.svg'); ?>" alt="Clickeable map finland" class="finlandia dkp">
         </div>
-        <div class="container-spn">
+        <div class="container-spn spain">
             <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/desktop/Spain.svg'); ?>" alt="Clickeable map spain" class="spain dkp">
         </div>
     </article>
