@@ -192,20 +192,10 @@ body.page-exhibitions {
 					&:hover {
 						font-weight: bold;
 					}
-
-					&.arg {
-						&:hover {
-							background-color: red;
-							&.container-arg {
-								img {
-									display: none;
-								}
-							}
-						}
-					}
 				}
 			}
 		}
+
 		.switch-btn {
 			border-color: #3f3f3f;
 			border-radius: 40px;
@@ -232,8 +222,64 @@ body.page-exhibitions {
 				}
 			}
 		}
-	
 	}
+	&.usa {
+		.container-usa {
+			img {
+				display: none;
+			}
+		}
+	}
+	&.spain  {
+		.container-spn  {
+			img {
+				display: none;
+			}
+		}
+	}
+	&.japan {
+		.container-jpn {
+			img {
+				display: none;
+			}
+		}
+	}
+	&.arg {
+		.container-arg {
+			img {
+				display: none;
+			}
+		}
+	}
+	&.uk {
+		.container-uk {
+			img {
+				display: none;
+			}
+		}
+	}
+	&.kr {
+		.container-kr {
+			img {
+				display: none;
+			}
+		}
+	}
+	&.br {
+		.container-br {
+			img {
+				display: none;
+			}
+		}
+	}
+	&.finlandia {
+		.container-fin {
+			img {
+				display: none;
+			}
+		}
+	}
+
 
 	&.solo-mode {
 		.main-exhibitions {
@@ -373,7 +419,6 @@ body.page-exhibitions {
 				top: -197px;
 				height: auto;
 				min-height: 1000px;
-
 			}
 		}
 	}

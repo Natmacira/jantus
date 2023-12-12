@@ -10,7 +10,7 @@ window.addEventListener('load', function () {
 		document.body.classList.toggle('work-open-open');
 	});
 
-	
+
 	// functionality for switch button solo group
 
 	const switchBtn = document.querySelector('.switch-btn')
@@ -30,7 +30,7 @@ window.addEventListener('load', function () {
 		mapJapan[i].addEventListener('click', function () {
 			document.body.classList.toggle('modal-japan-open');
 		});
-		
+
 	}
 	closeJapan.addEventListener('click', function () {
 		document.body.classList.toggle('modal-japan-open');
@@ -45,7 +45,7 @@ window.addEventListener('load', function () {
 		mapKr[i].addEventListener('click', function () {
 			document.body.classList.toggle('modal-kr-open');
 		});
-		
+
 	}
 	closeKr.addEventListener('click', function () {
 		document.body.classList.toggle('modal-kr-open');
@@ -153,6 +153,24 @@ window.addEventListener('load', function () {
 		document.body.classList.toggle('modal-spain-solo-open');
 	});
 
+
+	// Obtén la lista de elementos de la lista
+	const countryListItems = document.querySelectorAll('.menu-countrys li');
+
+	// Agrega eventos a cada elemento de la lista
+	countryListItems.forEach(item => {
+		item.addEventListener('mouseenter', function () {
+			// Obtiene la clase del elemento y la agrega al body
+			const countryClass = this.classList.item(0);
+			document.body.classList.add(countryClass);
+		});
+
+		item.addEventListener('mouseleave', function () {
+			// Remueve la clase del body al salir del elemento
+			const countryClass = this.classList.item(0);
+			document.body.classList.remove(countryClass);
+		});
+	});
 
 
 });
