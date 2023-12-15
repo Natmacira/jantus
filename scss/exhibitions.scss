@@ -26,9 +26,9 @@ body.page-exhibitions {
 				cursor: pointer;
 
 				&.japan {
-					top: 27.811765%;
+					top: 27.79%;
 					left: 4px;
-					width: 17.05882353%;
+					width: 17.11%;
 				}
 
 				&.kr {
@@ -39,8 +39,8 @@ body.page-exhibitions {
 
 				&.usa {
 					top: 0;
-					left: 30.81470588%;
-					width: 29.41176471%;
+					left: 30.8%;
+					width: 29.4117%;
 					&.solo {
 						z-index: 3;
 					}
@@ -102,8 +102,12 @@ body.page-exhibitions {
 				display: none;
 			}
 		}
-
-		.desktop.group-dk {
+		article.desktop.solo-dk {
+			display: none;
+			position: absolute;
+			top: 0;
+		}
+		article.desktop.group-dk {
 			display: none;
 			@media (min-width: 1200px) {
 				display: block;
@@ -132,10 +136,10 @@ body.page-exhibitions {
 
 			div {
 				&.container-jpn {
-					top: 166px;
+					top: 166.9px;
 					left: 2px;
-					width: 177px;
-					height: 145px;
+					width: 179px;
+					height: 149px;
 				}
 				&.container-kr {
 					width: 107px;
@@ -146,13 +150,13 @@ body.page-exhibitions {
 				&.container-usa {
 					width: 296px;
 					height: 316px;
-					left: 317px;
+					left: 316px;
 				}
 				&.container-br {
-					width: 288px;
+					width: 297px;
 					height: 231px;
-					top: 335px;
-					left: 70px;
+					top: 333px;
+					left: 68px;
 				}
 				&.container-uk {
 					width: 180px;
@@ -162,15 +166,15 @@ body.page-exhibitions {
 					z-index: 2;
 				}
 				&.container-arg {
-					width: 434px;
+					width: 436px;
 					top: 178px;
-					left: 408px;
+					left: 407.9px;
 					height: 436px;
 				}
 				&.container-fin {
 					width: 190px;
 					height: 121px;
-					left: 729px;
+					left: 727px;
 					top: 144px;
 				}
 				&.container-spn {
@@ -185,10 +189,13 @@ body.page-exhibitions {
 				@media (min-width: 1200px) {
 					display: block;
 					position: absolute;
-					top: 0;
+					text-align: center;
+					top: -68px;
+					left: -140px;
 				}
 				li {
 					cursor: pointer;
+					margin-bottom: 10px;
 					&:hover {
 						font-weight: bold;
 					}
@@ -230,8 +237,8 @@ body.page-exhibitions {
 			}
 		}
 	}
-	&.spain  {
-		.container-spn  {
+	&.spain {
+		.container-spn {
 			img {
 				display: none;
 			}
@@ -280,7 +287,6 @@ body.page-exhibitions {
 		}
 	}
 
-
 	&.solo-mode {
 		.main-exhibitions {
 			.mobile.group {
@@ -304,6 +310,15 @@ body.page-exhibitions {
 						padding-left: 0;
 						color: #3f3f3f;
 					}
+				}
+			}
+
+			@media (min-width: 1200px) {
+				article.desktop.group-dk {
+					display: none;
+				}
+				article.desktop.solo-dk {
+					display: block;
 				}
 			}
 		}
