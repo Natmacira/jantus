@@ -322,17 +322,19 @@ require_once 'header.php';
 
             </div>
             <div class="modal-info">
-                <div class="modal-inner-info">
-                    <span>Varkaus stadsbibliotek</span>
-                    <strong></strong>
-                    <p>Varkaus, Finland</p>
-                    <p>/ 2022</p>
-                </div>
-                <div class="modal-inner-info">
-                    <span>Kaapelitehdas</span>
-                    <strong></strong>
-                    <p>Helsinki, Finland</p>
-                    <p>/ 2019</p>
+                <div class="modal-manipulating-container-info">
+                    <div class="modal-inner-info">
+                        <span>Varkaus stadsbibliotek</span>
+                        <strong></strong>
+                        <p>Varkaus, Finland</p>
+                        <p>/ 2022</p>
+                    </div>
+                    <div class="modal-inner-info">
+                        <span>Kaapelitehdas</span>
+                        <strong></strong>
+                        <p>Helsinki, Finland</p>
+                        <p>/ 2019</p>
+                    </div>
                 </div>
             </div>
         </div>

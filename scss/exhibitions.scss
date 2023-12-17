@@ -634,6 +634,39 @@ body.page-exhibitions {
 					background-image: url("./img/mapas/desktop/modal/fin.svg");
 					background-repeat: no-repeat;
 					left: 0;
+					background-position-x: 500px;
+					background-position-y: 207px;
+					.modal-title {
+						position: relative;
+						p {
+							position: absolute;
+							left: 964px;
+							top: 329px;
+						}
+					}
+					.modal-youtube {
+						position: relative;
+						a {
+							position: absolute;
+							left: 870px;
+							top: 99px;
+						}
+						p {
+							position: absolute;
+							left: 870px;
+							top: 152px;
+						}
+					}
+					.modal-info {
+						position: relative;
+						.modal-manipulating-container-info {
+							position: absolute;
+							top: 120px;
+							left: 568px;
+							border-left: solid 1px;
+							padding-left: 30px;
+						}
+					}
 				}
 			}
 		}
