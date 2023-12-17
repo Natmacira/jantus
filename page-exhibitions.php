@@ -146,29 +146,31 @@ require_once 'header.php';
             </div>
 
             <div class="modal-info">
-                <div class="modal-inner-info">
-                    <span>Art Lab (Tucker Eason)</span>
-                    <strong></strong>
-                    <p>Nueva York, USA.</p>
-                    <p>/ 2018</p>
-                </div>
-                <div class="modal-inner-info">
-                    <span>Greenpoint Gallery</span>
-                    <strong></strong>
-                    <p>Nueva York, USA.</p>
-                    <p>/ 2018</p>
-                </div>
-                <div class="modal-inner-info">
-                    <span>ArtExpo New York</span>
-                    <strong>Pier 95</strong>
-                    <p>Nueva York, USA.</p>
-                    <p>/ 2018</p>
-                </div>
-                <div class="modal-inner-info">
-                    <span>30 Under 30</span>
-                    <strong>Viridian Artists</strong>
-                    <p>Nueva York, USA.</p>
-                    <p>/ 2018</p>
+                <div class="modal-manipulating-container-info">
+                    <div class="modal-inner-info">
+                        <span>Art Lab (Tucker Eason)</span>
+                        <strong></strong>
+                        <p>Nueva York, USA.</p>
+                        <p>/ 2018</p>
+                    </div>
+                    <div class="modal-inner-info">
+                        <span>Greenpoint Gallery</span>
+                        <strong></strong>
+                        <p>Nueva York, USA.</p>
+                        <p>/ 2018</p>
+                    </div>
+                    <div class="modal-inner-info">
+                        <span>ArtExpo New York</span>
+                        <strong>Pier 95</strong>
+                        <p>Nueva York, USA.</p>
+                        <p>/ 2018</p>
+                    </div>
+                    <div class="modal-inner-info">
+                        <span>30 Under 30</span>
+                        <strong>Viridian Artists</strong>
+                        <p>Nueva York, USA.</p>
+                        <p>/ 2018</p>
+                    </div>
                 </div>
             </div>
         </div>

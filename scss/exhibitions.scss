@@ -7,6 +7,9 @@ body.page-exhibitions {
 	}
 
 	.main-exhibitions {
+		font-family: "Archivo", sans-serif;
+	}
+	.main-exhibitions {
 		max-width: 1020px;
 		margin: 0 auto;
 		position: relative;
@@ -459,11 +462,13 @@ body.page-exhibitions {
 						}
 					}
 					.modal-info {
-					position: relative;
+						position: relative;
 						.modal-manipulating-container-info {
 							position: absolute;
 							top: -95px;
 							max-width: 40%;
+							border-left: solid 1px;
+							padding-left: 30px;
 						}
 					}
 				}
@@ -491,12 +496,14 @@ body.page-exhibitions {
 					}
 					.modal-info {
 						position: relative;
-							.modal-inner-info {
-								position: absolute;
-								left: 318px;
-								top: 237px;
-							}
+						.modal-inner-info {
+							position: absolute;
+							left: 318px;
+							top: 237px;
+							border-left: solid 1px;
+							padding-left: 30px;
 						}
+					}
 				}
 			}
 		}
@@ -517,6 +524,38 @@ body.page-exhibitions {
 					background-image: url("./img/mapas/desktop/modal/usa.svg");
 					background-repeat: no-repeat;
 					position: fixed;
+					background-position-x: 257px;
+					.modal-title {
+						position: relative;
+						p {
+							position: absolute;
+							left: 630px;
+							top: 135px;
+						}
+					}
+					.modal-youtube {
+						position: relative;
+						a {
+							position: absolute;
+							left: 870px;
+							top: 99px;
+						}
+						p {
+							position: absolute;
+							left: 870px;
+							top: 152px;
+						}
+					}
+					.modal-info {
+						position: relative;
+						.modal-manipulating-container-info {
+							position: absolute;
+							top: -140px;
+							left: 268px;
+							border-left: solid 1px;
+							padding-left: 30px;
+						}
+					}
 				}
 			}
 		}
@@ -594,6 +633,7 @@ body.page-exhibitions {
 					background-color: transparent;
 					background-image: url("./img/mapas/desktop/modal/fin.svg");
 					background-repeat: no-repeat;
+					left: 0;
 				}
 			}
 		}
