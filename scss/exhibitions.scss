@@ -432,6 +432,41 @@ body.page-exhibitions {
 			.modal-japan {
 				display: block;
 				background-color: $theme-japon;
+				@media (min-width: 1200px) {
+					background-color: transparent;
+					background-image: url("./img/mapas/desktop/modal/japan.svg");
+					background-repeat: no-repeat;
+					left: 0;
+					.modal-title {
+						position: relative;
+						p {
+							position: absolute;
+							top: 421px;
+							left: 159px;
+						}
+					}
+					.modal-youtube {
+						position: relative;
+						a {
+							position: absolute;
+							top: 361px;
+							left: 390px;
+						}
+						p {
+							position: absolute;
+							top: 410px;
+							left: 390px;
+						}
+					}
+					.modal-info {
+					position: relative;
+						.modal-manipulating-container-info {
+							position: absolute;
+							top: -95px;
+							max-width: 40%;
+						}
+					}
+				}
 			}
 		}
 	}
@@ -440,6 +475,29 @@ body.page-exhibitions {
 			.modal-kr {
 				display: block;
 				background-color: $theme-korea;
+				@media (min-width: 1200px) {
+					left: 0;
+					background-position-x: 267px;
+					background-color: transparent;
+					background-image: url("./img/mapas/desktop/modal/kr.svg");
+					background-repeat: no-repeat;
+					.modal-title {
+						position: relative;
+						p {
+							position: absolute;
+							top: 320px;
+							left: 440px;
+						}
+					}
+					.modal-info {
+						position: relative;
+							.modal-inner-info {
+								position: absolute;
+								left: 318px;
+								top: 237px;
+							}
+						}
+				}
 			}
 		}
 	}
@@ -452,6 +510,14 @@ body.page-exhibitions {
 				top: -197px;
 				height: auto;
 				min-height: 1000px;
+				@media (min-width: 1200px) {
+					left: 0;
+					top: 0;
+					background-color: transparent;
+					background-image: url("./img/mapas/desktop/modal/usa.svg");
+					background-repeat: no-repeat;
+					position: fixed;
+				}
 			}
 		}
 	}
@@ -461,6 +527,11 @@ body.page-exhibitions {
 				display: block;
 				background-color: $theme-usa;
 				z-index: 4;
+				@media (min-width: 1200px) {
+					background-color: transparent;
+					background-image: url("./img/mapas/desktop/modal/usa.svg");
+					background-repeat: no-repeat;
+				}
 			}
 		}
 	}
@@ -474,6 +545,12 @@ body.page-exhibitions {
 				top: -197px;
 				height: auto;
 				min-height: 1000px;
+				@media (min-width: 1200px) {
+					top: -123px;
+					background-color: transparent;
+					background-image: url("./img/mapas/desktop/modal/br.svg");
+					background-repeat: no-repeat;
+				}
 			}
 		}
 	}
@@ -482,6 +559,11 @@ body.page-exhibitions {
 			.modal-uk {
 				display: block;
 				background-color: $theme-uk;
+				@media (min-width: 1200px) {
+					background-color: transparent;
+					background-image: url("./img/mapas/desktop/modal/uk.svg");
+					background-repeat: no-repeat;
+				}
 			}
 		}
 	}
@@ -494,6 +576,12 @@ body.page-exhibitions {
 				top: -197px;
 				height: auto;
 				min-height: 1000px;
+				@media (min-width: 1200px) {
+					top: -123px;
+					background-color: transparent;
+					background-image: url("./img/mapas/desktop/modal/arg.svg");
+					background-repeat: no-repeat;
+				}
 			}
 		}
 	}
@@ -502,6 +590,11 @@ body.page-exhibitions {
 			.modal-finlandia {
 				display: block;
 				background-color: $theme-finlandia;
+				@media (min-width: 1200px) {
+					background-color: transparent;
+					background-image: url("./img/mapas/desktop/modal/fin.svg");
+					background-repeat: no-repeat;
+				}
 			}
 		}
 	}
@@ -511,6 +604,11 @@ body.page-exhibitions {
 				display: block;
 				background-color: $theme-espana;
 				z-index: 3;
+				@media (min-width: 1200px) {
+					background-color: transparent;
+					background-image: url("./img/mapas/desktop/modal/spain.svg");
+					background-repeat: no-repeat;
+				}
 			}
 		}
 	}
@@ -520,6 +618,11 @@ body.page-exhibitions {
 				display: block;
 				background-color: $theme-espana;
 				z-index: 4;
+				@media (min-width: 1200px) {
+					background-color: transparent;
+					background-image: url("./img/mapas/desktop/modal/sapin.svg");
+					background-repeat: no-repeat;
+				}
 			}
 		}
 	}

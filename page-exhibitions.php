@@ -99,17 +99,19 @@ require_once 'header.php';
                     MY MEMORIES</p>
             </div>
             <div class="modal-info">
-                <div class="modal-inner-info">
-                    <span>Enokojima Art, Culture and Creative Center</span>
-                    <strong></strong>
-                    <p>Osaka, Japan.</p>
-                    <p>/ 2022</p>
-                </div>
-                <div class="modal-inner-info">
-                    <span>Tokyo International Art Fair 2018</span>
-                    <strong>Bellesalle Ropong</strong>
-                    <p>Tokio, Japan.</p>
-                    <p>/ 2018</p>
+                <div class="modal-manipulating-container-info">
+                    <div class="modal-inner-info">
+                        <span>Enokojima Art, Culture and Creative Center</span>
+                        <strong></strong>
+                        <p>Osaka, Japan.</p>
+                        <p>/ 2022</p>
+                    </div>
+                    <div class="modal-inner-info">
+                        <span>Tokyo International Art Fair 2018</span>
+                        <strong>Bellesalle Ropong</strong>
+                        <p>Tokio, Japan.</p>
+                        <p>/ 2018</p>
+                    </div>
                 </div>
             </div>
         </div>
