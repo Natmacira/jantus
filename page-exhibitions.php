@@ -71,9 +71,11 @@ require_once 'header.php';
             <li class="spain">spain</li>
         </ul>
         <div class="container-usa usa">
-            <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/desktop/USA.svg'); ?>" alt="Clickeable map usa" class="usa dkp">
+            <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/desktop/USA.svg'); ?>" alt="Clickeable map usa" class="usa solo dkp">
+        </div>
+        <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/mobile/extra-big-mobile.svg'); ?>" alt="empty map" class="extra-big">
         <div class="container-spn spain">
-            <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/desktop/Spain.svg'); ?>" alt="Clickeable map spain" class="spain dkp">
+            <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/desktop/Spain.svg'); ?>" alt="Clickeable map spain" class="spain solo dkp">
         </div>
     </article>
 

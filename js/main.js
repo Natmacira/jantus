@@ -4,8 +4,6 @@ window.addEventListener('load', function () {
 	const openWorkMenu = document.querySelector('.work-open')
 	const openWorkMenuUl = document.querySelector('.work-open-close')
 
-	console.log(openWorkMenu, openWorkMenuUl);
-
 	openWorkMenu.addEventListener('click', function () {
 		document.body.classList.toggle('work-open-open');
 	});
@@ -64,16 +62,7 @@ window.addEventListener('load', function () {
 		document.body.classList.toggle('modal-usa-open');
 	});
 
-	//usa-solo
-	const mapUsaSolo = document.querySelector('.usa.solo')
-	const closeUsaSolo = document.querySelector('.close-usa-solo')
-
-	mapUsaSolo.addEventListener('click', function () {
-		document.body.classList.toggle('modal-usa-solo-open');
-	});
-	closeUsaSolo.addEventListener('click', function () {
-		document.body.classList.toggle('modal-usa-solo-open');
-	});
+	
 
 
 	//br
@@ -143,15 +132,40 @@ window.addEventListener('load', function () {
 	});
 
 	//spain-solo
-	const mapspainSolo = document.querySelector('.spain.solo')
+	const mapspainSolo = document.querySelector('.spain.solo.dkp')
+	console.log(mapspainSolo);
 	const closespainSolo = document.querySelector('.close-spain-solo')
 
 	mapspainSolo.addEventListener('click', function () {
 		document.body.classList.toggle('modal-spain-solo-open');
+		document.body.classList.remove('modal-spain-open');
 	});
 	closespainSolo.addEventListener('click', function () {
 		document.body.classList.toggle('modal-spain-solo-open');
 	});
+
+	//usa-solo
+	const mapUsaSolo = document.querySelector('.usa.solo')
+	const closeUsaSolo = document.querySelector('.close-usa-solo')
+
+	mapUsaSolo.addEventListener('click', function () {
+		document.body.classList.toggle('modal-usa-solo-open');
+		document.body.classList.remove('modal-usa-open');
+	});
+	closeUsaSolo.addEventListener('click', function () {
+		document.body.classList.toggle('modal-usa-solo-open');
+	});
+
+	//spain-solo desktop
+	// const mapspainSoloDesktop = document.querySelector('.spain.solo.dkp')
+	// const closespainSoloDesktop = document.querySelector('.close-spain-solo')
+
+	// mapspainSoloDesktop.addEventListener('click', function () {
+	// 	document.body.classList.toggle('modal-spain-solo-open');
+	// });
+	// closespainSoloDesktop.addEventListener('click', function () {
+	// 	document.body.classList.toggle('modal-spain-solo-open');
+	// });
 
 
 	// Obtén la lista de elementos de la lista
