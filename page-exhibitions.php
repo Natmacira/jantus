@@ -5,7 +5,7 @@ require_once 'header.php';
 
 ?>
 <div class="ul-inner-container">
-    <ul class="menu-countrys">
+    <ul class="menu-countrys group-ul">
         <li class="usa">usa</li>
         <li class="spain">spain</li>
         <li class="arg">argentina</li>
@@ -15,6 +15,10 @@ require_once 'header.php';
         <li class="finlandia">finland</li>
         <li class="uk">uk</li>
     </ul>
+    <ul class="menu-countrys solo-ul">
+            <li class="usa">usa</li>
+            <li class="spain">spain</li>
+        </ul>
 </div>
 <section class="main-exhibitions">
 
@@ -67,10 +71,7 @@ require_once 'header.php';
     </article>
 
     <article class="desktop solo-dk">
-        <ul class="menu-countrys">
-            <li class="usa">usa</li>
-            <li class="spain">spain</li>
-        </ul>
+      
         <div class="container-usa usa">
             <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/desktop/USA.svg'); ?>" alt="Clickeable map usa" class="usa solo dkp">
         </div>

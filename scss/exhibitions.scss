@@ -14,7 +14,9 @@ body.page-exhibitions {
 		ul.menu-countrys {
 			display: none;
 			@media (min-width: 1200px) {
-				display: block;
+				&.group-ul {
+					display: block;
+				}
 				position: absolute;
 				text-align: center;
 				top: -53px;
@@ -292,8 +294,21 @@ body.page-exhibitions {
 			}
 		}
 	}
-	
+
 	&.solo-mode {
+		div.ul-inner-container {
+			ul.menu-countrys {
+				@media (min-width: 1200px) {
+					&.group-ul {
+						display: none;
+					}
+					&.solo-ul {
+						display: block;
+						left: 95px;
+					}
+				}
+			}
+		}
 		.main-exhibitions {
 			.mobile.group {
 				display: none;
