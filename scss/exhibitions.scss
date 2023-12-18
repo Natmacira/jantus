@@ -9,6 +9,26 @@ body.page-exhibitions {
 	.main-exhibitions {
 		font-family: "Archivo", sans-serif;
 	}
+	div.ul-inner-container {
+		position: relative;
+		ul.menu-countrys {
+			display: none;
+			@media (min-width: 1200px) {
+				display: block;
+				position: absolute;
+				text-align: center;
+				top: -53px;
+				left: 59px;
+			}
+			li {
+				cursor: pointer;
+				margin-bottom: 10px;
+				&:hover {
+					font-weight: bold;
+				}
+			}
+		}
+	}
 	.main-exhibitions {
 		max-width: 1020px;
 		margin: 0 auto;
@@ -185,23 +205,6 @@ body.page-exhibitions {
 					height: 207px;
 					left: 822px;
 					top: 276px;
-				}
-			}
-			ul.menu-countrys {
-				display: none;
-				@media (min-width: 1200px) {
-					display: block;
-					position: absolute;
-					text-align: center;
-					top: -68px;
-					left: -140px;
-				}
-				li {
-					cursor: pointer;
-					margin-bottom: 10px;
-					&:hover {
-						font-weight: bold;
-					}
 				}
 			}
 		}
@@ -436,7 +439,8 @@ body.page-exhibitions {
 				display: block;
 				background-color: $theme-japon;
 				@media (min-width: 1200px) {
-					background-color: transparent;
+					background-color: rgba(255, 255, 255, 0.7);
+					backdrop-filter: blur(3px);
 					background-image: url("./img/mapas/desktop/modal/japan.svg");
 					background-repeat: no-repeat;
 					left: 0;
@@ -483,7 +487,8 @@ body.page-exhibitions {
 				@media (min-width: 1200px) {
 					left: 0;
 					background-position-x: 267px;
-					background-color: transparent;
+					background-color: rgba(255, 255, 255, 0.7);
+					backdrop-filter: blur(3px);
 					background-image: url("./img/mapas/desktop/modal/kr.svg");
 					background-repeat: no-repeat;
 					.modal-title {
@@ -520,7 +525,8 @@ body.page-exhibitions {
 				@media (min-width: 1200px) {
 					left: 0;
 					top: 0;
-					background-color: transparent;
+					background-color: rgba(255, 255, 255, 0.7);
+					backdrop-filter: blur(3px);
 					background-image: url("./img/mapas/desktop/modal/usa.svg");
 					background-repeat: no-repeat;
 					position: fixed;
@@ -567,7 +573,8 @@ body.page-exhibitions {
 				background-color: $theme-usa;
 				z-index: 4;
 				@media (min-width: 1200px) {
-					background-color: transparent;
+					background-color: rgba(255, 255, 255, 0.7);
+					backdrop-filter: blur(3px);
 					background-image: url("./img/mapas/desktop/modal/usa.svg");
 					background-repeat: no-repeat;
 				}
@@ -586,9 +593,50 @@ body.page-exhibitions {
 				min-height: 1000px;
 				@media (min-width: 1200px) {
 					top: -123px;
-					background-color: transparent;
+					background-color: rgba(255, 255, 255, 0.7);
+					backdrop-filter: blur(3px);
 					background-image: url("./img/mapas/desktop/modal/br.svg");
 					background-repeat: no-repeat;
+					position: fixed;
+					left: 0;
+					top: -66px;
+					.modal-title {
+						position: relative;
+						button {
+							position: absolute;
+							top: 70px;
+						}
+						p {
+							position: absolute;
+							left: 285px;
+							top: 610px;
+						}
+					}
+					.modal-youtube {
+						position: relative;
+						left: -180px;
+						a {
+							position: absolute;
+							left: 870px;
+							top: 99px;
+						}
+						p {
+							position: absolute;
+							left: 870px;
+							top: 152px;
+						}
+					}
+					.modal-info {
+						position: relative;
+						.modal-manipulating-container-info {
+							position: absolute;
+							top: -38px;
+							left: 330px;
+							border-left: solid 1px;
+							padding-left: 30px;
+							width: 22%;
+						}
+					}
 				}
 			}
 		}
@@ -599,9 +647,25 @@ body.page-exhibitions {
 				display: block;
 				background-color: $theme-uk;
 				@media (min-width: 1200px) {
-					background-color: transparent;
+					background-color: rgba(255, 255, 255, 0.7);
+					backdrop-filter: blur(3px);
 					background-image: url("./img/mapas/desktop/modal/uk.svg");
 					background-repeat: no-repeat;
+					background-position-x: 311px;
+					background-position-y: 146px;
+					left: 0;
+					.modal-title {
+						p {
+							position: absolute;
+							top: 488px;
+							left: 537px;
+						}
+					}
+					.modal-info {
+						position: absolute;
+						top: 300px;
+						left: 400px;
+					}
 				}
 			}
 		}
@@ -617,9 +681,52 @@ body.page-exhibitions {
 				min-height: 1000px;
 				@media (min-width: 1200px) {
 					top: -123px;
-					background-color: transparent;
+					background-color: rgba(255, 255, 255, 0.7);
+					backdrop-filter: blur(3px);
 					background-image: url("./img/mapas/desktop/modal/arg.svg");
 					background-repeat: no-repeat;
+					position: fixed;
+					left: 0;
+					top: 0;
+					background-position-y: -21px;
+					.modal-title {
+						position: relative;
+						p {
+							position: absolute;
+							left: 785px;
+							top: 610px;
+						}
+					}
+					.modal-youtube {
+						position: absolute;
+						left: 1080px;
+						top: 594px;
+					}
+					.modal-info {
+						position: relative;
+						div.first-block {
+							position: absolute;
+							top: 251px;
+							left: 36px;
+							border-left: solid 1px;
+							padding-left: 30px;
+						}
+						div.snd-block {
+							position: absolute;
+							left: 400px;
+							border-left: solid 1px;
+							padding-left: 30px;
+							top: -31px;
+						}
+						div.thd-block {
+							position: absolute;
+							left: 822px;
+							top: -40px;
+							width: 17%;
+							border-left: solid 1px;
+							padding-left: 30px;
+						}
+					}
 				}
 			}
 		}
@@ -630,7 +737,8 @@ body.page-exhibitions {
 				display: block;
 				background-color: $theme-finlandia;
 				@media (min-width: 1200px) {
-					background-color: transparent;
+					background-color: rgba(255, 255, 255, 0.7);
+					backdrop-filter: blur(3px);
 					background-image: url("./img/mapas/desktop/modal/fin.svg");
 					background-repeat: no-repeat;
 					left: 0;
@@ -678,9 +786,31 @@ body.page-exhibitions {
 				background-color: $theme-espana;
 				z-index: 3;
 				@media (min-width: 1200px) {
-					background-color: transparent;
+					background-color: rgba(255, 255, 255, 0.7);
+					backdrop-filter: blur(3px);
 					background-image: url("./img/mapas/desktop/modal/spain.svg");
 					background-repeat: no-repeat;
+					left: 0;
+					background-position-x: 373px;
+					background-position-y: -110px;
+					.modal-title {
+						p {
+							position: absolute;
+							left: 851px;
+							top: 479px;
+							transform: rotate(26deg);
+						}
+					}
+					.modal-youtube {
+						position: absolute;
+						left: 1020px;
+						top: 336px;
+					}
+					.modal-info {
+						position: absolute;
+						left: 811px;
+						top: 219px;
+					}
 				}
 			}
 		}
@@ -692,7 +822,8 @@ body.page-exhibitions {
 				background-color: $theme-espana;
 				z-index: 4;
 				@media (min-width: 1200px) {
-					background-color: transparent;
+					background-color: rgba(255, 255, 255, 0.7);
+					backdrop-filter: blur(3px);
 					background-image: url("./img/mapas/desktop/modal/sapin.svg");
 					background-repeat: no-repeat;
 				}

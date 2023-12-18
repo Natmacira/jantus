@@ -4,7 +4,18 @@ $body_class = "page-exhibitions";
 require_once 'header.php';
 
 ?>
-
+ <div class="ul-inner-container">
+        <ul class="menu-countrys">
+            <li class="usa">usa</li>
+            <li class="spain">spain</li>
+            <li class="arg">argentina</li>
+            <li class="japan">japan</li>
+            <li class="kr">korea</li>
+            <li class="br">brazil</li>
+            <li class="finlandia">finland</li>
+            <li class="uk">uk</li>
+        </ul>
+    </div>
 <section class="main-exhibitions">
 
     <article class="mobile group">
@@ -26,16 +37,6 @@ require_once 'header.php';
     </article>
 
     <article class="desktop group-dk">
-        <ul class="menu-countrys">
-            <li class="usa">usa</li>
-            <li class="spain">spain</li>
-            <li class="arg">argentina</li>
-            <li class="japan">japan</li>
-            <li class="kr">korea</li>
-            <li class="br">brazil</li>
-            <li class="finlandia">finland</li>
-            <li class="uk">uk</li>
-        </ul>
         <div class="container-jpn japan">
             <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/desktop/japan.svg'); ?>" alt="Clickeable map Japan" class="japan dkp">
         </div>
@@ -210,29 +211,31 @@ require_once 'header.php';
                     MY MEMORIES</p>
             </div>
             <div class="modal-info">
-                <div class="modal-inner-info">
-                    <span>Fabrica Bhering</span>
-                    <strong></strong>
-                    <p>Rio de Janeiro, Brazil</p>
-                    <p>/2022</p>
-                </div>
-                <div class="modal-inner-info">
-                    <span>BELA Biennial</span>
-                    <strong>Cidade das Artes</strong>
-                    <p>Rio de Janeiro, Brazil</p>
-                    <p>/2019</p>
-                </div>
-                <div class="modal-inner-info">
-                    <span>Casa França Brasil</span>
-                    <strong></strong>
-                    <p>Rio de Janeiro, Brazil</p>
-                    <p>/2019</p>
-                </div>
-                <div class="modal-inner-info">
-                    <span>Centro Cultural dos Correios</span>
-                    <strong></strong>
-                    <p>Rio de Janeiro, Brazil</p>
-                    <p>/2019</p>
+                <div class="modal-manipulating-container-info">
+                    <div class="modal-inner-info">
+                        <span>Fabrica Bhering</span>
+                        <strong></strong>
+                        <p>Rio de Janeiro, Brazil</p>
+                        <p>/2022</p>
+                    </div>
+                    <div class="modal-inner-info">
+                        <span>BELA Biennial</span>
+                        <strong>Cidade das Artes</strong>
+                        <p>Rio de Janeiro, Brazil</p>
+                        <p>/2019</p>
+                    </div>
+                    <div class="modal-inner-info">
+                        <span>Casa França Brasil</span>
+                        <strong></strong>
+                        <p>Rio de Janeiro, Brazil</p>
+                        <p>/2019</p>
+                    </div>
+                    <div class="modal-inner-info">
+                        <span>Centro Cultural dos Correios</span>
+                        <strong></strong>
+                        <p>Rio de Janeiro, Brazil</p>
+                        <p>/2019</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -266,47 +269,53 @@ require_once 'header.php';
                     MY MEMORIES</p>
             </div>
             <div class="modal-info">
-                <div class="modal-inner-info">
-                    <span>Muestra de Arte Joven</span>
-                    <strong>Museo Fundación Romulo Raggio</strong>
-                    <p>Buenos Aires, Argentina.</p>
-                    <p>/2022</p>
+                <div class="first-block">
+                    <div class="modal-inner-info">
+                        <span>Muestra de Arte Joven</span>
+                        <strong>Museo Fundación Romulo Raggio</strong>
+                        <p>Buenos Aires, Argentina.</p>
+                        <p>/2022</p>
+                    </div>
                 </div>
-                <div class="modal-inner-info">
-                    <span>Anábasis</span>
-                    <strong>Galería Buenos Aires Sur & pantanosumpf</strong>
-                    <p>Buenos Aires, Argentina.</p>
-                    <p>/2020</p>
+                <div class="snd-block">
+                    <div class="modal-inner-info">
+                        <span>Anábasis</span>
+                        <strong>Galería Buenos Aires Sur & pantanosumpf</strong>
+                        <p>Buenos Aires, Argentina.</p>
+                        <p>/2020</p>
+                    </div>
+                    <div class="modal-inner-info">
+                        <span>Muestra de Arte Joven</span>
+                        <strong>Museo Fundación Romulo Raggio</strong>
+                        <p>Buenos Aires, Argentina.</p>
+                        <p>/2019</p>
+                    </div>
+                    <div class="modal-inner-info">
+                        <span>Ausdrücke</span>
+                        <strong>Amuleto & pantanosumpf</strong>
+                        <p>Buenos Aires, Argentina.</p>
+                        <p>/2019</p>
+                    </div>
+                    <div class="modal-inner-info">
+                        <span>Muestra de Arte Joven </span>
+                        <strong>Museo Fundación Romulo Raggio</strong>
+                        <p>Buenos Aires, Argentina.</p>
+                        <p>/2017</p>
+                    </div>
                 </div>
-                <div class="modal-inner-info">
-                    <span>Muestra de Arte Joven</span>
-                    <strong>Museo Fundación Romulo Raggio</strong>
-                    <p>Buenos Aires, Argentina.</p>
-                    <p>/2019</p>
-                </div>
-                <div class="modal-inner-info">
-                    <span>Ausdrücke</span>
-                    <strong>Amuleto & pantanosumpf</strong>
-                    <p>Buenos Aires, Argentina.</p>
-                    <p>/2019</p>
-                </div>
-                <div class="modal-inner-info">
-                    <span>Muestra de Arte Joven </span>
-                    <strong>Museo Fundación Romulo Raggio</strong>
-                    <p>Buenos Aires, Argentina.</p>
-                    <p>/2017</p>
-                </div>
-                <div class="modal-inner-info">
-                    <span>LIX Salón de Artes Plásticas Manuel Belgrano </span>
-                    <strong>Museo Eduardo Sívori</strong>
-                    <p>Buenos Aires, Argentina.</p>
-                    <p>/2014</p>
-                </div>
-                <div class="modal-inner-info">
-                    <span>“Beluga”</span>
-                    <strong>Elsi del Río</strong>
-                    <p>Buenos Aires, Argentina.</p>
-                    <p>/2013</p>
+                <div class="thd-block">
+                    <div class="modal-inner-info">
+                        <span>LIX Salón de Artes Plásticas Manuel Belgrano </span>
+                        <strong>Museo Eduardo Sívori</strong>
+                        <p>Buenos Aires, Argentina.</p>
+                        <p>/2014</p>
+                    </div>
+                    <div class="modal-inner-info">
+                        <span>“Beluga”</span>
+                        <strong>Elsi del Río</strong>
+                        <p>Buenos Aires, Argentina.</p>
+                        <p>/2013</p>
+                    </div>
                 </div>
             </div>
         </div>
