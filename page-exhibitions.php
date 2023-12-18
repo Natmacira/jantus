@@ -4,18 +4,18 @@ $body_class = "page-exhibitions";
 require_once 'header.php';
 
 ?>
- <div class="ul-inner-container">
-        <ul class="menu-countrys">
-            <li class="usa">usa</li>
-            <li class="spain">spain</li>
-            <li class="arg">argentina</li>
-            <li class="japan">japan</li>
-            <li class="kr">korea</li>
-            <li class="br">brazil</li>
-            <li class="finlandia">finland</li>
-            <li class="uk">uk</li>
-        </ul>
-    </div>
+<div class="ul-inner-container">
+    <ul class="menu-countrys">
+        <li class="usa">usa</li>
+        <li class="spain">spain</li>
+        <li class="arg">argentina</li>
+        <li class="japan">japan</li>
+        <li class="kr">korea</li>
+        <li class="br">brazil</li>
+        <li class="finlandia">finland</li>
+        <li class="uk">uk</li>
+    </ul>
+</div>
 <section class="main-exhibitions">
 
     <article class="mobile group">
@@ -75,7 +75,7 @@ require_once 'header.php';
             <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/desktop/USA.svg'); ?>" alt="Clickeable map usa" class="usa solo dkp">
         </div>
         <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/mobile/extra-big-mobile.svg'); ?>" alt="empty map" class="extra-big">
-        <div class="container-spn spain">
+        <div class="container-spn spain solo dkp">
             <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/desktop/Spain.svg'); ?>" alt="Clickeable map spain" class="spain solo dkp">
         </div>
     </article>
@@ -95,7 +95,7 @@ require_once 'header.php';
                 <p>jpn</p>
             </div>
             <div class="modal-youtube">
-                <a href="https://www.youtube.com/"><img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/youtube-player.svg'); ?>" alt="youtube player"></a>
+                <a href="https://www.youtube.com/" target="_blank"><img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/youtube-player.svg'); ?>" alt="youtube player" ></a>
                 <p>WATCH SOME OF <br>
                     MY MEMORIES</p>
             </div>
@@ -141,7 +141,7 @@ require_once 'header.php';
                 <p>usa</p>
             </div>
             <div class="modal-youtube">
-                <a href="https://www.youtube.com/"><img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/youtube-player.svg'); ?>" alt="youtube player"></a>
+                <a href="https://www.youtube.com/" target="_blank"><img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/youtube-player.svg'); ?>" alt="youtube player" ></a>
                 <p>WATCH SOME OF <br>
                     MY MEMORIES</p>
             </div>
@@ -183,17 +183,19 @@ require_once 'header.php';
                 <p>usa</p>
             </div>
             <div class="modal-youtube">
-                <a href="https://www.youtube.com/"><img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/youtube-player.svg'); ?>" alt="youtube player"></a>
+                <a href="https://www.youtube.com/" target="_blank"><img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/youtube-player.svg'); ?>" alt="youtube player"  ></a>
                 <p>WATCH SOME OF <br>
                     MY MEMORIES</p>
             </div>
 
             <div class="modal-info">
-                <div class="modal-inner-info">
-                    <span>L´enfant Brut</span>
-                    <strong>Chashama</strong>
-                    <p>Nueva York, USA.</p>
-                    <p>/ 2018</p>
+                <div class="modal-manipulating-container-info">
+                    <div class="modal-inner-info">
+                        <span>L´enfant Brut</span>
+                        <strong>Chashama</strong>
+                        <p>Nueva York, USA.</p>
+                        <p>/ 2018</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -206,7 +208,7 @@ require_once 'header.php';
                 <p>br</p>
             </div>
             <div class="modal-youtube">
-                <a href="https://www.youtube.com/"><img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/youtube-player.svg'); ?>" alt="youtube player"></a>
+                <a href="https://www.youtube.com/" target="_blank"><img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/youtube-player.svg'); ?>" alt="youtube player"  ></a>
                 <p>WATCH SOME OF <br>
                     MY MEMORIES</p>
             </div>
@@ -264,7 +266,7 @@ require_once 'header.php';
                 <p>arg</p>
             </div>
             <div class="modal-youtube">
-                <a href="https://www.youtube.com/"><img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/youtube-player.svg'); ?>" alt="youtube player"></a>
+                <a href="https://www.youtube.com/" target="_blank"><img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/youtube-player.svg'); ?>" alt="youtube player"  ></a>
                 <p>WATCH SOME OF <br>
                     MY MEMORIES</p>
             </div>
@@ -357,7 +359,7 @@ require_once 'header.php';
                 <p>spn</p>
             </div>
             <div class="modal-youtube">
-                <a href="https://www.youtube.com/"><img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/youtube-player.svg'); ?>" alt="youtube player"></a>
+                <a href="https://www.youtube.com/" target="_blank"><img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/youtube-player.svg'); ?>" alt="youtube player"  ></a>
                 <p>WATCH SOME OF <br>
                     MY MEMORIES</p>
             </div>
@@ -379,7 +381,7 @@ require_once 'header.php';
                 <p>spn</p>
             </div>
             <div class="modal-youtube">
-                <a href="https://www.youtube.com/"><img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/youtube-player.svg'); ?>" alt="youtube player"></a>
+                <a href="https://www.youtube.com/" target="_blank"><img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/youtube-player.svg'); ?>" alt="youtube player"   ></a>
                 <p>WATCH SOME OF <br>
                     MY MEMORIES</p>
             </div>

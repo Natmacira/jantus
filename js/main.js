@@ -120,7 +120,7 @@ window.addEventListener('load', function () {
 
 
 	//spain
-	const mapspain = document.querySelectorAll('.spain')
+	const mapspain = document.querySelectorAll('.spain:not(.solo)')
 	const closespain = document.querySelector('.close-spain')
 	for (let i = 0; i < mapspain.length; i++) {
 		mapspain[i].addEventListener('click', function () {

@@ -292,13 +292,7 @@ body.page-exhibitions {
 			}
 		}
 	}
-	// &.solo-mode.modal-usa-open.modal-usa-solo-open {
-	// 	.modals-inner-container {
-	// 		.modal-usa {
-	// 			display: none;
-	// 		}
-	// 	}
-	// }
+	
 	&.solo-mode {
 		.main-exhibitions {
 			.mobile.group {
@@ -573,10 +567,45 @@ body.page-exhibitions {
 				background-color: $theme-usa;
 				z-index: 4;
 				@media (min-width: 1200px) {
+					left: 0;
+					top: 0;
 					background-color: rgba(255, 255, 255, 0.7);
 					backdrop-filter: blur(3px);
 					background-image: url("./img/mapas/desktop/modal/usa.svg");
 					background-repeat: no-repeat;
+					position: fixed;
+					background-position-x: 257px;
+					.modal-title {
+						position: relative;
+						p {
+							position: absolute;
+							left: 330px;
+							top: 73px;
+						}
+					}
+					.modal-youtube {
+						position: relative;
+						a {
+							position: absolute;
+							left: 870px;
+							top: 99px;
+						}
+						p {
+							position: absolute;
+							left: 870px;
+							top: 152px;
+						}
+					}
+					.modal-info {
+						position: relative;
+						.modal-manipulating-container-info {
+							position: absolute;
+							top: 0;
+							left: 268px;
+							border-left: solid 1px;
+							padding-left: 30px;
+						}
+					}
 				}
 			}
 		}
@@ -797,7 +826,7 @@ body.page-exhibitions {
 						p {
 							position: absolute;
 							left: 851px;
-							top: 479px;
+							top: 471px;
 							transform: rotate(26deg);
 						}
 					}
@@ -824,8 +853,29 @@ body.page-exhibitions {
 				@media (min-width: 1200px) {
 					background-color: rgba(255, 255, 255, 0.7);
 					backdrop-filter: blur(3px);
-					background-image: url("./img/mapas/desktop/modal/sapin.svg");
+					background-image: url("./img/mapas/desktop/modal/spain.svg");
 					background-repeat: no-repeat;
+					left: 0;
+					background-position-x: 373px;
+					background-position-y: -110px;
+					.modal-title {
+						p {
+							position: absolute;
+							left: 851px;
+							top: 471px;
+							transform: rotate(26deg);
+						}
+					}
+					.modal-youtube {
+						position: absolute;
+						left: 1020px;
+						top: 336px;
+					}
+					.modal-info {
+						position: absolute;
+						left: 420px;
+						top: 54px;
+					}
 				}
 			}
 		}
