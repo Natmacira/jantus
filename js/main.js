@@ -169,7 +169,7 @@ window.addEventListener('load', function () {
 
 
 	// Obtén la lista de elementos de la lista
-	const countryListItems = document.querySelectorAll('.menu-countrys li');
+	const countryListItems = document.querySelectorAll('.menu-countrys.group-ul li');
 
 	// Agrega eventos a cada elemento de la lista
 	countryListItems.forEach(item => {

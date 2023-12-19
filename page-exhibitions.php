@@ -16,9 +16,9 @@ require_once 'header.php';
         <li class="uk">uk</li>
     </ul>
     <ul class="menu-countrys solo-ul">
-            <li class="usa">usa</li>
-            <li class="spain">spain</li>
-        </ul>
+        <li class="usa-solo-li">usa</li>
+        <li class="spain-solo-li">spain</li>
+    </ul>
 </div>
 <section class="main-exhibitions">
 
@@ -71,7 +71,7 @@ require_once 'header.php';
     </article>
 
     <article class="desktop solo-dk">
-      
+
         <div class="container-usa usa">
             <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/desktop/USA.svg'); ?>" alt="Clickeable map usa" class="usa solo dkp">
         </div>
@@ -96,7 +96,7 @@ require_once 'header.php';
                 <p>jpn</p>
             </div>
             <div class="modal-youtube">
-                <a href="https://www.youtube.com/" target="_blank"><img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/youtube-player.svg'); ?>" alt="youtube player" ></a>
+                <a href="https://www.youtube.com/" target="_blank"><img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/youtube-player.svg'); ?>" alt="youtube player"></a>
                 <p>WATCH SOME OF <br>
                     MY MEMORIES</p>
             </div>
@@ -142,7 +142,7 @@ require_once 'header.php';
                 <p>usa</p>
             </div>
             <div class="modal-youtube">
-                <a href="https://www.youtube.com/" target="_blank"><img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/youtube-player.svg'); ?>" alt="youtube player" ></a>
+                <a href="https://www.youtube.com/" target="_blank"><img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/youtube-player.svg'); ?>" alt="youtube player"></a>
                 <p>WATCH SOME OF <br>
                     MY MEMORIES</p>
             </div>
@@ -184,7 +184,7 @@ require_once 'header.php';
                 <p>usa</p>
             </div>
             <div class="modal-youtube">
-                <a href="https://www.youtube.com/" target="_blank"><img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/youtube-player.svg'); ?>" alt="youtube player"  ></a>
+                <a href="https://www.youtube.com/" target="_blank"><img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/youtube-player.svg'); ?>" alt="youtube player"></a>
                 <p>WATCH SOME OF <br>
                     MY MEMORIES</p>
             </div>
@@ -209,7 +209,7 @@ require_once 'header.php';
                 <p>br</p>
             </div>
             <div class="modal-youtube">
-                <a href="https://www.youtube.com/" target="_blank"><img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/youtube-player.svg'); ?>" alt="youtube player"  ></a>
+                <a href="https://www.youtube.com/" target="_blank"><img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/youtube-player.svg'); ?>" alt="youtube player"></a>
                 <p>WATCH SOME OF <br>
                     MY MEMORIES</p>
             </div>
@@ -267,7 +267,7 @@ require_once 'header.php';
                 <p>arg</p>
             </div>
             <div class="modal-youtube">
-                <a href="https://www.youtube.com/" target="_blank"><img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/youtube-player.svg'); ?>" alt="youtube player"  ></a>
+                <a href="https://www.youtube.com/" target="_blank"><img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/youtube-player.svg'); ?>" alt="youtube player"></a>
                 <p>WATCH SOME OF <br>
                     MY MEMORIES</p>
             </div>
@@ -360,7 +360,7 @@ require_once 'header.php';
                 <p>spn</p>
             </div>
             <div class="modal-youtube">
-                <a href="https://www.youtube.com/" target="_blank"><img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/youtube-player.svg'); ?>" alt="youtube player"  ></a>
+                <a href="https://www.youtube.com/" target="_blank"><img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/youtube-player.svg'); ?>" alt="youtube player"></a>
                 <p>WATCH SOME OF <br>
                     MY MEMORIES</p>
             </div>
@@ -382,7 +382,7 @@ require_once 'header.php';
                 <p>spn</p>
             </div>
             <div class="modal-youtube">
-                <a href="https://www.youtube.com/" target="_blank"><img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/youtube-player.svg'); ?>" alt="youtube player"   ></a>
+                <a href="https://www.youtube.com/" target="_blank"><img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/youtube-player.svg'); ?>" alt="youtube player"></a>
                 <p>WATCH SOME OF <br>
                     MY MEMORIES</p>
             </div>
