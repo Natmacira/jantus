@@ -417,6 +417,12 @@ body.page-exhibitions {
 			}
 			.modal-youtube {
 				min-height: 99.2px;
+				a {
+					display: none;
+					@media (min-width: 1200px) {
+						display: block;
+					}
+				}
 				p {
 					font-size: 14px;
 					color: white;
@@ -896,10 +902,6 @@ body.page-exhibitions {
 			}
 		}
 	}
-
-
-
-
 
 	section.swiper.generic-swiper {
 		max-width: 500px;

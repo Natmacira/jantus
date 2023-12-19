@@ -99,6 +99,20 @@ require_once 'header.php';
                 <a href="https://www.youtube.com/" target="_blank"><img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/youtube-player.svg'); ?>" alt="youtube player"></a>
                 <p>WATCH SOME OF <br>
                     MY MEMORIES</p>
+                <section class="swiper generic-swiper">
+                    <div class="swiper-wrapper">
+                        <!-- SLIDE 1 -->
+                        <article class="swiper-slide">
+                            <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/galeria/EXJAP02.jpg'); ?>" alt="test">
+                        </article>
+
+                        <!-- SLIDE 2 -->
+                        <article class="swiper-slide">
+                            <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/galeria/EXJAP01.jpg'); ?>" alt="">
+                        </article>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </section>
             </div>
             <div class="modal-info">
                 <div class="modal-manipulating-container-info">
@@ -145,6 +159,25 @@ require_once 'header.php';
                 <a href="https://www.youtube.com/" target="_blank"><img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/youtube-player.svg'); ?>" alt="youtube player"></a>
                 <p>WATCH SOME OF <br>
                     MY MEMORIES</p>
+                <section class="swiper generic-swiper">
+                    <div class="swiper-wrapper">
+                        <!-- SLIDE 1 -->
+                        <article class="swiper-slide">
+                            <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/galeria/EXUSA05.jpg'); ?>" alt="test">
+                        </article>
+
+                        <!-- SLIDE 2 -->
+                        <article class="swiper-slide">
+                            <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/galeria/EXUSA02.jpg'); ?>" alt="">
+                        </article>
+
+                        <!-- SLIDE 3 -->
+                        <article class="swiper-slide">
+                            <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/galeria/EXUSA03.jpg'); ?>" alt="">
+                        </article>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </section>
             </div>
 
             <div class="modal-info">
@@ -183,43 +216,12 @@ require_once 'header.php';
                     <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/close-map-location.svg'); ?>"></button>
                 <p>usa</p>
             </div>
-
-
             <div class="modal-youtube">
                 <a href="https://www.youtube.com/" target="_blank"><img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/youtube-player.svg'); ?>" alt="youtube player"></a>
                 <p>WATCH SOME OF <br>
                     MY MEMORIES</p>
-                <section class="swiper generic-swiper">
-                    <div class="swiper-wrapper">
-                        <!-- SLIDE 1 -->
-                        <article class="swiper-slide">
-                            <div class="content-div">
-                                <h4>Diseño</h4>
-                            </div>
-                            <picture>
-                                <!-- Desktop -->
-                                <source media="(min-width:1200px)" srcset="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/youtube-player.svg'); ?>" alt="">
-                                <!-- Mobile  -->
-                                <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/youtube-player.svg'); ?>" alt="test">
-                            </picture>
-                        </article>
-
-                        <!-- SLIDE 2 -->
-                        <article class="swiper-slide">
-                            <div class="content-div">
-                                <h4>Colores</h4>
-                            </div>
-                            <picture>
-                                <!-- Desktop -->
-                                <source media="(min-width:1200px)" srcset="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/youtube-player.svg'); ?>" alt="">
-                                <!-- Mobile  -->
-                                <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/youtube-player.svg'); ?>" alt="">
-                            </picture>
-                        </article>
-
-                    </div>
-                    <div class="swiper-pagination"></div>
-
+                <section class="img-galerie">
+                    <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/galeria/EXUSA03.jpg'); ?>" alt="">
                 </section>
             </div>
 
@@ -246,7 +248,24 @@ require_once 'header.php';
             <div class="modal-youtube">
                 <a href="https://www.youtube.com/" target="_blank"><img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/youtube-player.svg'); ?>" alt="youtube player"></a>
                 <p>WATCH SOME OF <br>
-                    MY MEMORIES</p>
+                    MY MEMORIES
+                </p>
+
+                <section class="swiper generic-swiper">
+                    <div class="swiper-wrapper">
+                        <!-- SLIDE 1 -->
+                        <article class="swiper-slide">
+                            <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/galeria/EXBRA04.jpg'); ?>" alt="test">
+                        </article>
+
+                        <!-- SLIDE 2 -->
+                        <article class="swiper-slide">
+                            <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/galeria/EXARG03.jpg'); ?>" alt="">
+                        </article>
+                    </div>
+                    <div class="swiper-pagination"></div>
+
+                </section>
             </div>
             <div class="modal-info">
                 <div class="modal-manipulating-container-info">
@@ -305,6 +324,34 @@ require_once 'header.php';
                 <a href="https://www.youtube.com/" target="_blank"><img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/youtube-player.svg'); ?>" alt="youtube player"></a>
                 <p>WATCH SOME OF <br>
                     MY MEMORIES</p>
+                <section class="swiper generic-swiper">
+                    <div class="swiper-wrapper">
+                        <!-- SLIDE 1 -->
+                        <article class="swiper-slide">
+                            <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/galeria/EXARG07_2022.jpg'); ?>" alt="test">
+                        </article>
+
+                        <!-- SLIDE 2 -->
+                        <article class="swiper-slide">
+                            <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/galeria/EXARG06.jpg'); ?>" alt="">
+                        </article>
+                        <!-- SLIDE 3 -->
+                        <article class="swiper-slide">
+                            <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/galeria/EXARG04.jpg'); ?>" alt="">
+                        </article>
+                        <!-- SLIDE 4 -->
+                        <article class="swiper-slide">
+                            <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/galeria/EXARG03.jpg'); ?>" alt="">
+                        </article>
+                        <!-- SLIDE 5 -->
+                        <article class="swiper-slide">
+                            <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/galeria/EXARG02.jpg'); ?>" alt="">
+                        </article>
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+
+                </section>
             </div>
             <div class="modal-info">
                 <div class="first-block">
@@ -366,7 +413,24 @@ require_once 'header.php';
                 <p>fi</p>
             </div>
             <div class="modal-youtube">
+                <a href="https://www.youtube.com/" target="_blank"><img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/youtube-player.svg'); ?>" alt="youtube player"></a>
+                <p>WATCH SOME OF <br>
+                    MY MEMORIES</p>
+                <section class="swiper generic-swiper">
+                    <div class="swiper-wrapper">
+                        <!-- SLIDE 1 -->
+                        <article class="swiper-slide">
+                            <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/galeria/EXFIN02.jpg'); ?>" alt="test">
+                        </article>
 
+                        <!-- SLIDE 2 -->
+                        <article class="swiper-slide">
+                            <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/galeria/EXFIN01.jpg'); ?>" alt="">
+                        </article>
+                    </div>
+                    <div class="swiper-pagination"></div>
+
+                </section>
             </div>
             <div class="modal-info">
                 <div class="modal-manipulating-container-info">
@@ -395,9 +459,7 @@ require_once 'header.php';
                 <p>spn</p>
             </div>
             <div class="modal-youtube">
-                <a href="https://www.youtube.com/" target="_blank"><img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/youtube-player.svg'); ?>" alt="youtube player"></a>
-                <p>WATCH SOME OF <br>
-                    MY MEMORIES</p>
+
             </div>
             <div class="modal-info">
                 <div class="modal-inner-info">
@@ -420,6 +482,9 @@ require_once 'header.php';
                 <a href="https://www.youtube.com/" target="_blank"><img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/youtube-player.svg'); ?>" alt="youtube player"></a>
                 <p>WATCH SOME OF <br>
                     MY MEMORIES</p>
+                <section class="img-galerie">
+                    <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/galeria/EXFIN01.jpg'); ?>" alt="">
+                </section>
             </div>
             <div class="modal-info">
                 <div class="modal-inner-info">
