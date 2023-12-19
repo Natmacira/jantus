@@ -16,8 +16,8 @@ require_once 'header.php';
         <li class="uk">uk</li>
     </ul>
     <ul class="menu-countrys solo-ul">
-        <li class="usa-solo-li">usa</li>
-        <li class="spain-solo-li">spain</li>
+        <li class="usa">usa</li>
+        <li class="spain">spain</li>
     </ul>
 </div>
 <section class="main-exhibitions">

@@ -185,6 +185,23 @@ window.addEventListener('load', function () {
 			document.body.classList.remove(countryClass);
 		});
 	});
+	// Obtén la lista de elementos de la lista
+	const countryListItemsSolo = document.querySelectorAll('.menu-countrys.solo-ul li');
+
+	// Agrega eventos a cada elemento de la lista
+	countryListItemsSolo.forEach(item => {
+		item.addEventListener('mouseenter', function () {
+			// Obtiene la clase del elemento y la agrega al body
+			const countryClass = this.classList.item(0);
+			document.body.classList.add(countryClass);
+		});
+
+		item.addEventListener('mouseleave', function () {
+			// Remueve la clase del body al salir del elemento
+			const countryClass = this.classList.item(0);
+			document.body.classList.remove(countryClass);
+		});
+	});
 
 
 });
