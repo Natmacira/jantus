@@ -396,9 +396,8 @@ body.page-exhibitions {
 			width: 100%;
 			height: 100%;
 			z-index: 2;
-			padding-left: 25px;
-			padding-right: 9px;
 			.modal-title {
+				padding-left: 25px;
 				p {
 					font-size: 98px;
 					color: white;
@@ -428,6 +427,9 @@ body.page-exhibitions {
 					color: white;
 					padding-top: 13px;
 					font-weight: 400;
+					padding-left: 25px;
+					padding-right: 9px;
+					padding-bottom: 25px;
 				}
 			}
 			.modal-inner-info {
@@ -435,6 +437,8 @@ body.page-exhibitions {
 			}
 			.modal-info {
 				padding-left: 27px;
+				margin-left: 25px;
+				margin-right: 9px;
 				color: white;
 				border-left: solid 1px white;
 				margin-top: 34px;
@@ -904,14 +908,10 @@ body.page-exhibitions {
 	}
 
 	section.swiper.generic-swiper {
-		max-width: 500px;
-
 		@media (min-width: 1200px) {
 			max-width: 1000px;
 		}
-
 		position: relative;
-
 		div.content-div {
 			position: absolute;
 			left: 20%;
@@ -929,30 +929,6 @@ body.page-exhibitions {
 				width: 66%;
 				left: 20%;
 			}
-			h4 {
-				color: white;
-				margin: 0 auto;
-				font-size: 22px;
-				margin-top: 10px;
-				text-shadow: 0px 3px 6px #0000005c;
-				@media (min-width: 550px) {
-					font-size: 34px;
-				}
-				span {
-					color: red;
-					text-transform: uppercase;
-				}
-			}
-
-			a {
-				margin-left: 0;
-				font-size: 13px;
-				padding-bottom: 5px;
-			}
-		}
-		img {
-			padding: 38px 50px;
-			border-radius: 67px;
 		}
 
 		.swiper-horizontal > .swiper-pagination-bullets,
