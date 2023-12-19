@@ -183,11 +183,46 @@ require_once 'header.php';
                     <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/close-map-location.svg'); ?>"></button>
                 <p>usa</p>
             </div>
+
+
             <div class="modal-youtube">
                 <a href="https://www.youtube.com/" target="_blank"><img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/youtube-player.svg'); ?>" alt="youtube player"></a>
                 <p>WATCH SOME OF <br>
                     MY MEMORIES</p>
+                <section class="swiper generic-swiper">
+                    <div class="swiper-wrapper">
+                        <!-- SLIDE 1 -->
+                        <article class="swiper-slide">
+                            <div class="content-div">
+                                <h4>Diseño</h4>
+                            </div>
+                            <picture>
+                                <!-- Desktop -->
+                                <source media="(min-width:1200px)" srcset="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/youtube-player.svg'); ?>" alt="">
+                                <!-- Mobile  -->
+                                <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/youtube-player.svg'); ?>" alt="test">
+                            </picture>
+                        </article>
+
+                        <!-- SLIDE 2 -->
+                        <article class="swiper-slide">
+                            <div class="content-div">
+                                <h4>Colores</h4>
+                            </div>
+                            <picture>
+                                <!-- Desktop -->
+                                <source media="(min-width:1200px)" srcset="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/youtube-player.svg'); ?>" alt="">
+                                <!-- Mobile  -->
+                                <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/youtube-player.svg'); ?>" alt="">
+                            </picture>
+                        </article>
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+
+                </section>
             </div>
+
 
             <div class="modal-info">
                 <div class="modal-manipulating-container-info">

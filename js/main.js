@@ -199,5 +199,21 @@ window.addEventListener('load', function () {
 		});
 	});
 
+	let slidesPerPage = document.body.classList.contains('puerta') ? 2 : 1;
+	slidesPerPage = screen.width < 1200 ? 1 : slidesPerPage;
+	let welcomeSwiper = new Swiper('.generic-swiper', {
+		spaceBetween: 30,
+		loop: false,
+		slidesPerView: slidesPerPage,
+		pagination: {
+			el: ".swiper-pagination",
+			clickable: true
+		},
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
+	});
+
 
 });
