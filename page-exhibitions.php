@@ -96,7 +96,7 @@ require_once 'header.php';
                 <p>jpn</p>
             </div>
             <div class="modal-youtube">
-                <a href="https://www.youtube.com/" target="_blank"><img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/youtube-player.svg'); ?>" alt="youtube player"></a>
+                <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/youtube-player.svg'); ?>" alt="click to open galery" class="img-open-galery">
                 <p>WATCH SOME OF <br>
                     MY MEMORIES</p>
                 <section class="swiper generic-swiper">
@@ -156,7 +156,7 @@ require_once 'header.php';
                 <p>usa</p>
             </div>
             <div class="modal-youtube">
-                <a href="https://www.youtube.com/" target="_blank"><img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/youtube-player.svg'); ?>" alt="youtube player"></a>
+                <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/youtube-player.svg'); ?>" alt="click to open galery" class="img-open-galery">
                 <p>WATCH SOME OF <br>
                     MY MEMORIES</p>
                 <section class="swiper generic-swiper">
@@ -217,7 +217,7 @@ require_once 'header.php';
                 <p>usa</p>
             </div>
             <div class="modal-youtube">
-                <a href="https://www.youtube.com/" target="_blank"><img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/youtube-player.svg'); ?>" alt="youtube player"></a>
+                <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/youtube-player.svg'); ?>" alt="click to open galery" class="img-open-galery">
                 <p>WATCH SOME OF <br>
                     MY MEMORIES</p>
                 <section class="img-galerie">
@@ -246,7 +246,7 @@ require_once 'header.php';
                 <p>br</p>
             </div>
             <div class="modal-youtube">
-                <a href="https://www.youtube.com/" target="_blank"><img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/youtube-player.svg'); ?>" alt="youtube player"></a>
+                <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/youtube-player.svg'); ?>" alt="click to open galery" class="img-open-galery">
                 <p>WATCH SOME OF <br>
                     MY MEMORIES
                 </p>
@@ -321,7 +321,7 @@ require_once 'header.php';
                 <p>arg</p>
             </div>
             <div class="modal-youtube">
-                <a href="https://www.youtube.com/" target="_blank"><img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/youtube-player.svg'); ?>" alt="youtube player"></a>
+                <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/youtube-player.svg'); ?>" alt="click to open galery" class="img-open-galery">
                 <p>WATCH SOME OF <br>
                     MY MEMORIES</p>
                 <section class="swiper generic-swiper">
@@ -413,7 +413,7 @@ require_once 'header.php';
                 <p>fi</p>
             </div>
             <div class="modal-youtube">
-                <a href="https://www.youtube.com/" target="_blank"><img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/youtube-player.svg'); ?>" alt="youtube player"></a>
+                <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/youtube-player.svg'); ?>" alt="click to open galery" class="img-open-galery">
                 <p>WATCH SOME OF <br>
                     MY MEMORIES</p>
                 <section class="swiper generic-swiper">
@@ -479,7 +479,7 @@ require_once 'header.php';
                 <p>spn</p>
             </div>
             <div class="modal-youtube">
-                <a href="https://www.youtube.com/" target="_blank"><img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/youtube-player.svg'); ?>" alt="youtube player"></a>
+                <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/youtube-player.svg'); ?>" alt="click to open galery" class="img-open-galery">
                 <p>WATCH SOME OF <br>
                     MY MEMORIES</p>
                 <section class="img-galerie">

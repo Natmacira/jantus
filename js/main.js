@@ -17,6 +17,16 @@ window.addEventListener('load', function () {
 		document.body.classList.toggle('solo-mode');
 	});
 
+	// functionality to open galery buton
+
+	// Obtén la lista de elementos de la lista
+	const galeryBtnList = document.querySelectorAll('.img-open-galery');
+	// Agrega eventos a cada elemento de la lista
+	galeryBtnList.forEach(item => {
+		item.addEventListener('click', function () {
+			document.body.classList.toggle('galery-open');
+		});
+	});
 
 
 	// functionality for modals maps MOBILE
@@ -198,6 +208,8 @@ window.addEventListener('load', function () {
 			document.body.classList.remove(countryClass);
 		});
 	});
+
+	// slider
 
 	let slidesPerPage = document.body.classList.contains('puerta') ? 2 : 1;
 	slidesPerPage = screen.width < 1200 ? 1 : slidesPerPage;

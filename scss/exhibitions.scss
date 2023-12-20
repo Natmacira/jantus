@@ -416,11 +416,9 @@ body.page-exhibitions {
 			}
 			.modal-youtube {
 				min-height: 99.2px;
-				a {
-					display: none;
-					@media (min-width: 1200px) {
-						display: block;
-					}
+				img {
+					padding-left: 25px;
+					cursor: pointer;
 				}
 				p {
 					font-size: 14px;
@@ -430,6 +428,11 @@ body.page-exhibitions {
 					padding-left: 25px;
 					padding-right: 9px;
 					padding-bottom: 25px;
+				}
+				.swiper.generic-swiper {
+					img {
+						padding-left: 0;
+					}
 				}
 			}
 			.modal-inner-info {
@@ -933,8 +936,8 @@ body.page-exhibitions {
 
 		.swiper-horizontal > .swiper-pagination-bullets,
 		.swiper-pagination-bullets.swiper-pagination-horizontal {
-			bottom: 17%;
-			left: -27%;
+			bottom: 0;
+			left: 0;
 			width: 100%;
 			transform: rotate(0);
 			top: auto;
@@ -942,6 +945,23 @@ body.page-exhibitions {
 		.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
 		.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
 			margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 2px);
+		}
+	}
+
+	section.swiper.generic-swiper.swiper-initialized.swiper-horizontal.swiper-backface-hidden {
+		height: 0;
+		-moz-transition:  1s;
+		-webkit-transition:  1s;
+		-o-transition:  1s;
+		transition:  1s;
+		overflow: hidden;
+	}
+
+	&.galery-open {
+		section.swiper.generic-swiper.swiper-initialized.swiper-horizontal.swiper-backface-hidden {
+			height: 745px;
+			max-height: 70vh;
+			padding-bottom: 30px;
 		}
 	}
 }
