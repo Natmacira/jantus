@@ -42,6 +42,7 @@ window.addEventListener('load', function () {
 	}
 	closeJapan.addEventListener('click', function () {
 		document.body.classList.toggle('modal-japan-open');
+		document.body.classList.remove('galery-open');
 	});
 
 
@@ -52,6 +53,7 @@ window.addEventListener('load', function () {
 	for (let i = 0; i < mapKr.length; i++) {
 		mapKr[i].addEventListener('click', function () {
 			document.body.classList.toggle('modal-kr-open');
+
 		});
 
 	}
@@ -70,6 +72,8 @@ window.addEventListener('load', function () {
 	}
 	closeUsa.addEventListener('click', function () {
 		document.body.classList.toggle('modal-usa-open');
+		document.body.classList.remove('galery-open');
+
 	});
 
 
@@ -85,6 +89,8 @@ window.addEventListener('load', function () {
 	}
 	closebr.addEventListener('click', function () {
 		document.body.classList.toggle('modal-br-open');
+		document.body.classList.remove('galery-open');
+
 	});
 
 
@@ -111,6 +117,8 @@ window.addEventListener('load', function () {
 	}
 	closearg.addEventListener('click', function () {
 		document.body.classList.toggle('modal-arg-open');
+		document.body.classList.remove('galery-open');
+
 	});
 
 
@@ -125,6 +133,8 @@ window.addEventListener('load', function () {
 	}
 	closefinlandia.addEventListener('click', function () {
 		document.body.classList.toggle('modal-finlandia-open');
+		document.body.classList.remove('galery-open');
+
 	});
 
 
@@ -139,6 +149,7 @@ window.addEventListener('load', function () {
 	}
 	closespain.addEventListener('click', function () {
 		document.body.classList.toggle('modal-spain-open');
+
 	});
 
 	//spain-solo
@@ -154,6 +165,8 @@ window.addEventListener('load', function () {
 	});
 	closespainSolo.addEventListener('click', function () {
 		document.body.classList.toggle('modal-spain-solo-open');
+		document.body.classList.remove('galery-open');
+
 	});
 
 
@@ -170,6 +183,8 @@ window.addEventListener('load', function () {
 
 	closeUsaSolo.addEventListener('click', function () {
 		document.body.classList.toggle('modal-usa-solo-open');
+		document.body.classList.remove('galery-open');
+
 	});
 
 

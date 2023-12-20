@@ -220,8 +220,14 @@ require_once 'header.php';
                 <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/youtube-player.svg'); ?>" alt="click to open galery" class="img-open-galery">
                 <p>WATCH SOME OF <br>
                     MY MEMORIES</p>
-                <section class="img-galerie">
-                    <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/galeria/EXUSA03.jpg'); ?>" alt="">
+                <section class="swiper generic-swiper">
+                    <div class="swiper-wrapper">
+                        <!-- SLIDE 1 -->
+                        <article class="swiper-slide">
+                        <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/galeria/EXUSA03.jpg'); ?>" alt="">
+                        </article>
+                    </div>
+                    <div class="swiper-pagination"></div>
                 </section>
             </div>
 
@@ -482,8 +488,14 @@ require_once 'header.php';
                 <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/youtube-player.svg'); ?>" alt="click to open galery" class="img-open-galery">
                 <p>WATCH SOME OF <br>
                     MY MEMORIES</p>
-                <section class="img-galerie">
-                    <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/galeria/EXFIN01.jpg'); ?>" alt="">
+                    <section class="swiper generic-swiper">
+                    <div class="swiper-wrapper">
+                        <!-- SLIDE 1 -->
+                        <article class="swiper-slide">
+                        <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/galeria/EXFIN01.jpg'); ?>" alt="">
+                        </article>
+                    </div>
+                    <div class="swiper-pagination"></div>
                 </section>
             </div>
             <div class="modal-info">

@@ -453,6 +453,20 @@ body.page-exhibitions {
 				}
 			}
 		}
+		// .modal-usa-solo,
+		// .modal-spain-solo {
+		// 	section.img-galerie {
+		// 		img {
+		// 			padding-left: 0;
+		// 			height: 0;
+		// 			-moz-transition: 1s;
+		// 			-webkit-transition: 1s;
+		// 			-o-transition: 1s;
+		// 			transition: 1s;
+		// 			overflow: hidden;
+		// 		}
+		// 	}
+		// }
 	}
 
 	&.modal-japan-open {
@@ -460,12 +474,17 @@ body.page-exhibitions {
 			.modal-japan {
 				display: block;
 				background-color: $theme-japon;
+				position: absolute;
+				top: -197px;
+				height: auto;
+				min-height: 1000px;
+				left: 0;
 				@media (min-width: 1200px) {
 					background-color: rgba(255, 255, 255, 0.7);
 					backdrop-filter: blur(3px);
 					background-image: url("./img/mapas/desktop/modal/japan.svg");
 					background-repeat: no-repeat;
-					left: 0;
+
 					.modal-title {
 						position: relative;
 						p {
@@ -595,6 +614,11 @@ body.page-exhibitions {
 				display: block;
 				background-color: $theme-usa;
 				z-index: 4;
+				position: absolute;
+				top: -197px;
+				height: auto;
+				min-height: 1000px;
+				left: 0;
 				@media (min-width: 1200px) {
 					left: 0;
 					top: 0;
@@ -794,6 +818,11 @@ body.page-exhibitions {
 			.modal-finlandia {
 				display: block;
 				background-color: $theme-finlandia;
+				position: absolute;
+				top: -197px;
+				height: auto;
+				min-height: 1000px;
+				left: 0;
 				@media (min-width: 1200px) {
 					background-color: rgba(255, 255, 255, 0.7);
 					backdrop-filter: blur(3px);
@@ -879,6 +908,11 @@ body.page-exhibitions {
 				display: block;
 				background-color: $theme-espana;
 				z-index: 4;
+				position: absolute;
+				top: -197px;
+				height: auto;
+				min-height: 1000px;
+				left: 0;
 				@media (min-width: 1200px) {
 					background-color: rgba(255, 255, 255, 0.7);
 					backdrop-filter: blur(3px);
@@ -950,10 +984,10 @@ body.page-exhibitions {
 
 	section.swiper.generic-swiper.swiper-initialized.swiper-horizontal.swiper-backface-hidden {
 		height: 0;
-		-moz-transition:  1s;
-		-webkit-transition:  1s;
-		-o-transition:  1s;
-		transition:  1s;
+		-moz-transition: 1s;
+		-webkit-transition: 1s;
+		-o-transition: 1s;
+		transition: 1s;
 		overflow: hidden;
 	}
 
@@ -963,5 +997,16 @@ body.page-exhibitions {
 			max-height: 70vh;
 			padding-bottom: 30px;
 		}
+		// .modal-usa-solo,
+		// .modal-spain-solo {
+		// 	section.img-galerie {
+		// 		img {
+		// 			padding-left: 0;
+		// 			height: 0;
+		// 			height: 745px;
+		// 			max-height: 70vh;
+		// 		}
+		// 	}
+		// }
 	}
 }
