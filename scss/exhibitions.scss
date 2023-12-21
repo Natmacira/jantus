@@ -453,7 +453,6 @@ body.page-exhibitions {
 				}
 			}
 		}
-		
 	}
 
 	&.modal-japan-open {
@@ -475,7 +474,6 @@ body.page-exhibitions {
 					background-position-x: 0;
 					left: 0;
 					top: 0;
-
 
 					.modal-title {
 						position: relative;
@@ -992,6 +990,22 @@ body.page-exhibitions {
 			max-height: 70vh;
 			padding-bottom: 30px;
 		}
-		
+		.modals-inner-container .modal-usa .modal-youtube {
+			img {
+				@media (min-width: 1200px) {
+					top: 0;
+					left: auto;
+
+					&.img-open-galery {
+						background: black;
+						border-radius: 38px;
+						display: block;
+						text-align: center;
+						margin-left: 11px;
+						padding: 4px;
+					}
+				}
+			}
+		}
 	}
 }
