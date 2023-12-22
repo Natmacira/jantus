@@ -820,6 +820,8 @@ body.page-exhibitions {
 					background-image: url("./img/mapas/desktop/modal/fin.svg");
 					background-repeat: no-repeat;
 					left: 0;
+					position: fixed;
+					top: 0;
 					background-position-x: 500px;
 					background-position-y: 207px;
 					.modal-title {
@@ -834,13 +836,13 @@ body.page-exhibitions {
 						position: relative;
 						img {
 							position: absolute;
-							left: 870px;
-							top: 99px;
+							left: 790px;
+							top: 294px;
 						}
 						p {
 							position: absolute;
-							left: 870px;
-							top: 152px;
+							left: 796px;
+							top: 351px;
 						}
 					}
 					.modal-info {
@@ -848,7 +850,7 @@ body.page-exhibitions {
 						.modal-manipulating-container-info {
 							position: absolute;
 							top: 120px;
-							left: 568px;
+							left: 502px;
 							border-left: solid 1px;
 							padding-left: 30px;
 						}
@@ -990,19 +992,60 @@ body.page-exhibitions {
 			max-height: 70vh;
 			padding-bottom: 30px;
 		}
-		.modals-inner-container .modal-usa .modal-youtube {
-			img {
-				@media (min-width: 1200px) {
-					top: 0;
-					left: auto;
-
-					&.img-open-galery {
+		.modals-inner-container {
+			@media (min-width: 1200px) {
+				.modal-youtube {
+					img.img-open-galery {
 						background: black;
 						border-radius: 38px;
 						display: block;
 						text-align: center;
 						margin-left: 11px;
 						padding: 4px;
+						z-index: 10;
+
+					}
+				}
+			}
+			.modal-usa {
+				.modal-youtube {
+					img {
+						@media (min-width: 1200px) {
+							top: 0;
+							left: auto;
+						}
+					}
+				}
+				.modal-info {
+					.modal-manipulating-container-info {
+						@media (min-width: 1200px) {
+							top: -550px;
+						}
+					}
+				}
+			}
+			.modal-japan {
+				.modal-youtube img {
+					@media (min-width: 1200px) {
+						top: 0;
+						left: auto;
+					}
+				}
+				.modal-info {
+					.modal-manipulating-container-info {
+						@media (min-width: 1200px) {
+							top: -457px;
+						}
+					}
+				}
+			}
+
+			.modal-br {
+				.modal-info {
+					.modal-manipulating-container-info {
+						@media (min-width: 1200px) {
+							top: -409px;
+						}
 					}
 				}
 			}
