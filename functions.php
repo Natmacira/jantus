@@ -12,17 +12,16 @@ if (!defined('JANTUS_VERSION')) {
 	define('JANTUS_VERSION', '0.0.9');
 }
 
-add_action(
-	'wp_enqueue_scripts',
-	function () {
-		wp_enqueue_style('jantus', get_stylesheet_directory_uri() . '/style.min.css', array(), JANTUS_VERSION);
-		wp_enqueue_script('jantus', get_stylesheet_directory_uri() . '/js/main.js', array(), JANTUS_VERSION);
-		wp_enqueue_script('jantus-publications', get_stylesheet_directory_uri() . '/js/publications.js', array(), JANTUS_VERSION);
-		wp_enqueue_script('jantus-bundle-min', get_stylesheet_directory_uri() . '/js/swiper-bundle.min.js', array(), JANTUS_VERSION);
-		wp_enqueue_script('jantus-bundle-min-map', get_stylesheet_directory_uri() . '/js/swiper-bundle.min.js.map', array(), JANTUS_VERSION);
-		wp_enqueue_script('jantus-home', get_stylesheet_directory_uri() . '/js/home.js', array(), JANTUS_VERSION);
-	}
-);
+function jantus_enqueue_scripts() {
+	wp_enqueue_style('jantus', get_stylesheet_directory_uri() . '/style.min.css', array(), JANTUS_VERSION);
+	wp_enqueue_script('jantus', get_stylesheet_directory_uri() . '/js/main.js', array(), JANTUS_VERSION);
+	wp_enqueue_script('jantus-publications', get_stylesheet_directory_uri() . '/js/publications.js', array(), JANTUS_VERSION);
+	wp_enqueue_script('jantus-bundle-min', get_stylesheet_directory_uri() . '/js/swiper-bundle.min.js', array(), JANTUS_VERSION);
+	wp_enqueue_script('jantus-bundle-min-map', get_stylesheet_directory_uri() . '/js/swiper-bundle.min.js.map', array(), JANTUS_VERSION);
+	wp_enqueue_script('jantus-home', get_stylesheet_directory_uri() . '/js/home.js', array(), JANTUS_VERSION);
+}
+
+add_action( 'wp_enqueue_scripts', 'jantus_enqueue_scripts' );
 
 add_action(
 	'init',
@@ -78,7 +77,7 @@ add_action(
 						function($post){
 							$year = get_post_meta($post->ID, 'year', true);
 							?><input type="text" name="year" id="year" class="postbox" value="<?php echo(esc_attr($year))?>"><?php
-						},			
+						},
 						'painting' 					// Post type
 					);
 					add_meta_box(
@@ -87,7 +86,7 @@ add_action(
 						function($post){
 							$technique = get_post_meta($post->ID, 'technique', true);
 							?><input type="text" name="technique" id="technique" class="postbox" value="<?php echo(esc_attr($technique))?>"><?php
-						},			
+						},
 						'painting' 					// Post type
 					);
 					add_meta_box(
@@ -96,10 +95,10 @@ add_action(
 						function($post){
 							$size = get_post_meta($post->ID, 'size', true);
 							?><input type="text" name="size" id="size" class="postbox" value="<?php echo(esc_attr($size))?>"><?php
-						},			
+						},
 						'painting' 					// Post type
 					);
-				
+
 				}
 			)
 		);
@@ -131,7 +130,7 @@ add_action(
 						function($post){
 							$author = get_post_meta($post->ID, 'author', true);
 							?><input type="text" name="author" id="author" class="postbox" value="<?php echo(esc_attr($author))?>"><?php
-						},			
+						},
 						'cloth' 					// Post type
 					);
 					add_meta_box(
@@ -140,7 +139,7 @@ add_action(
 						function($post){
 							$year = get_post_meta($post->ID, 'year', true);
 							?><input type="text" name="year" id="year" class="postbox" value="<?php echo(esc_attr($year))?>"><?php
-						},			
+						},
 						'cloth' 					// Post type
 					);
 					add_meta_box(
@@ -149,10 +148,10 @@ add_action(
 						function($post){
 							$code = get_post_meta($post->ID, 'code', true);
 							?><input type="text" name="code" id="code" class="postbox" value="<?php echo(esc_attr($code))?>"><?php
-						},			
+						},
 						'cloth' 					// Post type
 					);
-				
+
 				}
 			)
 		);
@@ -191,7 +190,7 @@ add_action( 'save_post', function($post_id) {
 
 		update_post_meta( $post_id, 'size', $size );
 	}
-	
+
 } );
 
 add_action( 'save_post', function($post_id) {
@@ -207,7 +206,7 @@ add_action( 'save_post', function($post_id) {
 		return;
 	}
 
-	
+
 	if ( 'cloth' !== get_post_type( $post_id ) ) {
 		return;
 	}
@@ -223,7 +222,7 @@ add_action( 'save_post', function($post_id) {
 
 		update_post_meta( $post_id, 'code', $code );
 	}
-	
+
 	if ( isset( $_POST['author'] ) ) {
 		$author = sanitize_text_field($_POST['author'] );
 
@@ -404,7 +403,7 @@ function jantus_print_body_class()
 
 	$classes = array();
 
-	/* 
+	/*
 	*	is_home returns true if it's the blog page
 	*/
 	if (is_home()) {

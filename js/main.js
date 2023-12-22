@@ -4,10 +4,11 @@ window.addEventListener('load', function () {
 	const openWorkMenu = document.querySelector('.work-open')
 	const openWorkMenuUl = document.querySelector('.work-open-close')
 
-	openWorkMenu.addEventListener('click', function () {
-		document.body.classList.toggle('work-open-open');
-	});
-
+	if ( openWorkMenu ) {
+		openWorkMenu.addEventListener('click', function () {
+			document.body.classList.toggle('work-open-open');
+		});
+	}
 
 	// functionality for switch button solo group
 
