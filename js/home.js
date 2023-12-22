@@ -6,8 +6,8 @@ const img = document.getElementById('reboteImg');
 function animate() {
   let posX = Math.random() * window.innerWidth;
   let posY = Math.random() * window.innerHeight;
-  let velX = (3 + Math.random() * 5) * (Math.random() > 0.5 ? 1 : -1);
-  let velY = (3 + Math.random() * 5) * (Math.random() > 0.5 ? 1 : -1);
+  let velX = (1 + Math.random() * 2) * (Math.random() > 0.5 ? 1 : -1);
+  let velY = (1 + Math.random() * 2) * (Math.random() > 0.5 ? 1 : -1);
     console.log(img)
   img.style.position = 'absolute';
   img.style.left = posX + 'px';

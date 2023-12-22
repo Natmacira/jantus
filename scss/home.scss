@@ -5,6 +5,10 @@
 body.page-home {
     margin: 0;
     overflow: hidden;
+    h1 {
+        position: relative;
+        z-index: 4;
+    }
     h2 {
         display: none;
     }
@@ -15,7 +19,12 @@ body.page-home {
         p {
             padding: 0 20px 40px;
             text-align: center;
+            position: relative;
+            z-index: 4;
         }
     }
-   
+
+    img {
+        width: 240px;
+    }
 }
