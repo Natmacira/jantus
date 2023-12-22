@@ -33,7 +33,8 @@ window.addEventListener('load', function () {
         update();
     }
     animate();
-
+    
+    if (document.body.classList.contains('page-home')) {
     const images = [
         'wp-content/themes/jantus/img/home/one.jpg', 'wp-content/themes/jantus/img/home/2.jpg', 'wp-content/themes/jantus/img/home/3.jpg', 'wp-content/themes/jantus/img/home/4.jpg',
         'wp-content/themes/jantus/img/home/5.jpg', 'wp-content/themes/jantus/img/home/6.jpg', 'wp-content/themes/jantus/img/home/7.jpg', 'wp-content/themes/jantus/img/home/8.jpg',
@@ -43,27 +44,23 @@ window.addEventListener('load', function () {
 
     let addedImagesCount = 0;
 
-    document.body.addEventListener('click', function (event) {
-        // Verificar si la pantalla es de escritorio (ancho mayor o igual a 1200 px)
-        if (window.innerWidth >= 1200) {
-            // Si ya se han agregado 14 imágenes, eliminarlas todas
-            // if (addedImagesCount === 14) {
-            //     const existingImages = document.querySelectorAll('img');
-            //     existingImages.forEach(img => img.remove());
-            //     addedImagesCount = 0; // reiniciar el conteo
-            // }
+        document.body.addEventListener('click', function (event) {
+            // Verificar si la pantalla es de escritorio (ancho mayor o igual a 1200 px)
+            if (window.innerWidth >= 1200) {
 
-            // Obtener una imagen aleatoria de la lista
-            const randomIndex = Math.floor(Math.random() * images.length);
-            const newImg = document.createElement('img');
-            newImg.src = images[randomIndex];
-            newImg.style.position = 'absolute';
-            newImg.style.left = event.clientX + 'px';
-            newImg.style.top = event.clientY + 'px';
 
-            document.body.appendChild(newImg);
+                // Obtener una imagen aleatoria de la lista
+                const randomIndex = Math.floor(Math.random() * images.length);
+                const newImg = document.createElement('img');
+                newImg.src = images[randomIndex];
+                newImg.style.position = 'absolute';
+                newImg.style.left = event.clientX + 'px';
+                newImg.style.top = event.clientY + 'px';
 
-            addedImagesCount++;
-        }
-    });
+                document.body.appendChild(newImg);
+
+                addedImagesCount++;
+            }
+        });
+    }
 });
