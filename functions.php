@@ -20,6 +20,7 @@ add_action(
 		wp_enqueue_script('jantus-publications', get_stylesheet_directory_uri() . '/js/publications.js', array(), JANTUS_VERSION);
 		wp_enqueue_script('jantus-bundle-min', get_stylesheet_directory_uri() . '/js/swiper-bundle.min.js', array(), JANTUS_VERSION);
 		wp_enqueue_script('jantus-bundle-min-map', get_stylesheet_directory_uri() . '/js/swiper-bundle.min.js.map', array(), JANTUS_VERSION);
+		wp_enqueue_script('jantus-home', get_stylesheet_directory_uri() . '/js/home.js', array(), JANTUS_VERSION);
 	}
 );
 
