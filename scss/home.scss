@@ -5,6 +5,7 @@
 body.page-home {
     margin: 0;
     overflow: hidden;
+    cursor: pointer;
     h1 {
         position: relative;
         z-index: 4;
@@ -21,6 +22,14 @@ body.page-home {
             text-align: center;
             position: relative;
             z-index: 4;
+            font-size: 14px;
+            text-transform: uppercase;
+            @media (min-width: 1200px) {
+                padding: 24px 0 40px;
+                max-width: 600px;
+                margin: 0 auto;
+                font-size: 18px;
+            }
         }
     }
 

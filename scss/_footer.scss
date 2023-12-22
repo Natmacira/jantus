@@ -20,8 +20,12 @@ footer {
 	.work-open-close {
 		display: none;
 	}
-	@media (min-width: 1200px) {
-		// position: fixed;
+}
+body.page-home {
+	footer {
+		@media (min-width: 1200px) {
+			position: fixed;
+		}
 	}
 }
 
