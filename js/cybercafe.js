@@ -58,20 +58,33 @@ window.addEventListener('load', function () {
 	//Mostrar nft random cuando carga la página
 	nftRandom(nftActual, nfts);
 
+	//Mostrar nft random al clickear boton "nft"
+	if (randomBtn) {
+		randomBtn.addEventListener('click', () => {
+			nftRandom(nftActual, nfts);
+		});
+	}
+
 	//Modificaciones visuales
 	const controls = document.querySelector('#controls');
-	const nftDisplay = document.querySelector('#nft');
+	// const nftDisplay = document.querySelector('#nft');
+	const layerHue        = document.querySelector('#layer-hue');
+	const layerBrightness = document.querySelector('#layer-brightness');
+	const layerBlur       = document.querySelector('#layer-blur');
 
 	const changeColor = value => {
-		nftDisplay.style.filter = `hue-rotate(${value}deg)`;
+		// nftDisplay.style.filter = `hue-rotate(${value}deg)`;
+		layerHue.style.filter = `hue-rotate(${value}deg)`;
 	};
 
 	const changeBrightness = value => {
-		nftDisplay.style.filter = `brightness(${value})`;
+		// nftDisplay.style.filter = `brightness(${value})`;
+		layerBrightness.style.filter = `brightness(${value})`;
 	};
 
 	const changeBlur = value => {
-		nftDisplay.style.filter = `blur(${value}px)`;
+		// nftDisplay.style.filter = `blur(${value}px)`;
+		layerBlur.style.filter = `blur(${value}px)`;
 	};
 
 	controls.addEventListener('input', e => {

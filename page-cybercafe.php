@@ -54,8 +54,13 @@ get_header();
 ?>
             <h1>cybercafe</h1>
 			<h2 id="loading-message">Loading...</h2>
-			<section id="nft">
-			</section>
+			<div id="layer-hue">
+				<div id="layer-brightness">
+					<div id="layer-blur">
+						<section id="nft"></section>
+					</div>
+				</div>
+			</div>
 
 			<section id="controls">
                 <article id="control-panel">
