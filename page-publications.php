@@ -8,7 +8,7 @@ require_once 'header.php';
 
 <section class="library">
     <article class="library-inner-element">
-        <div class="one-book-content">
+        <div class="book-content one-book-content">
             <div class="titles-inner-container">
                 <h3>BONART</h3>
                 <span>full interview</span>
@@ -18,14 +18,14 @@ require_once 'header.php';
             </div>
             <p>test<br> 2018</p>
         </div>
-        <div class="one-book-title">
+        <div class="book-title one-book-title">
             <p><span>18</span> BONART</p>
         </div>
     </article>
 
 
     <article class="library-inner-element">
-        <div class="two-book-content">
+        <div class="book-content two-book-content">
             <div class="titles-inner-container">
                 <h3>contemporary art curator</h3>
                 <span>full interview</span>
@@ -35,14 +35,14 @@ require_once 'header.php';
             </div>
             <p>test<br> 2018</p>
         </div>
-        <div class="two-book-title">
+        <div class="book-title two-book-title">
             <p><span>22</span> contemporary art curator</p>
         </div>
     </article>
 
 
     <article class="library-inner-element">
-        <div class="three-book-content">
+        <div class="book-content three-book-content">
             <div class="titles-inner-container">
                 <h3>LA RADIO <br> BARCELONA</h3>
                 <span>full interview</span>
@@ -52,14 +52,14 @@ require_once 'header.php';
             </div>
             <p>BARCELONA. <br> 2018</p>
         </div>
-        <div class="three-book-title">
+        <div class="book-title three-book-title">
             <p><span>18</span> LA RADIO BARCELONA</p>
         </div>
     </article>
 
 
     <article class="library-inner-element">
-        <div class="four-book-content">
+        <div class="book-content four-book-content">
             <div class="titles-inner-container">
                 <h3>LA RADIO BARCELONA</h3>
                 <span>full interview</span>
@@ -69,14 +69,14 @@ require_once 'header.php';
             </div>
             <p>BARCELONA. <br> 2018</p>
         </div>
-        <div class="four-book-title">
+        <div class="book-title four-book-title">
             <p><span>18</span>artsy</p>
         </div>
     </article>
 
 
     <article class="library-inner-element">
-        <div class="five-book-content">
+        <div class="book-content five-book-content">
             <div class="titles-inner-container">
                 <h3>LA RADIO BARCELONA</h3>
                 <span>full interview</span>
@@ -86,14 +86,14 @@ require_once 'header.php';
             </div>
             <p>BARCELONA. <br> 2018</p>
         </div>
-        <div class="five-book-title">
+        <div class="book-title five-book-title">
             <p><span>19</span> ARTQOL</p>
         </div>
     </article>
 
 
     <article class="library-inner-element">
-        <div class="six-book-content">
+        <div class="book-content six-book-content">
             <div class="titles-inner-container">
                 <h3>LA RADIO BARCELONA</h3>
                 <span>full interview</span>
@@ -103,14 +103,14 @@ require_once 'header.php';
             </div>
             <p>BARCELONA. <br> 2018</p>
         </div>
-        <div class="six-book-title">
+        <div class="book-title six-book-title">
             <p><span>18</span>Kirjasta-kirjaan</p>
         </div>
     </article>
 
 
     <article class="library-inner-element">
-        <div class="seven-book-content">
+        <div class="book-content seven-book-content">
             <div class="titles-inner-container">
                 <h3>LA RADIO BARCELONA</h3>
                 <span>full interview</span>
@@ -120,14 +120,14 @@ require_once 'header.php';
             </div>
             <p>BARCELONA. <br> 2018</p>
         </div>
-        <div class="seven-book-title">
+        <div class="book-title seven-book-title">
             <p><span>21</span>diffuse reality </p>
         </div>
     </article>
 
 
     <article class="library-inner-element">
-        <div class="eight-book-content">
+        <div class="book-content eight-book-content">
             <div class="titles-inner-container">
                 <h3>LA RADIO BARCELONA</h3>
                 <span>full interview</span>
@@ -137,14 +137,14 @@ require_once 'header.php';
             </div>
             <p>BARCELONA. <br> 2018</p>
         </div>
-        <div class="eight-book-title">
+        <div class="book-title eight-book-title">
             <p><span>19</span>chasama </p>
         </div>
     </article>
 
 
     <article class="library-inner-element">
-        <div class="nine-book-content">
+        <div class="book-content nine-book-content">
             <div class="titles-inner-container">
                 <h3>LA RADIO BARCELONA</h3>
                 <span>full interview</span>
@@ -154,7 +154,7 @@ require_once 'header.php';
             </div>
             <p>BARCELONA. <br> 2018</p>
         </div>
-        <div class="nine-book-title">
+        <div class="book-title nine-book-title">
             <p><span>18</span>flamantes #12</p>
         </div>
     </article>

@@ -1,85 +1,78 @@
 window.addEventListener('load', function () {
+	// get all elements with class .book-content and add event listener
 
-	console.log('hola')
+	const bookTitle = document.querySelectorAll('.book-title');
 
-	// //functionality for submenu work
+	for (let i = 0; i < bookTitle.length; i++) {
+		bookTitle[i].addEventListener('click', function () {
+			if (this.parentElement.querySelector('.book-content').classList.contains('book-open')) {
+				// this.parentElement.querySelector('.book-content').classList.remove('book-open');
 
-	// const openWorkMenu = document.querySelector('.work-open')
-	// const openWorkMenuUl = document.querySelector('.work-open-close')
+				// decrease width of book content from 100% to 0. using settimeout. the whole process lasts 1s
+				const contentElement = this.parentElement.querySelector('.book-content');
+				const initialWidth = contentElement.clientWidth; // Get the initial width in pixels
+				const targetWidth = 0;
+				const duration = 500; // Animation duration in milliseconds
+				const steps = 50; // Number of steps for the animation
 
-	// console.log('publications', openWorkMenu, openWorkMenuUl);
+				const widthDecrease = (initialWidth - targetWidth) / steps;
+				let currentWidth = initialWidth;
 
-	// openWorkMenu.addEventListener('click', function () {
-	// 	document.body.classList.toggle('work-open-open');
-	// });
-	//functionality for publications books to open
+				const decrease = setInterval(function () {
+					currentWidth -= widthDecrease;
+					contentElement.style.width = currentWidth + 'px';
 
-	const oneBookContent = document.querySelector('.one-book-content')
-	const oneBookTitle = document.querySelector('.one-book-title')
+					if (currentWidth <= targetWidth) {
+						contentElement.style.width = targetWidth + 'px';
+						clearInterval(decrease);
+					}
+					if (targetWidth == 0) {
+						bookTitle[i].parentElement.querySelector('.book-content').classList.remove('book-open');
+						// contentElement.style.width = '' with a settimeout of 1s
+						setTimeout(function () {
+							contentElement.style.width = '';
+						}, 1000);
 
+					}
 
-	const twoBookContent = document.querySelector('.two-book-content')
-	const twoBookTitle = document.querySelector('.two-book-title')
+				}, duration / steps);
 
+			} else {
+				for (let i = 0; i < bookTitle.length; i++) {
+					if (bookTitle[i].parentElement.querySelector('.book-content').classList.contains('book-open')) {
+						// decrease width of book content from 100% to 0. using settimeout. the whole process lasts 1s
+						const contentElement = bookTitle[i].parentElement.querySelector('.book-content');
+						const initialWidth = contentElement.clientWidth; // Get the initial width in pixels
+						const targetWidth = 0;
+						const duration = 500; // Animation duration in milliseconds
+						const steps = 50; // Number of steps for the animation
 
-	const threeBookContent = document.querySelector('.three-book-content')
-	const threeBookTitle = document.querySelector('.three-book-title')
+						const widthDecrease = (initialWidth - targetWidth) / steps;
+						let currentWidth = initialWidth;
 
+						const decrease = setInterval(function () {
+							currentWidth -= widthDecrease;
+							contentElement.style.width = currentWidth + 'px';
 
-	const fourBookContent = document.querySelector('.four-book-content')
-	const fourBookTitle = document.querySelector('.four-book-title')
+							if (currentWidth <= targetWidth) {
+								contentElement.style.width = targetWidth + 'px';
+								clearInterval(decrease);
+							}
+							if (targetWidth == 0) {
+								bookTitle[i].parentElement.querySelector('.book-content').classList.remove('book-open');
+								// contentElement.style.width = '' with a settimeout of 1s
+								setTimeout(function () {
+									contentElement.style.width = '';
+								}, 1000);
 
+							}
 
-	const fiveBookContent = document.querySelector('.five-book-content')
-	const fiveBookTitle = document.querySelector('.five-book-title')
+						}, duration / steps);
+					}
+				}
 
-
-	const sixBookContent = document.querySelector('.six-book-content')
-	const sixBookTitle = document.querySelector('.six-book-title')
-
-
-	const sevenBookContent = document.querySelector('.seven-book-content')
-	const sevenBookTitle = document.querySelector('.seven-book-title')
-
-
-	const eightBookContent = document.querySelector('.eight-book-content')
-	const eightBookTitle = document.querySelector('.eight-book-title')
-
-
-	const nineBookContent = document.querySelector('.nine-book-content')
-	const nineBookTitle = document.querySelector('.nine-book-title')
-
-
-
-	oneBookTitle.addEventListener('click', function () {
-		oneBookContent.classList.toggle('book-open');
-	});
-	twoBookTitle.addEventListener('click', function () {
-		twoBookContent.classList.toggle('book-open');
-	});
-	threeBookTitle.addEventListener('click', function () {
-		threeBookContent.classList.toggle('book-open');
-	});
-	fourBookTitle.addEventListener('click', function () {
-		fourBookContent.classList.toggle('book-open');
-	});
-	fiveBookTitle.addEventListener('click', function () {
-		fiveBookContent.classList.toggle('book-open');
-	});
-	sixBookTitle.addEventListener('click', function () {
-		sixBookContent.classList.toggle('book-open');
-	});
-	sevenBookTitle.addEventListener('click', function () {
-		sevenBookContent.classList.toggle('book-open');
-	});
-	eightBookTitle.addEventListener('click', function () {
-		eightBookContent.classList.toggle('book-open');
-	});
-	nineBookTitle.addEventListener('click', function () {
-		nineBookContent.classList.toggle('book-open');
-	});
-
-	
-
-
+				this.parentElement.querySelector('.book-content').classList.add('book-open');
+			}
+		});
+	}
 });

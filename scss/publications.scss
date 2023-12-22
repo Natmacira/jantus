@@ -105,9 +105,55 @@ body {
 		}
 
 		section.library {
-			@media (min-width:1200px) {
-				transform: rotate(90deg); /* Gira el bloque 90 grados a la derecha */
-				max-width: 100vh;
+			@media (min-width: 1200px) {
+				// transform: rotate(90deg); /* Gira el bloque 90 grados a la derecha */
+				// max-width: 100vh;
+				height: auto;
+				display: flex;
+				justify-content: right;
+
+				article.library-inner-element {
+					// width: 50px;
+					height: 400px;
+					display: flex;
+
+					div.book-content {
+						width: 0;
+						height: auto;
+						transition: none;
+
+						&.book-open {
+							width: 100%;
+							height: auto;
+							border-bottom: solid 1px;
+							transition: 1s ease all;
+						}
+
+					}
+
+					div.book-title {
+						border-bottom: solid 1px;
+						cursor: pointer;
+
+						p {
+							writing-mode: vertical-rl;
+							position: relative;
+							padding-top: 70px;
+							width: 40px;
+							line-height: 40px;
+
+							span {
+								writing-mode: horizontal-tb;
+								display: block;
+								position: absolute;
+								top: 0;
+								width: 40px;
+								left: 0;
+								text-align: center;
+							}
+						}
+					}
+				}
 			}
 		}
 	}

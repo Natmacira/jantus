@@ -13,9 +13,11 @@ window.addEventListener('load', function () {
 
 	const switchBtn = document.querySelector('.switch-btn')
 
-	switchBtn.addEventListener('click', function () {
-		document.body.classList.toggle('solo-mode');
-	});
+	if ( switchBtn ) {
+		switchBtn.addEventListener('click', function () {
+			document.body.classList.toggle('solo-mode');
+		});
+	}
 
 	// functionality to open galery buton
 
@@ -40,10 +42,13 @@ window.addEventListener('load', function () {
 		});
 
 	}
-	closeJapan.addEventListener('click', function () {
-		document.body.classList.toggle('modal-japan-open');
-		document.body.classList.remove('galery-open');
-	});
+
+	if ( closeJapan ) {
+		closeJapan.addEventListener('click', function () {
+			document.body.classList.toggle('modal-japan-open');
+			document.body.classList.remove('galery-open');
+		});
+	}
 
 
 	//KR
@@ -57,9 +62,12 @@ window.addEventListener('load', function () {
 		});
 
 	}
-	closeKr.addEventListener('click', function () {
-		document.body.classList.toggle('modal-kr-open');
-	});
+
+	if ( closeKr ) {
+		closeKr.addEventListener('click', function () {
+			document.body.classList.toggle('modal-kr-open');
+		});
+	}
 
 
 	//usa
@@ -70,11 +78,14 @@ window.addEventListener('load', function () {
 			document.body.classList.toggle('modal-usa-open');
 		});
 	}
-	closeUsa.addEventListener('click', function () {
-		document.body.classList.toggle('modal-usa-open');
-		document.body.classList.remove('galery-open');
 
-	});
+	if ( closeUsa ) {
+		closeUsa.addEventListener('click', function () {
+			document.body.classList.toggle('modal-usa-open');
+			document.body.classList.remove('galery-open');
+
+		});
+	}
 
 
 
@@ -87,11 +98,13 @@ window.addEventListener('load', function () {
 			document.body.classList.toggle('modal-br-open');
 		});
 	}
-	closebr.addEventListener('click', function () {
-		document.body.classList.toggle('modal-br-open');
-		document.body.classList.remove('galery-open');
 
-	});
+	if ( closebr ) {
+		closebr.addEventListener('click', function () {
+			document.body.classList.toggle('modal-br-open');
+			document.body.classList.remove('galery-open');
+		});
+	}
 
 
 	//uk
@@ -102,9 +115,12 @@ window.addEventListener('load', function () {
 			document.body.classList.toggle('modal-uk-open');
 		});
 	}
-	closeuk.addEventListener('click', function () {
-		document.body.classList.toggle('modal-uk-open');
-	});
+
+	if ( closeuk ) {
+		closeuk.addEventListener('click', function () {
+			document.body.classList.toggle('modal-uk-open');
+		});
+	}
 
 
 	//arg
@@ -115,13 +131,13 @@ window.addEventListener('load', function () {
 			document.body.classList.toggle('modal-arg-open');
 		});
 	}
-	closearg.addEventListener('click', function () {
-		document.body.classList.toggle('modal-arg-open');
-		document.body.classList.remove('galery-open');
 
-	});
-
-
+	if ( closearg ) {
+		closearg.addEventListener('click', function () {
+			document.body.classList.toggle('modal-arg-open');
+			document.body.classList.remove('galery-open');
+		});
+	}
 
 	//finlandia
 	const mapfinlandia = document.querySelectorAll('.finlandia')
@@ -131,13 +147,13 @@ window.addEventListener('load', function () {
 			document.body.classList.toggle('modal-finlandia-open');
 		});
 	}
-	closefinlandia.addEventListener('click', function () {
-		document.body.classList.toggle('modal-finlandia-open');
-		document.body.classList.remove('galery-open');
 
-	});
-
-
+	if ( closefinlandia ) {
+		closefinlandia.addEventListener('click', function () {
+			document.body.classList.toggle('modal-finlandia-open');
+			document.body.classList.remove('galery-open');
+		});
+	}
 
 	//spain
 	const mapspain = document.querySelectorAll('.spain:not(.solo)')
@@ -147,14 +163,15 @@ window.addEventListener('load', function () {
 			document.body.classList.toggle('modal-spain-open');
 		});
 	}
-	closespain.addEventListener('click', function () {
-		document.body.classList.toggle('modal-spain-open');
 
-	});
+	if ( closespain ) {
+		closespain.addEventListener('click', function () {
+			document.body.classList.toggle('modal-spain-open');
+		});
+	}
 
 	//spain-solo
 	const mapspainSolo = document.querySelectorAll('.spain.solo')
-	console.log(mapspainSolo);
 	const closespainSolo = document.querySelector('.close-spain-solo')
 
 	mapspainSolo.forEach(function (element) {
@@ -163,11 +180,13 @@ window.addEventListener('load', function () {
 			document.body.classList.remove('modal-spain-open');
 		});
 	});
-	closespainSolo.addEventListener('click', function () {
-		document.body.classList.toggle('modal-spain-solo-open');
-		document.body.classList.remove('galery-open');
 
-	});
+	if ( closespainSolo ) {
+		closespainSolo.addEventListener('click', function () {
+			document.body.classList.toggle('modal-spain-solo-open');
+			document.body.classList.remove('galery-open');
+		});
+	}
 
 
 	//usa-solo
@@ -181,11 +200,12 @@ window.addEventListener('load', function () {
 		});
 	});
 
-	closeUsaSolo.addEventListener('click', function () {
-		document.body.classList.toggle('modal-usa-solo-open');
-		document.body.classList.remove('galery-open');
-
-	});
+	if ( closeUsaSolo ) {
+		closeUsaSolo.addEventListener('click', function () {
+			document.body.classList.toggle('modal-usa-solo-open');
+			document.body.classList.remove('galery-open');
+		});
+	}
 
 
 
