@@ -1074,9 +1074,66 @@ body.page-exhibitions {
 					}
 					.modal-info {
 						.modal-manipulating-container-info {
-								top: -374px;
+							top: -374px;
 						}
+					}
 				}
+			}
+			.modal-finlandia {
+				@media (min-width: 1200px) {
+					.modal-youtube {
+						@media (min-width: 1200px) {
+							top: 0;
+							left: 0;
+							img {
+								top: 0;
+								left: auto;
+							}
+						}
+					}
+					.modal-info {
+						.modal-manipulating-container-info {
+							top: -374px;
+						}
+					}
+				}
+			}
+			.modal-usa-solo {
+				.modal-youtube {
+					img {
+						@media (min-width: 1200px) {
+							top: 0;
+							left: auto;
+						}
+					}
+				}
+				.modal-info {
+					.modal-manipulating-container-info {
+						@media (min-width: 1200px) {
+							top: -350px;
+						}
+					}
+				}
+			}
+			.modal-spain-solo {
+				.modal-youtube {
+					@media (min-width: 1200px) {
+						top: 67px;
+						left: auto;
+					}
+					img {
+						@media (min-width: 1200px) {
+							top: 0;
+							left: auto;
+						}
+					}
+				}
+				.modal-info {
+					.modal-manipulating-container-info {
+						@media (min-width: 1200px) {
+							top: -350px;
+						}
+					}
 				}
 			}
 		}
