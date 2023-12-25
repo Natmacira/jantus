@@ -29,6 +29,7 @@ body.page-home {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		position: fixed;
 		div.media-div {
 			display: block;
 			ul.ul-mail {
@@ -51,9 +52,6 @@ body.page-home {
 					}
 				}
 			}
-		}
-		@media (min-width: 1200px) {
-			position: fixed;
 		}
 	}
 }
