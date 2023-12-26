@@ -14,25 +14,49 @@ body.page-clothes {
             height: 420px;
             margin: 0 auto;
             margin-bottom: 60px;
-            p {
-                font-size: 32px;
-                padding-top: 24px;
-                text-align: center;
-            }
-            img.painting-img.wp-post-image,
-            img.cloth-img.wp-post-image  {
-                width: 100%;
-            }
+
             @media (min-width: 1200px) {
                 filter: blur(1.5rem);
             }
+
+            a {
+                display: block;
+                width: 100%;
+                padding-top: calc(100% + 80px);
+                position: relative;
+                overflow: hidden;
+                
+                p {
+                    font-size: 32px;
+                    padding-top: 24px;
+                    text-align: center;
+
+                    position: absolute;
+                    bottom: 25px;
+                    width: 100%;
+                }
+
+                img.painting-img.wp-post-image,
+                img.cloth-img.wp-post-image {
+                    width: 100%;
+
+                    position: absolute;
+                    top: 0;
+                    left: 50%;
+                    width: auto;
+                    max-width: none;
+                    margin: auto;
+                    transform: translateX(-50%);
+                    height: calc(100% - 80px);
+                }
+            }
         }
+
         section.card-product:hover {
             @media (min-width: 1200px) {
                 filter: blur(0);
             }
         }
-
 
         div.cards-inner-container {
             @media (min-width: 1200px) {

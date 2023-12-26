@@ -5,10 +5,71 @@
 body.single {
     main {
         section.section-product {
+            @media (min-width: 1200px) {
+                position: relative;
+
+                article.zoom-in {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 340px;
+                    padding: 10px;
+                }
+            }
+
             img {
                 width: 100%;
             }
+
             article {
+                &:first-child {
+                    width: 100%;
+                    position: relative;
+                    height: 0;
+                    padding-top: 100%;
+                    overflow: hidden;
+
+                    @media (min-width: 1200px) {
+                        position: static;
+                        height: auto;
+                        padding-top: 0;
+                        overflow: auto;
+
+                        max-height: 70vh;
+                        position: relative;
+                        height: 0;
+                        padding-bottom: 70vh;
+                        overflow: hidden;
+                    }
+
+                    img {
+                        position: absolute;
+                        top: 0;
+                        left: 50%;
+                        width: auto;
+                        max-width: none;
+                        margin: auto;
+                        transform: translateX(-50%);
+                        height: calc(100% - 80px);
+
+                        @media (min-width: 1200px) {
+                            position: static;
+                            top: auto;
+                            left: auto;
+                            width: 100%;
+                            max-width: 100%;
+                            transform: none;
+                            height: auto;
+
+                            position: absolute;
+                            height: 100%;
+                            width: auto;
+                            left: 50%;
+                            transform: translateX(-50%);
+                        }
+                    }
+                }
+
                 button {
                     padding: 24px 0 40px;
                     margin: 0 auto;
@@ -48,9 +109,12 @@ body.single {
                     }
                 }
                 @media (min-width: 1200px) {
-                    min-width: 460px;
-                    padding-right: 100px;
+                    // min-width: 460px;
+                    // padding-right: 100px;
                     margin-bottom: 81px;
+                    width: 340px;
+                    min-width: 340px;
+                    padding-right: 10px;
                 }
             }
             @media (min-width: 1200px) {
@@ -72,6 +136,7 @@ body.single {
     }
 }
 body.single.zoom-in-open {
+    overflow: hidden;
     main {
         section.section-product {
             article {
@@ -85,12 +150,14 @@ body.single.zoom-in-open {
                     width: 100%;
                     max-width: none;
                     max-height: none;
+                    z-index: 2;
+
                     img {
                         min-width: 100%;
                         min-height: 100%;
                         width: auto;
                         height: auto;
-                        max-width: none;
+                        max-width: 2500px;
                         max-height: none;
                         position: absolute;
                         display: block; /* Elimina el espacio adicional debajo de la imagen */
@@ -102,17 +169,29 @@ body.single.zoom-in-open {
     }
 
     p.exit {
+        cursor: pointer;
         z-index: 5;
         position: fixed;
+        z-index: 3;
         /* bottom: 0; */
         color: white;
         text-decoration: underline;
         font-size: 32px;
-        top: 550px;
-        left: 50%;
-        right: 0;
-        margin: auto;
-        transform: translateX(-19%);
+        // top: 550px;
+        // left: 50%;
+        // right: 0;
+        // margin: auto;
+        // transform: translateX(-19%);
+        // @media (min-width: 1200px) {
+            width: 100px;
+            transform: none;
+            left: 0;
+            right: 0;
+            margin: auto;
+            text-align: center;
+            text-shadow: -1px 2px 3px black;
+            bottom: 50px;
+        // }
     }
 
     footer {
