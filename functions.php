@@ -9,7 +9,7 @@
  */
 
 if (!defined('JANTUS_VERSION')) {
-	define('JANTUS_VERSION', '1.0.2');
+	define('JANTUS_VERSION', '1.0.3');
 }
 
 function jantus_enqueue_scripts() {

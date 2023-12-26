@@ -21,7 +21,7 @@ body.single {
                 width: 100%;
             }
 
-            article {
+            > article {
                 &:first-child {
                     width: 100%;
                     position: relative;

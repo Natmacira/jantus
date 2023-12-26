@@ -18,7 +18,7 @@ foreach ($query->posts as $painting) {
     <section class="card-product">
         <article>
             <a href="<?php echo get_permalink($painting->ID) ?>">
-                <?php echo get_the_post_thumbnail($painting->ID, 'thumbnail', array('class' => 'painting-img'));
+                <?php echo get_the_post_thumbnail($painting->ID, 'full', array('class' => 'painting-img'));
                 ?>
                 <p> <?php echo esc_html($painting->post_title); ?> </p>
 

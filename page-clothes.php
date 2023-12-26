@@ -19,7 +19,7 @@ foreach ($query->posts as $cloth) {
     <section class="card-product">
         <article>
             <a href="<?php echo get_permalink($cloth->ID) ?>">
-                <?php echo get_the_post_thumbnail($cloth->ID, 'thumbnail', array('class' => 'cloth-img'));
+                <?php echo get_the_post_thumbnail($cloth->ID, 'full', array('class' => 'cloth-img'));
                 ?>
                 <p> <?php echo esc_html($cloth->post_title); ?> </p>
 

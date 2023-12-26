@@ -9,13 +9,13 @@ while (have_posts()) {
     <section class="section-product">
         <article>
             <?php
-            echo get_the_post_thumbnail(get_the_ID(), 'thumbnail', array('class' => 'cloth-img'));
+            echo get_the_post_thumbnail(get_the_ID(), 'full', array('class' => 'cloth-img'));
             ?>
         </article>
         <article class="zoom-in">
             <button>ZOOM IN</button>
             <div class="container-zoom-in">
-                <?php the_post_thumbnail('thumbnail', array('class' => 'zoomed-img')); ?>
+                <?php the_post_thumbnail('full', array('class' => 'zoomed-img')); ?>
                 <p class="exit">EXIT</p>
             </div>
         </article>

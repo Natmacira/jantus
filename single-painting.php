@@ -17,12 +17,12 @@ while (have_posts()) {
 
     <section class="section-product">
         <article>
-            <?php the_post_thumbnail('thumbnail', array('class' => 'painting-img')); ?>
+            <?php the_post_thumbnail('full', array('class' => 'painting-img')); ?>
         </article>
         <article class="zoom-in">
             <button>ZOOM IN</button>
             <div class="container-zoom-in">
-                <?php the_post_thumbnail('thumbnail', array('class' => 'zoomed-img')); ?>
+                <?php the_post_thumbnail('full', array('class' => 'zoomed-img')); ?>
                 <p class="exit">EXIT</p>
             </div>
         </article>
