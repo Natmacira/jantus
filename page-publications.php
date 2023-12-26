@@ -7,6 +7,9 @@ require_once 'header.php';
 
 
 <section class="library">
+    <!-- <div> -->
+        <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/book-publication.svg'); ?>" alt="Book Publications" class="book-publications">
+    <!-- </div> -->
     <article class="library-inner-element">
         <div class="book-content one-book-content">
             <div class="titles-inner-container">

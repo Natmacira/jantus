@@ -1,4 +1,22 @@
 window.addEventListener('load', function () {
+	//functionality for zoom in
+	
+	const zoomIn = document.querySelector('.zoom-in')
+	const zoomInExit = document.querySelector('.exit')
+
+	console.log(zoomIn);
+	if ( zoomIn ) {
+		zoomIn.addEventListener('click', function () {
+			document.body.classList.add('zoom-in-open');
+		});
+	}
+	if ( zoomInExit ) {
+		zoomIn.addEventListener('click', function () {
+			document.body.classList.remove('zoom-in-open');
+		});
+	}
+	console.log('hola');
+
 	//functionality for submenu work
 
 	const openWorkMenu = document.querySelector('.work-open')
