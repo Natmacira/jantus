@@ -12,6 +12,13 @@ while (have_posts()) {
             echo get_the_post_thumbnail(get_the_ID(), 'thumbnail', array('class' => 'cloth-img'));
             ?>
         </article>
+        <article class="zoom-in">
+            <button>ZOOM IN</button>
+            <div class="container-zoom-in">
+                <?php the_post_thumbnail('thumbnail', array('class' => 'zoomed-img')); ?>
+                <p class="exit">EXIT</p>
+            </div>
+        </article>
         <div class="inner-data-container">
             <article>
                 <p>Author:</p>
