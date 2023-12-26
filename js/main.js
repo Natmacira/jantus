@@ -11,11 +11,12 @@ window.addEventListener('load', function () {
 		});
 	}
 	if ( zoomInExit ) {
-		zoomIn.addEventListener('click', function () {
+		zoomInExit.addEventListener('click', function ( e ) {
 			document.body.classList.remove('zoom-in-open');
+			console.log('hola');
+			e.stopPropagation();
 		});
 	}
-	console.log('hola');
 
 	//functionality for submenu work
 

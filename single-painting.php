@@ -19,8 +19,8 @@ while (have_posts()) {
         <article>
             <?php the_post_thumbnail('thumbnail', array('class' => 'painting-img')); ?>
         </article>
-        <article>
-            <button class="zoom-in">ZOOM IN</a>
+        <article class="zoom-in">
+            <button>ZOOM IN</button>
             <div class="container-zoom-in">
                 <?php the_post_thumbnail('thumbnail', array('class' => 'zoomed-img')); ?>
                 <p class="exit">EXIT</p>

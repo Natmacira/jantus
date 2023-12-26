@@ -1,3 +1,20 @@
+
+/* Ocultar la barra de desplazamiento visual */
+// body {
+//   scrollbar-width: thin; /* Para navegadores que admiten el estándar */
+//   scrollbar-color: transparent transparent; /* Para navegadores que admiten el estándar */
+//   overflow-y: scroll; /* Hace que el contenedor tenga una barra de desplazamiento vertical siempre visible */
+// }
+
+// /* Estilo para la barra de desplazamiento en navegadores que admiten el estándar */
+// body::-webkit-scrollbar {
+//   width: 0; /* Ancho de la barra de desplazamiento */
+// }
+
+// body::-webkit-scrollbar-thumb {
+//   background-color: transparent; /* Color del área visible de la barra de desplazamiento */
+// }
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
