@@ -5,6 +5,9 @@
 body.page-home {
     margin: 0;
     overflow: hidden;
+    main {
+        min-height: 800px;
+    }
     cursor: pointer;
     h1 {
         position: relative;
@@ -37,5 +40,18 @@ body.page-home {
         &#reboteImg {
             width: 240px;
         }
+    }
+
+    cursor: none;
+
+    .cursor-text {
+        position: fixed;
+        font-size: 18px;
+        font-weight: bold;
+        pointer-events: none;
+        user-select: none;
+        transform: translate(-50%, -50%);
+        white-space: nowrap;
+        z-index: 40;
     }
 }

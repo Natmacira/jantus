@@ -39,7 +39,7 @@
 <body class="<?php echo $body_class ?>">
 	<header>
 		<section class="titles">
-			<h1>Cutre Lux Jantus</h1>
+			<h1>Cutre Luxor Jantus</h1>
 			<?php
 			$post_type = get_post_type(); // Obtiene el nombre del tipo de entrada personalizada del post actual
 			$post_type_object = get_post_type_object($post_type); // Obtiene el objeto del tipo de entrada personalizada

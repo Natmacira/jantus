@@ -31,7 +31,6 @@
 		<ul class="ul-social">
 			<li><a href="https://opensea.io/JANTUS" target="_blank"><img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/home/item-opensee.svg'); ?>" alt=""></a></li>
 			<li><a href="https://www.youtube.com/channel/UCJ9e4sO1nlxais79BWPRJ7g" target="_blank"><img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/home/item-youtube.svg'); ?>" alt=""></a></li>
-			<li><a href="https://www.instagram.com/jantus_" target="_blank"><img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/home/item-instagram.svg'); ?>" alt=""></a></li>
 			<li><a href="https://twitter.com/jantus_art" target="_blank"><img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/home/item-twiter.svg'); ?>" alt=""></a></li>
 		</ul>
 	</div>

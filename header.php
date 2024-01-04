@@ -37,7 +37,7 @@ global $body_class;
 <body class="<?php echo $body_class ?>">
 	<header>
 		<section class="titles">
-			<a href="<?php bloginfo('url'); ?>"><h1>Cutre Lux Jantus</h1></a>
+			<a href="<?php bloginfo('url'); ?>"><h1>Cutre Luxor Jantus</h1></a>
 			<h2><?php echo esc_html(get_the_title()); ?></h2>
 		</section>
 		<section class="back-btn"><a href="javascript:history.back()"><img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/iconos/Atras.svg'); ?>" alt="Botón para volver atrás"></a></section>
