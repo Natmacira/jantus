@@ -125,7 +125,7 @@ require_once 'header.php';
                     <div class="modal-inner-info">
                         <span>Tokyo International Art Fair 2018</span>
                         <strong>Bellesalle Ropong</strong>
-                        <p>Tokio, Japan.</p>
+                        <p>Tokyo, Japan.</p>
                         <p>/ 2018</p>
                     </div>
                 </div>
@@ -173,7 +173,7 @@ require_once 'header.php';
 
                         <!-- SLIDE 3 -->
                         <article class="swiper-slide">
-                            <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/galeria/EXUSA03.jpg'); ?>" alt="">
+                            <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/galeria/EXUSA01.jpg'); ?>" alt="">
                         </article>
                     </div>
                     <div class="swiper-pagination"></div>
@@ -185,25 +185,25 @@ require_once 'header.php';
                     <div class="modal-inner-info">
                         <span>Art Lab (Tucker Eason)</span>
                         <strong></strong>
-                        <p>Nueva York, USA.</p>
+                        <p>New York, USA.</p>
                         <p>/ 2018</p>
                     </div>
                     <div class="modal-inner-info">
                         <span>Greenpoint Gallery</span>
                         <strong></strong>
-                        <p>Nueva York, USA.</p>
+                        <p>New York, USA.</p>
                         <p>/ 2018</p>
                     </div>
                     <div class="modal-inner-info">
                         <span>ArtExpo New York</span>
                         <strong>Pier 95</strong>
-                        <p>Nueva York, USA.</p>
+                        <p>New York, USA.</p>
                         <p>/ 2018</p>
                     </div>
                     <div class="modal-inner-info">
                         <span>30 Under 30</span>
                         <strong>Viridian Artists</strong>
-                        <p>Nueva York, USA.</p>
+                        <p>New York, USA.</p>
                         <p>/ 2018</p>
                     </div>
                 </div>
@@ -224,7 +224,11 @@ require_once 'header.php';
                     <div class="swiper-wrapper">
                         <!-- SLIDE 1 -->
                         <article class="swiper-slide">
-                        <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/galeria/EXUSA03.jpg'); ?>" alt="">
+                            <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/galeria/EXUSA03.jpg'); ?>" alt="">
+                        </article>
+                        <!-- SLIDE 2 -->
+                        <article class="swiper-slide">
+                            <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/galeria/EXUSA03.jpg'); ?>" alt="">
                         </article>
                     </div>
                     <div class="swiper-pagination"></div>
@@ -237,7 +241,7 @@ require_once 'header.php';
                     <div class="modal-inner-info">
                         <span>L´enfant Brut</span>
                         <strong>Chashama</strong>
-                        <p>Nueva York, USA.</p>
+                        <p>New York, USA.</p>
                         <p>/ 2018</p>
                     </div>
                 </div>
@@ -266,7 +270,7 @@ require_once 'header.php';
 
                         <!-- SLIDE 2 -->
                         <article class="swiper-slide">
-                            <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/galeria/EXARG03.jpg'); ?>" alt="">
+                            <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/galeria/EXBRA03.jpg'); ?>" alt="">
                         </article>
                     </div>
                     <div class="swiper-pagination"></div>
@@ -488,11 +492,11 @@ require_once 'header.php';
                 <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/youtube-player.svg'); ?>" alt="click to open galery" class="img-open-galery">
                 <p>WATCH SOME OF <br>
                     MY MEMORIES</p>
-                    <section class="swiper generic-swiper">
+                <section class="swiper generic-swiper">
                     <div class="swiper-wrapper">
                         <!-- SLIDE 1 -->
                         <article class="swiper-slide">
-                        <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/galeria/EXFIN01.jpg'); ?>" alt="">
+                            <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/mapas/galeria/EXSP01.jpg'); ?>" alt="">
                         </article>
                     </div>
                     <div class="swiper-pagination"></div>
