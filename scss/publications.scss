@@ -18,6 +18,7 @@ body {
 
 			@media (min-width: 1200px) {
 				display: block;
+				height: 525px;
 			}
 		}
 
@@ -120,7 +121,7 @@ body {
 				display: flex;
 				justify-content: right;
 				min-height: 600px;
-
+				align-items: flex-end;
 				article.library-inner-element {
 					// width: 50px;
 					height: 600px;
@@ -136,6 +137,10 @@ body {
 							height: auto;
 							border-bottom: solid 1px;
 							transition: 1s ease all;
+							@media (min-width: 1200px) {
+							overflow: auto;
+							}
+
 						}
 					}
 

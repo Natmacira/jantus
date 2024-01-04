@@ -5,6 +5,9 @@ footer {
 	bottom: 0;
 	width: 100%;
 	padding: 15px 40px 40px;
+	.logo-x {
+		width: 14px;
+	}
 	ul {
 		padding-top: 0;
 		padding-right: 0;
@@ -86,5 +89,8 @@ body.page-publications {
 	footer {
 	position: relative;
 	margin-top: 40px;
+	@media (min-width: 1200px) {
+		position: fixed;
+	}
 	}
 }
