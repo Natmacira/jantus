@@ -88,113 +88,63 @@ require_once 'header.php';
                 </p>
             </div>
         </div>
-        <div class="book-title two-book-title">
+        <div class="book-title three-book-title">
             <p><span>18</span> Flamantes #13</p>
         </div>
     </article>
 
-
     <article class="library-inner-element">
         <div class="book-content four-book-content">
             <div class="titles-inner-container">
-                <h3>LA RADIO BARCELONA</h3>
-                <span>full interview</span>
+                <h3>Chasama</h3>
             </div>
-            <div class="iframe-container">
-                <iframe src="" frameborder="0"></iframe>
+            <div class="info-book-inner-container">
+            <p>Web: <br>
+                    <a href="https://chashama.org/event/lenfant-brut/" target="_blank"> https://chashama.org/event/lenfant-brut/</a>
+                </p>
+                <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/publications/Chashama_Jantus.png'); ?>" alt="Portada del sitio web donde se presenta la obra de arte." class="portada">
             </div>
-            <p>BARCELONA. <br> 2018</p>
         </div>
         <div class="book-title four-book-title">
-            <p><span>18</span>artsy</p>
+            <p><span>19</span>Chasama</p>
         </div>
     </article>
-
-
     <article class="library-inner-element">
         <div class="book-content five-book-content">
             <div class="titles-inner-container">
-                <h3>LA RADIO BARCELONA</h3>
-                <span>full interview</span>
+                <h3>Murze Magazine</h3>
             </div>
-            <div class="iframe-container">
-                <iframe src="" frameborder="0"></iframe>
+            <div class="info-book-inner-container">
+                <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/publications/Murze.jpg'); ?>" alt="Portada del sitio web donde se presenta la obra de arte." class="portada">
+
+                <p class="pdf-link"><a href="https://drive.google.com/file/d/1kbRyb_9E4Ie-CfV3YQqnXfU1WRV1SvnS/view?usp=drive_link" target="_blank">PDF LINK</a></p>
+
             </div>
-            <p>BARCELONA. <br> 2018</p>
         </div>
         <div class="book-title five-book-title">
-            <p><span>19</span> ARTQOL</p>
+            <p><span>19</span>Murze Magazine</p>
         </div>
     </article>
-
 
     <article class="library-inner-element">
         <div class="book-content six-book-content">
             <div class="titles-inner-container">
-                <h3>LA RADIO BARCELONA</h3>
-                <span>full interview</span>
+                <h3>BL8D #2</h3>
             </div>
-            <div class="iframe-container">
-                <iframe src="" frameborder="0"></iframe>
+            <div class="info-book-inner-container">
+                <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/publications/bl8d-1.jpg'); ?>" alt="Portada del sitio web donde se presenta la obra de arte." class="portada">
+                <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/publications/bl8d-2.jpg'); ?>" alt="Portada del sitio web donde se presenta la obra de arte." class="portada">
+                <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/publications/bl8d-3.jpg'); ?>" alt="Portada del sitio web donde se presenta la obra de arte." class="portada">
+                <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/publications/bl8d-4.jpg'); ?>" alt="Portada del sitio web donde se presenta la obra de arte." class="portada">
             </div>
-            <p>BARCELONA. <br> 2018</p>
         </div>
         <div class="book-title six-book-title">
-            <p><span>18</span>Kirjasta-kirjaan</p>
+            <p><span>23</span>BL8D #2</p>
         </div>
     </article>
 
 
-    <article class="library-inner-element">
-        <div class="book-content seven-book-content">
-            <div class="titles-inner-container">
-                <h3>LA RADIO BARCELONA</h3>
-                <span>full interview</span>
-            </div>
-            <div class="iframe-container">
-                <iframe src="" frameborder="0"></iframe>
-            </div>
-            <p>BARCELONA. <br> 2018</p>
-        </div>
-        <div class="book-title seven-book-title">
-            <p><span>21</span>diffuse reality </p>
-        </div>
-    </article>
-
-
-    <article class="library-inner-element">
-        <div class="book-content eight-book-content">
-            <div class="titles-inner-container">
-                <h3>LA RADIO BARCELONA</h3>
-                <span>full interview</span>
-            </div>
-            <div class="iframe-container">
-                <iframe src="" frameborder="0"></iframe>
-            </div>
-            <p>BARCELONA. <br> 2018</p>
-        </div>
-        <div class="book-title eight-book-title">
-            <p><span>19</span>chasama </p>
-        </div>
-    </article>
-
-
-    <article class="library-inner-element">
-        <div class="book-content nine-book-content">
-            <div class="titles-inner-container">
-                <h3>LA RADIO BARCELONA</h3>
-                <span>full interview</span>
-            </div>
-            <div class="iframe-container">
-                <iframe src="" frameborder="0"></iframe>
-            </div>
-            <p>BARCELONA. <br> 2018</p>
-        </div>
-        <div class="book-title nine-book-title">
-            <p><span>18</span>flamantes #12</p>
-        </div>
-    </article>
-</section>
+    
 
 <?php
 
