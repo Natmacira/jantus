@@ -17,7 +17,7 @@ require_once 'header.php';
             </div>
             <div class="info-book-inner-container">
                 <p>Web: <br>
-                    <a href="https://www.bonart.cat/ca"> https://www.bonart.cat/ca</a>
+                    <a href="https://www.bonart.cat/ca" target="_blank"> https://www.bonart.cat/ca</a>
                 </p>
                 <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/publications/1_Bonart_Jantus.png'); ?>" alt="Portada del sitio web donde se presenta la obra de arte." class="portada">
 
@@ -27,16 +27,16 @@ require_once 'header.php';
                 <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/publications/2_Bonart_Jantus.png'); ?>" alt="Portada del sitio web donde se presenta la obra de arte." class="portada">
                 <p> Bonart 2 Jantus y Rose Madone:
                     <br>
-                    <a href="https://bit.ly/Bonart_JantusRoseMadone"> https://bit.ly/Bonart_JantusRoseMadone </a>
+                    <a href="https://bit.ly/Bonart_JantusRoseMadone" target="_blank"> https://bit.ly/Bonart_JantusRoseMadone </a>
                 </p>
                 <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/publications/3_Bonart_Jantus.png'); ?>" alt="Portada del sitio web donde se presenta la obra de arte." class="portada">
                 <p> Bonart 3:
                     <br>
-                    <a href="https://bit.ly/Bonart_Jantus_Fundació_Claret"> https://bit.ly/Bonart_Jantus_Fundació_Claret </a>
+                    <a href="https://bit.ly/Bonart_Jantus_Fundació_Claret" target="_blank"> https://bit.ly/Bonart_Jantus_Fundació_Claret </a>
                 </p>
                 <p> Bonart 4:
                     <br>
-                    <a href="https://bit.ly/Bonart_Jantus_Amuleto"> https://bit.ly/Bonart_Jantus_Amuleto </a>
+                    <a href="https://bit.ly/Bonart_Jantus_Amuleto" target="_blank"> https://bit.ly/Bonart_Jantus_Amuleto </a>
                 </p>
             </div>
         </div>
@@ -53,14 +53,14 @@ require_once 'header.php';
             </div>
             <div class="info-book-inner-container">
                 <p>Web: <br>
-                    <a href="https://bit.ly/Flamantes12_Jantus"> https://bit.ly/Flamantes12_Jantus</a>
+                    <a href="https://bit.ly/Flamantes12_Jantus" target="_blank"> https://bit.ly/Flamantes12_Jantus</a>
                 </p>
                 <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/publications/flamantes.jpg'); ?>" alt="Portada del sitio web donde se presenta la obra de arte." class="portada">
 
-                <p class="pdf-link"><a href="https://drive.google.com/file/d/13fmAJ_TtMZ35fl_z46pp2GvAm3MB28DM/view?usp=drive_link">PDF LINK</a></p>
+                <p class="pdf-link"><a href="https://drive.google.com/file/d/13fmAJ_TtMZ35fl_z46pp2GvAm3MB28DM/view?usp=drive_link" target="_blank">PDF LINK</a></p>
 
                 <p>Video: <br>
-                    <a href="https://bit.ly/Video_Flamantes12_Lectura"> https://bit.ly/Video_Flamantes12_Lectura</a>
+                    <a href="https://bit.ly/Video_Flamantes12_Lectura" target="_blank"> https://bit.ly/Video_Flamantes12_Lectura</a>
                 </p>
             </div>
         </div>
@@ -73,16 +73,23 @@ require_once 'header.php';
     <article class="library-inner-element">
         <div class="book-content three-book-content">
             <div class="titles-inner-container">
-                <h3>LA RADIO <br> BARCELONA</h3>
-                <span>full interview</span>
+                <h3>Flamantes #13</h3>
             </div>
-            <div class="iframe-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/Ya-qrLbSLAc?si=PQhRmsf0kZB6THp9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="info-book-inner-container">
+                <p>Web: <br>
+                    <a href="https://bit.ly/Flamantes_13_Web" target="_blank"> https://bit.ly/Flamantes_13_Web</a>
+                </p>
+                <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/publications/flamantes_13.jpg'); ?>" alt="Portada del sitio web donde se presenta la obra de arte." class="portada">
+
+                <p class="pdf-link"><a href="https://drive.google.com/file/d/1bgEg8hhjTM4gdyOk2vm0-Z4p97MjUQ35/view?usp=drive_link" target="_blank">PDF LINK</a></p>
+
+                <p>Video: <br>
+                    <a href="https://bit.ly/Flamantes_13_vide" target="_blank"> https://bit.ly/Flamantes_13_vide</a>
+                </p>
             </div>
-            <p>BARCELONA. <br> 2018</p>
         </div>
-        <div class="book-title three-book-title">
-            <p><span>18</span> LA RADIO BARCELONA</p>
+        <div class="book-title two-book-title">
+            <p><span>18</span> Flamantes #13</p>
         </div>
     </article>
 
