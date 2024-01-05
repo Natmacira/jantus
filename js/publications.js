@@ -5,6 +5,8 @@ window.addEventListener('load', function () {
 
 	for (let i = 0; i < bookTitle.length; i++) {
 		bookTitle[i].addEventListener('click', function () {
+			document.body.classList.toggle('book-body-open');
+
 			if (this.parentElement.querySelector('.book-content').classList.contains('book-open')) {
 				// this.parentElement.querySelector('.book-content').classList.remove('book-open');
 

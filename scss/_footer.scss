@@ -48,7 +48,8 @@ body.page-home {
 				display: flex;
 				align-items: center;
 				justify-content: space-evenly;
-				padding-left: 0; li {
+				padding-left: 0;
+				li {
 					a {
 						img {
 							vertical-align: bottom;
@@ -87,10 +88,16 @@ body.work-open-open {
 
 body.page-publications {
 	footer {
-	position: relative;
-	margin-top: 40px;
-	@media (min-width: 1200px) {
 		position: fixed;
+		margin-top: 40px;
+		@media (min-width: 1200px) {
+			position: fixed;
+		}
 	}
+
+	&.book-body-open {
+		footer {
+			position: relative;
+		}
 	}
 }
