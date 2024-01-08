@@ -32,8 +32,14 @@ body.page-home {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		position: fixed;
+		position: relative;
 		z-index: 20;
+		margin-bottom: 60px;
+		@media (min-width: 1200px) {
+			position: fixed;
+			margin-bottom: 0;
+
+		}
 		div.media-div {
 			display: block;
 			ul.ul-mail {
