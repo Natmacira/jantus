@@ -229,10 +229,8 @@ window.addEventListener('load', function () {
 
 
 
-	// Obtén la lista de elementos de la lista
 	const countryListItems = document.querySelectorAll('.menu-countrys.group-ul li');
 
-	// Agrega eventos a cada elemento de la lista
 	countryListItems.forEach(item => {
 		item.addEventListener('mouseenter', function () {
 			// Obtiene la clase del elemento y la agrega al body

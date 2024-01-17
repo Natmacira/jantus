@@ -34,7 +34,7 @@ window.addEventListener('load', function () {
 			video.src = file.src;
 			video.autoplay = true;
 			video.loop = true;
-			video.muted = true;
+			video.muted = false;
 			video.setAttribute('playsinline', '');
 			nftSection.appendChild(video);
 		}
