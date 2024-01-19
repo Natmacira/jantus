@@ -4,7 +4,6 @@ window.addEventListener('load', function () {
 	const zoomIn = document.querySelector('.zoom-in')
 	const zoomInExit = document.querySelector('.exit')
 
-	console.log(zoomIn);
 	if ( zoomIn ) {
 		zoomIn.addEventListener('click', function () {
 			document.body.classList.add('zoom-in-open');
@@ -13,7 +12,6 @@ window.addEventListener('load', function () {
 	if ( zoomInExit ) {
 		zoomInExit.addEventListener('click', function ( e ) {
 			document.body.classList.remove('zoom-in-open');
-			console.log('hola');
 			e.stopPropagation();
 		});
 	}
