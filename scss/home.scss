@@ -35,7 +35,7 @@ body.page-home {
             padding: 0 20px 40px;
             text-align: center;
             position: relative;
-            z-index: 4;
+            z-index: 48;
             font-size: 14px;
             text-transform: uppercase;
             @media (min-width: 900px) {
@@ -50,6 +50,7 @@ body.page-home {
     img {
         &#reboteImg {
             width: 240px;
+            z-index: 45;
         }
     }
 
@@ -67,12 +68,11 @@ body.page-home {
     }
 
     footer {
-        ul {
+        background: white;
+        z-index: 50;
+        cursor: auto;
+        ul li {
             cursor: pointer;
-            .cursor-text {
-                display: none;
-                position: relative;
-            }
         }
     }
 }

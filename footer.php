@@ -28,11 +28,11 @@
 		<ul class="ul-mail">
 			<li><a href="mailto:jantus@gmail.com">jantus@gmail.com</a></li>
 		</ul>
-		<ul class="ul-social">
+		<!-- <ul class="ul-social">
 			<li><a href="https://opensea.io/JANTUS" target="_blank"><img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/home/item-opensee.svg'); ?>" alt="Link to opensee"></a></li>
 			<li><a href="https://www.youtube.com/channel/UCJ9e4sO1nlxais79BWPRJ7g" target="_blank"><img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/home/item-youtube.svg'); ?>" alt="Link to youtube"></a></li>
 			<li><a href="https://twitter.com/jantus_art" target="_blank"><img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/home/item-twiter.svg'); ?>" alt="Link to twitter" class="logo-x"></a></li>
-		</ul>
+		</ul> -->
 	</div>
 </footer>
 <!-- <?php wp_footer(); ?> -->

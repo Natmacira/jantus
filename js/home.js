@@ -91,10 +91,10 @@ animate();
             document.body.addEventListener('mouseleave', function () {
                 cursorText.style.opacity = 0;
             });
-            // footer ul sin click
+
+            // footer uls sin click
         
-            const menuFooterItems = document.querySelectorAll('.main-menu li');
-            console.log(menuFooterItems);
+            const menuFooterItems = document.querySelectorAll('ul li');
             menuFooterItems.forEach(item => {
                 item.addEventListener('mouseenter', function () {
                     document.body.removeChild(cursorText);
