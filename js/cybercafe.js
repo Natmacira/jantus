@@ -68,9 +68,11 @@ window.addEventListener('load', function () {
 	//Modificaciones visuales
 	const controls = document.querySelector('#controls');
 	// const nftDisplay = document.querySelector('#nft');
-	const layerHue        = document.querySelector('#layer-hue');
+	const layerHue = document.querySelector('#layer-hue');
 	const layerBrightness = document.querySelector('#layer-brightness');
-	const layerBlur       = document.querySelector('#layer-blur');
+	const layerBlur = document.querySelector('#layer-blur');
+	const video = document.querySelector('video'); // 
+
 
 	const changeColor = value => {
 		// nftDisplay.style.filter = `hue-rotate(${value}deg)`;
@@ -87,6 +89,10 @@ window.addEventListener('load', function () {
 		layerBlur.style.filter = `blur(${value}px)`;
 	};
 
+	const changeVolume = value => {
+		video.volume = value;
+	};
+
 	controls.addEventListener('input', e => {
 		const input = e.target.id;
 		const value = e.target.value;
@@ -100,6 +106,9 @@ window.addEventListener('load', function () {
 				break;
 			case 'blur-control':
 				changeBlur(value);
+				break;
+			case 'volume-control':
+				changeVolume(value);
 				break;
 		}
 	});
