@@ -30,7 +30,7 @@ window.addEventListener('load', function () {
 		}
 
 		if (file.type === 'video') {
-			const video = document.createElement('VIDEO');
+			var video = document.createElement('VIDEO');
 			video.src = file.src;
 			video.autoplay = true;
 			video.loop = true;
@@ -71,7 +71,9 @@ window.addEventListener('load', function () {
 	const layerHue = document.querySelector('#layer-hue');
 	const layerBrightness = document.querySelector('#layer-brightness');
 	const layerBlur = document.querySelector('#layer-blur');
-	const video = document.querySelector('video'); // 
+	const video = document.querySelector('video'); 
+	console.log(video);
+	console.log('arriba está el video');
 
 
 	const changeColor = value => {
@@ -91,6 +93,13 @@ window.addEventListener('load', function () {
 
 	const changeVolume = value => {
 		video.volume = value;
+		let videos = document.getElementsByTagName('video');
+		for (let i = 0; i < videos.length; i++) {
+			videos[i].volume = value;
+		}
+		console.log(video);
+		console.log(value);
+		console.log(video.volume);
 	};
 
 	controls.addEventListener('input', e => {
@@ -108,6 +117,7 @@ window.addEventListener('load', function () {
 				changeBlur(value);
 				break;
 			case 'volume-control':
+				
 				changeVolume(value);
 				break;
 		}
