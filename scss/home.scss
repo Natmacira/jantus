@@ -5,20 +5,19 @@
 body.page-home {
     margin: 0;
     overflow: hidden;
-        @media (max-width: 1200px) {
-
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-between;
-            height: 100vh;
-        }
+    @media (max-width: 1200px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 100vh;
+    }
 
     main {
         // min-height: 400px;
         @media (min-width: 1200px) {
             min-height: 600px;
-		}
+        }
     }
     cursor: pointer;
     h1 {
@@ -65,5 +64,15 @@ body.page-home {
         transform: translate(-50%, -50%);
         white-space: nowrap;
         z-index: 40;
+    }
+
+    footer {
+        ul {
+            cursor: pointer;
+            .cursor-text {
+                display: none;
+                position: relative;
+            }
+        }
     }
 }

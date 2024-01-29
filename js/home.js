@@ -2,37 +2,42 @@ window.addEventListener('load', function () {
 
     const bouncingImg = document.getElementById('reboteImg');
 
-    function animate() {
-        let posX = Math.random() * window.innerWidth;
-        let posY = Math.random() * window.innerHeight;
-        let velX = (1 + Math.random() * 2) * (Math.random() > 0.5 ? 1 : -1);
-        let velY = (1 + Math.random() * 2) * (Math.random() > 0.5 ? 1 : -1);
-        console.log(bouncingImg)
-        bouncingImg.style.position = 'absolute';
+function animate() {
+    // Calcula las coordenadas para centrar la imagen
+    let posX = (window.innerWidth - bouncingImg.width) / 2;
+    let posY = (window.innerHeight - bouncingImg.height) / 2;
+
+    let velX = (1 + Math.random() * 2) * (Math.random() > 0.5 ? 1 : -1);
+    let velY = (1 + Math.random() * 2) * (Math.random() > 0.5 ? 1 : -1);
+
+    bouncingImg.style.position = 'absolute';
+    // Asigna las coordenadas centradas como posición inicial
+    bouncingImg.style.left = posX + 'px';
+    bouncingImg.style.top = posY + 'px';
+
+    function update() {
+        posX += velX;
+        posY += velY;
+
+        if (posX + bouncingImg.width > window.innerWidth || posX < 0) {
+            velX = -velX;
+        }
+
+        if (posY + bouncingImg.height > window.innerHeight || posY < 0) {
+            velY = -velY;
+        }
+
         bouncingImg.style.left = posX + 'px';
         bouncingImg.style.top = posY + 'px';
 
-        function update() {
-            posX += velX;
-            posY += velY;
-
-            if (posX + bouncingImg.width > window.innerWidth || posX < 0) {
-                velX = -velX;
-            }
-
-            if (posY + bouncingImg.height > window.innerHeight || posY < 0) {
-                velY = -velY;
-            }
-
-            bouncingImg.style.left = posX + 'px';
-            bouncingImg.style.top = posY + 'px';
-
-            requestAnimationFrame(update);
-        }
-
-        update();
+        requestAnimationFrame(update);
     }
-    animate();
+
+    update();
+}
+
+animate();
+
 
     if (document.body.classList.contains('page-home')) {
         const images = [
@@ -69,7 +74,6 @@ window.addEventListener('load', function () {
     // Verificar si la pantalla es de escritorio (ancho mayor o igual a 1200 px)
     if (window.innerWidth >= 1200) {
         if (document.body.classList.contains('page-home')) {
-            console.log('click-adentro')
             const cursorText = document.createElement('div');
             cursorText.className = 'cursor-text';
             cursorText.textContent = 'CLICK';
@@ -87,7 +91,25 @@ window.addEventListener('load', function () {
             document.body.addEventListener('mouseleave', function () {
                 cursorText.style.opacity = 0;
             });
+            // footer ul sin click
+        
+            const menuFooterItems = document.querySelectorAll('.main-menu li');
+            console.log(menuFooterItems);
+            menuFooterItems.forEach(item => {
+                item.addEventListener('mouseenter', function () {
+                    document.body.removeChild(cursorText);
+                });
+        
+                item.addEventListener('mouseleave', function () {
+                         document.body.appendChild(cursorText);
+
+                });
+            });
         }
     }
+
+
+
+
 
 });
