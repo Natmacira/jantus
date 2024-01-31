@@ -26,7 +26,7 @@
 	</div>
 	<div class="media-div">
 		<ul class="ul-mail">
-			<li><a href="mailto:jantus@gmail.com">jantus@gmail.com</a></li>
+			<li><a href="mailto:jantus@gmail.com">jantus.co@gmail.com</a></li>
 		</ul>
 		<!-- <ul class="ul-social">
 			<li><a href="https://opensea.io/JANTUS" target="_blank"><img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/home/item-opensee.svg'); ?>" alt="Link to opensee"></a></li>
