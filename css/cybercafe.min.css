@@ -662,10 +662,10 @@ body.page.page-cybercafe section#controls.show-controls article#control-panel {
     width: 100%
 }
 
-body.page.page-cybercafe section#controls.show-controls .chevron-button {
+/* body.page.page-cybercafe section#controls.show-controls .chevron-button {
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg)
-}
+} */
 
 body.page.page-cybercafe section#controls article#control-panel {
     display: flex;
