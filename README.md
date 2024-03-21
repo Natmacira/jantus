@@ -11,6 +11,7 @@ Tecnologías utilizadas: HTML, Sass, CSS, JavaScript, PHP
 
 Características destacadas:
 Diseño completamente personalizado by ALT cooperativa
+
 Desarrollo Nat Ciraolo y ALT cooperativa
 
 Utilización de Sass para mejorar la eficiencia en la escritura del CSS
