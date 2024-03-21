@@ -13,9 +13,10 @@
 <footer class="site-footer">
 	<div>
 		<ul class="main-menu">
-			<li><a href="#" class="work-open">Work</a></li>
+			<li><a href="#12" class="work-open">Work</a></li>
 			<li><a href="<?php echo esc_url(get_permalink(get_page_by_path('exhibitions'))); ?>">Exhibitions</a></li>
 			<li><a href="<?php echo esc_url(get_permalink(get_page_by_path('publications'))); ?>">Publications</a></li>
+			<li><a href="mailto:jantus.co@gmail.com">jantus.co@gmail.com</a></li>
 		</ul>
 		<ul class="work-open-close">
 			<li><a href="<?php echo esc_url(get_permalink(get_page_by_path('paintings'))); ?>">Paintings</a></li>
@@ -26,7 +27,6 @@
 	</div>
 	<div class="media-div">
 		<ul class="ul-mail">
-			<li><a href="mailto:jantus@gmail.com">jantus.co@gmail.com</a></li>
 		</ul>
 		<!-- <ul class="ul-social">
 			<li><a href="https://opensea.io/JANTUS" target="_blank"><img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/home/item-opensee.svg'); ?>" alt="Link to opensee"></a></li>

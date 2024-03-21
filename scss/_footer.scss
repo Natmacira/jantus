@@ -1,12 +1,19 @@
 /*mobile first*/
+
 footer {
-	font-family: "Chivo Mono", monospace;
+	display: flex;
+	flex-direction: column;
+	align-items: right;
 	position: relative;
+	z-index: 20;
+	margin-bottom: 60px;
+	font-family: "Chivo Mono", monospace;
 	bottom: 0;
 	width: 100%;
 	padding: 15px 40px 40px;
-	.logo-x {
-		width: 14px;
+	@media (min-width: 1200px) {
+		position: fixed;
+		margin-bottom: 0;
 	}
 	ul {
 		padding-top: 0;
@@ -23,53 +30,14 @@ footer {
 	.work-open-close {
 		display: none;
 	}
-	div.media-div {
-		display: none;
-	}
-}
-body.page-home {
-	footer {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		position: relative;
-		z-index: 20;
-		margin-bottom: 60px;
-		@media (min-width: 1200px) {
-			position: fixed;
-			margin-bottom: 0;
-		}
-		div.media-div {
-			display: block;
-			ul.ul-mail {
-				padding-bottom: 3px;
-				text-transform: uppercase;
-				padding-left: 0;
-				a {
-					font-size: 15px;
-				}
-			}
-			ul.ul-social {
-				display: flex;
-				align-items: center;
-				justify-content: space-evenly;
-				padding-left: 0;
-				li {
-					a {
-						img {
-							vertical-align: bottom;
-						}
-					}
-				}
-			}
-		}
-	}
 }
 
 body.work-open-open {
 	footer {
 		display: flex;
-		align-items: self-end;
+		@media (min-width: 1200px) {
+			padding-bottom: 62px;
+		}
 		div:first-child {
 			position: relative;
 		}
@@ -93,6 +61,11 @@ body.work-open-open {
 						position: absolute;
 						bottom: -35px;
 					}
+					&:nth-child(4) {
+						position: absolute;
+						bottom: -52px;
+						color: black;
+					}
 				}
 
 				li:first-child {
@@ -103,13 +76,26 @@ body.work-open-open {
 		}
 	}
 }
-
+body.page-exhibitions {
+	footer {
+		@media (min-width: 1200px) {
+			position: relative;
+		}
+	}
+}
 body.page-publications {
 	footer {
 		position: fixed;
 		margin-top: 40px;
+		margin-bottom: 0;
 		@media (min-width: 1200px) {
 			position: fixed;
+		}
+
+	}
+	&.work-open-open {
+		footer {
+			position: relative;
 		}
 	}
 
