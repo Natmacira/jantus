@@ -19,6 +19,9 @@ function jantus_enqueue_scripts() {
 	wp_enqueue_script('jantus-bundle-min', get_stylesheet_directory_uri() . '/js/swiper-bundle.min.js', array(), JANTUS_VERSION);
 	wp_enqueue_script('jantus-bundle-min-map', get_stylesheet_directory_uri() . '/js/swiper-bundle.min.js.map', array(), JANTUS_VERSION);
 	wp_enqueue_script('jantus-home', get_stylesheet_directory_uri() . '/js/home.js', array(), JANTUS_VERSION);
+
+    // Enqueue WordPress Media script
+    wp_enqueue_media();
 }
 
 add_action( 'wp_enqueue_scripts', 'jantus_enqueue_scripts' );
@@ -151,6 +154,185 @@ add_action(
 						},
 						'cloth' 					// Post type
 					);
+
+				}
+			)
+		);
+		register_post_type(
+			'publication',
+			array(
+				'labels'      => array(
+					'name'          => __('Publications', 'textdomain'),
+					'singular_name' => __('Publications', 'textdomain'),
+					'add_new_item' => __('Add New Publication'),
+					'new_item' => __('New Publication'),
+					'edit_item' => __('Edit Publication'),
+					'view_item' => __('View Publication'),
+					'all_items' => __('All Publications'),
+					'search_items' => __('Search Publications'),
+					'not_found' => __('No Publications found.'),
+				),
+				'public'      => true,
+				'has_archive' => true,
+				'supports'    => array(
+					'title',
+					'thumbnail'
+				),
+				//create meta box
+				'register_meta_box_cb' => function () {
+					add_meta_box(
+						'sub-title-one',                 	// Unique ID
+						'Subtitulo 1',      				// Box title
+						function($post){
+							$subTitleOne = get_post_meta($post->ID, 'sub-title-one', true);
+							?><input type="text" name="sub-title-one" id="sub-title-one" class="postbox" value="<?php echo(esc_attr($subTitleOne))?>"><?php
+						},
+						'publication' 					// Post type
+					);
+					add_meta_box(
+						'web-link-one',                 	// Unique ID
+						'Link Web 1',      				// Box title
+						function($post){
+							$webLinkOne = get_post_meta($post->ID, 'web-link-one', true);
+							?><input type="text" name="web-link-one" id="web-link-one" class="postbox" value="<?php echo(esc_attr($webLinkOne))?>"><?php
+						},
+						'publication' 					// Post type
+					);
+					add_meta_box(
+						'image-one',                  // Unique ID
+						'Image 1',                    // Box title
+						function ($post) {
+							$image_one = get_post_meta($post->ID, 'image_one', true);
+							?>
+							<input type="text" name="image_one" id="image_one" class="postbox" value="<?php echo esc_attr($image_one) ?>">
+							<input type="button" value="Upload Image" class="upload_image_button" id="upload_image_one">
+							<?php
+						},
+						'publication'                 // Post type
+					);
+					add_meta_box(
+						'sub-title-two',                 	// Unique ID
+						'Subtitulo 2',      				// Box title
+						function($post){
+							$subTitleTwo = get_post_meta($post->ID, 'sub-title-two', true);
+							?><input type="text" name="sub-title-two" id="sub-title-two" class="postbox" value="<?php echo(esc_attr($subTitleTwo))?>"><?php
+						},
+						'publication' 					// Post type
+					);
+					add_meta_box(
+						'web-link-two',                 	// Unique ID
+						'Link Web 2',      				// Box title
+						function($post){
+							$webLinkTwo = get_post_meta($post->ID, 'web-link-two', true);
+							?><input type="text" name="web-link-two" id="web-link-two" class="postbox" value="<?php echo(esc_attr($webLinkTwo))?>"><?php
+						},
+						'publication' 					// Post type
+					);
+					add_meta_box(
+						'image-two',                  // Unique ID
+						'Image 2',                    // Box title
+						function ($post) {
+							$image_two = get_post_meta($post->ID, 'image_two', true);
+							?>
+							<input type="text" name="image_two" id="image_two" class="postbox" value="<?php echo esc_attr($image_two) ?>">
+							<input type="button" value="Upload Image" class="upload_image_button" id="upload_image_two">
+							<?php
+						},
+						'publication'                 // Post type
+					);
+					add_meta_box(
+						'sub-title-three',                 	// Unique ID
+						'Subtitulo 3',      				// Box title
+						function($post){
+							$subTitleThree = get_post_meta($post->ID, 'sub-title-three', true);
+							?><input type="text" name="sub-title-three" id="sub-title-three" class="postbox" value="<?php echo(esc_attr($subTitleThree))?>"><?php
+						},
+						'publication' 					// Post type
+					);
+					add_meta_box(
+						'web-link-three',                 	// Unique ID
+						'Link Web 3',      				// Box title
+						function($post){
+							$webLinkThree = get_post_meta($post->ID, 'web-link-three', true);
+							?><input type="text" name="web-link-three" id="web-link-three" class="postbox" value="<?php echo(esc_attr($webLinkThree))?>"><?php
+						},
+						'publication' 					// Post type
+					);
+					add_meta_box(
+						'image-three',                  // Unique ID
+						'Image 3',                      // Box title
+						function ($post) {
+							$image_three = get_post_meta($post->ID, 'image_three', true);
+							?>
+							<input type="text" name="image_three" id="image_three" class="postbox" value="<?php echo esc_attr($image_three) ?>">
+							<input type="button" value="Upload Image" class="upload_image_button" id="upload_image_three">
+							<?php
+						},
+						'publication'                   // Post type
+					);
+					add_meta_box(
+						'sub-title-four',                 	// Unique ID
+						'Subtitulo 4',      				// Box title
+						function($post){
+							$subTitleFour = get_post_meta($post->ID, 'sub-title-four', true);
+							?><input type="text" name="sub-title-four" id="sub-title-four" class="postbox" value="<?php echo(esc_attr($subTitleFour))?>"><?php
+						},
+						'publication' 					// Post type
+					);
+					add_meta_box(
+						'web-link-four',                 	// Unique ID
+						'Link Web 4',      				// Box title
+						function($post){
+							$webLinkFour = get_post_meta($post->ID, 'web-link-four', true);
+							?><input type="text" name="web-link-four" id="web-link-four" class="postbox" value="<?php echo(esc_attr($webLinkFour))?>"><?php
+						},
+						'publication' 					// Post type
+					);
+					add_meta_box(
+						'image-four',                  // Unique ID
+						'Image 4',                      // Box title
+						function ($post) {
+							$image_four = get_post_meta($post->ID, 'image_four', true);
+							?>
+							<input type="text" name="image_four" id="image_four" class="postbox" value="<?php echo esc_attr($image_four) ?>">
+							<input type="button" value="Upload Image" class="upload_image_button" id="upload_image_four">
+							<?php
+						},
+						'publication'                   // Post type
+					);
+					add_meta_box(
+						'sub-title-five',                 	// Unique ID
+						'Subtitulo 5',      				// Box title
+						function($post){
+							$subTitleFive = get_post_meta($post->ID, 'sub-title-five', true);
+							?><input type="text" name="sub-title-five" id="sub-title-five" class="postbox" value="<?php echo(esc_attr($subTitleFive))?>"><?php
+						},
+						'publication' 					// Post type
+					);
+					add_meta_box(
+						'web-link-five',                 	// Unique ID
+						'Link Web 5',      				// Box title
+						function($post){
+							$webLinkFive = get_post_meta($post->ID, 'web-link-five', true);
+							?><input type="text" name="web-link-five" id="web-link-five" class="postbox" value="<?php echo(esc_attr($webLinkFive))?>"><?php
+						},
+						'publication' 					// Post type
+					);
+					add_meta_box(
+						'image-five',                  // Unique ID
+						'Image 5',                      // Box title
+						function ($post) {
+							$image_five = get_post_meta($post->ID, 'image_five', true);
+							?>
+							<input type="text" name="image_five" id="image_five" class="postbox" value="<?php echo esc_attr($image_five) ?>">
+							<input type="button" value="Upload Image" class="upload_image_button" id="upload_image_five">
+							<?php
+						},
+						'publication'                   // Post type
+					);
+
+
+					//probando para imagenes
 
 				}
 			)
@@ -568,15 +750,7 @@ function jantus_print_post($post_id = null, $atts = array())
 
 		$html .= '<article id="article-' . esc_attr($post_id) . '">';
 
-		/* 	if ( ! empty( $image ) ) {
-			if ( ! is_single() ) {
-				$html .= '<a href="' . esc_url( $link ) . '" title="' . esc_attr( $title ) . '">' . wp_kses_post( $image ) . '</a>';
-			} else {
-				if ( get_post_type( $post_id ) === 'post' ) {
-					$html .= wp_kses_post( $image );
-				}
-			}
-		} */
+	
 
 		if (!is_single()) {
 			$html .= '<h2><a href="' . esc_url($link) . '" title="' . esc_attr($title) . '">' . esc_html($title) . '</a></h2>';
