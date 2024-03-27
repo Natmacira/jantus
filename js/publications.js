@@ -1,22 +1,7 @@
 window.addEventListener('load', function () {
 
 
-	var uploadImageButtons = document.querySelectorAll('.upload_image_button');
-	console.log('acá')
-	console.log(uploadImageButtons);
-    uploadImageButtons.forEach(function(button) {
-        button.addEventListener('click', function(event) {
-			console.log('Clic en el botón de carga de imagen');
-            var id = event.target.getAttribute('id').replace('upload_image_', '');
-            var sendAttachmentBkp = wp.media.editor.send.attachment;
-            wp.media.editor.send.attachment = function(props, attachment) {
-                document.getElementById('image_' + id).value = attachment.url;
-                wp.media.editor.send.attachment = sendAttachmentBkp;
-            };
-            wp.media.editor.open(button);
-            return false;
-        });
-    });
+
 
 	// get all elements with class .book-content and add event listener
 

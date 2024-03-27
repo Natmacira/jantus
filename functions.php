@@ -158,6 +158,29 @@ add_action(
 				}
 			)
 		);
+		?>
+		<!-- <script>
+			window.addEventListener('load', function () {
+
+		var uploadImageButtons = document.querySelectorAll('.upload_image_button');
+		console.log('acá')
+		console.log(uploadImageButtons);
+		uploadImageButtons.forEach(function(button) {
+			button.addEventListener('click', function(event) {
+				console.log('Clic en el botón de carga de imagen');
+				var id = event.target.getAttribute('id').replace('upload_image_', '');
+				var sendAttachmentBkp = wp.media.editor.send.attachment;
+				wp.media.editor.send.attachment = function(props, attachment) {
+					document.getElementById('image_' + id).value = attachment.url;
+					wp.media.editor.send.attachment = sendAttachmentBkp;
+				};
+				wp.media.editor.open(button);
+				return false;
+			});
+		});
+	});
+		</script> -->
+		<?php
 		register_post_type(
 			'publication',
 			array(
@@ -331,15 +354,12 @@ add_action(
 						'publication'                   // Post type
 					);
 
-
-					//probando para imagenes
-
 				}
 			)
 		);
 	}
 );
-
+// save post painting
 add_action( 'save_post', function($post_id) {
 	if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) {
 		return;
@@ -374,7 +394,7 @@ add_action( 'save_post', function($post_id) {
 	}
 
 } );
-
+// save post cloth
 add_action( 'save_post', function($post_id) {
 	if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) {
 		return;
@@ -410,6 +430,42 @@ add_action( 'save_post', function($post_id) {
 
 		update_post_meta( $post_id, 'author', $author );
 	}
+} );
+// save post publication
+add_action( 'save_post', function($post_id) {
+	if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) {
+		return;
+	}
+
+	if ( defined( 'DOING_AJAX' ) && DOING_AJAX ) {
+		return;
+	}
+
+	if ( ! current_user_can( 'edit_post', $post_id ) ) {
+		return;
+	}
+
+
+	if ( 'publication' !== get_post_type( $post_id ) ) {
+		return;
+	}
+
+	if ( isset( $_POST['sub-title-one'] ) ) {
+		$subTitleOne = sanitize_text_field($_POST['sub-title-one'] );
+
+		update_post_meta( $post_id, 'sub-title-one', $subTitleOne );
+	}
+	if ( isset( $_POST['web-link-one'] ) ) {
+		$webLinkOne = sanitize_text_field($_POST['web-link-one'] );
+
+		update_post_meta( $post_id, 'web-link-one', $webLinkOne );
+	}
+	if ( isset( $_POST['image-one'] ) ) {
+		$image_one = sanitize_text_field($_POST['image-one'] );
+
+		update_post_meta( $post_id, 'image-one', $image_one );
+	}
+
 } );
 
 
