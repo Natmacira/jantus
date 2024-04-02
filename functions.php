@@ -158,8 +158,8 @@ add_action(
 				}
 			)
 		);
-		?>
-		<!-- <script>
+		
+		/*<!-- <script>
 			window.addEventListener('load', function () {
 
 		var uploadImageButtons = document.querySelectorAll('.upload_image_button');
@@ -179,8 +179,8 @@ add_action(
 			});
 		});
 	});
-		</script> -->
-		<?php
+		</script> -->*/
+		
 		register_post_type(
 			'publication',
 			array(
@@ -199,10 +199,11 @@ add_action(
 				'has_archive' => true,
 				'supports'    => array(
 					'title',
-					'thumbnail'
+					'thumbnail',
+					'editor'
 				),
 				//create meta box
-				'register_meta_box_cb' => function () {
+				/*'register_meta_box_cb' => function () {
 					add_meta_box(
 						'sub-title-one',                 	// Unique ID
 						'Subtitulo 1',      				// Box title
@@ -354,7 +355,7 @@ add_action(
 						'publication'                   // Post type
 					);
 
-				}
+				}*/
 			)
 		);
 	}

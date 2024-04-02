@@ -7,45 +7,32 @@ require_once 'header.php';
 
 
 <section class="library">
-    <!-- <div> -->
-    <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/publications/libro_publications.png'); ?>" alt="Book Publications" class="book-publications">
-    <!-- </div> -->
-    <article class="library-inner-element">
+
+<?php
+$query = new WP_Query(array('post_type' => 'publication'));
+foreach ($query->posts as $cloth) {
+
+?>
+
+<article class="library-inner-element">
         <div class="book-content one-book-content">
             <div class="titles-inner-container">
-                <h3>Bonart (Cataluña)</h3>
+                <h3><?php echo esc_html($cloth->post_title); ?></h3>
             </div>
             <div class="info-book-inner-container">
-                <p>Web: <br>
-                    <a href="https://www.bonart.cat/ca" target="_blank"> https://www.bonart.cat/ca</a>
-                </p>
-                <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/publications/1_Bonart_Jantus.png'); ?>" alt="Portada del sitio web donde se presenta la obra de arte." class="portada">
-
-                <p>Bonart 1 Jantus y Galería Cor: <br>
-                    <a href="https://bit.ly/Bonart_Jantus_GaleríaCor"> https://bit.ly/Bonart_Jantus_GaleríaCor</a>
-                </p>
-                <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/publications/2_Bonart_Jantus.png'); ?>" alt="Portada del sitio web donde se presenta la obra de arte." class="portada">
-                <p> Bonart 2 Jantus y Rose Madone:
-                    <br>
-                    <a href="https://bit.ly/Bonart_JantusRoseMadone" target="_blank"> https://bit.ly/Bonart_JantusRoseMadone </a>
-                </p>
-                <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/publications/3_Bonart_Jantus.png'); ?>" alt="Portada del sitio web donde se presenta la obra de arte." class="portada">
-                <p> Bonart 3:
-                    <br>
-                    <a href="https://bit.ly/Bonart_Jantus_Fundació_Claret" target="_blank"> https://bit.ly/Bonart_Jantus_Fundació_Claret </a>
-                </p>
-                <p> Bonart 4:
-                    <br>
-                    <a href="https://bit.ly/Bonart_Jantus_Amuleto" target="_blank"> https://bit.ly/Bonart_Jantus_Amuleto </a>
-                </p>
+            <?php echo wp_kses_post($cloth->post_content); ?>
             </div>
         </div>
         <div class="book-title one-book-title">
             <p><span>18</span> Bonart (Cataluña)</p>
         </div>
     </article>
-
-
+<?php
+}?>
+    <!-- <div> -->
+    <img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/publications/libro_publications.png'); ?>" alt="Book Publications" class="book-publications">
+    <!-- </div> -->
+    
     <article class="library-inner-element">
         <div class="book-content two-book-content">
             <div class="titles-inner-container">
@@ -142,7 +129,6 @@ require_once 'header.php';
             <p><span>23</span>BL8D #2</p>
         </div>
     </article>
-
 
     
 
