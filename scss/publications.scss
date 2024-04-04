@@ -21,14 +21,28 @@ body {
 				height: 525px;
 			}
 		}
+		section.library {
+			border-bottom: solid 1px;
+		}
+		h3 {
+			font-size: 32px;
+			font-weight: 400;
+			padding-bottom: 18px;
+		}
 
 		.info-book-inner-container {
 			font-size: 18px;
+			margin-bottom: 20px;
 			p, a, span, img {
 				display: block;
 			}
+		
+			a {
+				padding-bottom: 18px;
+			}
 
 			img {
+				padding-bottom: 13px;
 				@media (min-width: 1200px) {
 					min-width: 600px;
 				}
@@ -66,11 +80,7 @@ body {
 				justify-content: space-between;
 				padding-top: 18px;
 				text-transform: uppercase;
-				h3 {
-					font-size: 32px;
-					font-weight: 400;
-					padding-bottom: 18px;
-				}
+			
 			}
 
 			p {

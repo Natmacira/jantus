@@ -1,87 +1,45 @@
 window.addEventListener('load', function () {
+    const bookTitles = document.querySelectorAll('.book-title');
 
+    for (let i = 0; i < bookTitles.length; i++) {
+        bookTitles[i].addEventListener('click', function () {
+            document.body.classList.add('book-body-open');
 
+            const contentElement = this.parentElement.querySelector('.book-content');
+            const isOpen = contentElement.classList.contains('book-open');
 
+            // Calculating target height based on content
+            const targetHeight = isOpen ? 0 : contentElement.scrollHeight;
 
-	// get all elements with class .book-content and add event listener
+            // Setting transition duration
+            const duration = 500; // Animation duration in milliseconds
 
-	const bookTitle = document.querySelectorAll('.book-title');
+            // Setting number of steps for the animation
+            const steps = 50; // Number of steps for the animation
 
-	for (let i = 0; i < bookTitle.length; i++) {
-		bookTitle[i].addEventListener('click', function () {
-			document.body.classList.toggle('book-body-open');
+            // Calculating height change per step
+            const heightChange = targetHeight / steps;
 
-			if (this.parentElement.querySelector('.book-content').classList.contains('book-open')) {
-				// this.parentElement.querySelector('.book-content').classList.remove('book-open');
+            let currentHeight = contentElement.clientHeight;
+            let stepCount = 0;
 
-				// decrease width of book content from 100% to 0. using settimeout. the whole process lasts 1s
-				const contentElement = this.parentElement.querySelector('.book-content');
-				const initialWidth = contentElement.clientWidth; // Get the initial width in pixels
-				const targetWidth = 0;
-				const duration = 500; // Animation duration in milliseconds
-				const steps = 50; // Number of steps for the animation
+            // Animating height change
+            const animation = setInterval(function () {
+                stepCount++;
+                if (isOpen) {
+                    currentHeight -= heightChange;
+                } else {
+                    currentHeight += heightChange;
+                }
 
-				const widthDecrease = (initialWidth - targetWidth) / steps;
-				let currentWidth = initialWidth;
+                contentElement.style.height = currentHeight + 'px';
 
-				const decrease = setInterval(function () {
-					currentWidth -= widthDecrease;
-					contentElement.style.width = currentWidth + 'px';
-
-					if (currentWidth <= targetWidth) {
-						contentElement.style.width = targetWidth + 'px';
-						clearInterval(decrease);
-					}
-					if (targetWidth == 0) {
-						bookTitle[i].parentElement.querySelector('.book-content').classList.remove('book-open');
-						// contentElement.style.width = '' with a settimeout of 1s
-						setTimeout(function () {
-							contentElement.style.width = '';
-						}, 1000);
-
-					}
-
-				}, duration / steps);
-
-			} else {
-				for (let i = 0; i < bookTitle.length; i++) {
-					if (bookTitle[i].parentElement.querySelector('.book-content').classList.contains('book-open')) {
-						// decrease width of book content from 100% to 0. using settimeout. the whole process lasts 1s
-						const contentElement = bookTitle[i].parentElement.querySelector('.book-content');
-						const initialWidth = contentElement.clientWidth; // Get the initial width in pixels
-						const targetWidth = 0;
-						const duration = 500; // Animation duration in milliseconds
-						const steps = 50; // Number of steps for the animation
-
-						const widthDecrease = (initialWidth - targetWidth) / steps;
-						let currentWidth = initialWidth;
-
-						const decrease = setInterval(function () {
-							currentWidth -= widthDecrease;
-							contentElement.style.width = currentWidth + 'px';
-
-							if (currentWidth <= targetWidth) {
-								contentElement.style.width = targetWidth + 'px';
-								clearInterval(decrease);
-							}
-							if (targetWidth == 0) {
-								bookTitle[i].parentElement.querySelector('.book-content').classList.remove('book-open');
-								// contentElement.style.width = '' with a settimeout of 1s
-								setTimeout(function () {
-									contentElement.style.width = '';
-								}, 1000);
-
-							}
-
-						}, duration / steps);
-					}
-				}
-
-				this.parentElement.querySelector('.book-content').classList.add('book-open');
-			}
-		});
-	}
-
-
-  
+                if (stepCount >= steps) {
+                    clearInterval(animation);
+                    contentElement.style.height = isOpen ? '0' : 'auto';
+                    contentElement.classList.toggle('book-open');
+                }
+            }, duration / steps);
+        });
+    }
 });
