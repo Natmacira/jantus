@@ -159,27 +159,6 @@ add_action(
 			)
 		);
 		
-		/*<!-- <script>
-			window.addEventListener('load', function () {
-
-		var uploadImageButtons = document.querySelectorAll('.upload_image_button');
-		console.log('acá')
-		console.log(uploadImageButtons);
-		uploadImageButtons.forEach(function(button) {
-			button.addEventListener('click', function(event) {
-				console.log('Clic en el botón de carga de imagen');
-				var id = event.target.getAttribute('id').replace('upload_image_', '');
-				var sendAttachmentBkp = wp.media.editor.send.attachment;
-				wp.media.editor.send.attachment = function(props, attachment) {
-					document.getElementById('image_' + id).value = attachment.url;
-					wp.media.editor.send.attachment = sendAttachmentBkp;
-				};
-				wp.media.editor.open(button);
-				return false;
-			});
-		});
-	});
-		</script> -->*/
 		
 		register_post_type(
 			'publication',
@@ -203,159 +182,19 @@ add_action(
 					'editor'
 				),
 				//create meta box
-				/*'register_meta_box_cb' => function () {
+				'register_meta_box_cb' => function () {
 					add_meta_box(
-						'sub-title-one',                 	// Unique ID
-						'Subtitulo 1',      				// Box title
+						'year',                 	// Unique ID
+						'Year',      				// Box title
 						function($post){
-							$subTitleOne = get_post_meta($post->ID, 'sub-title-one', true);
-							?><input type="text" name="sub-title-one" id="sub-title-one" class="postbox" value="<?php echo(esc_attr($subTitleOne))?>"><?php
+							$year = get_post_meta($post->ID, 'year', true);
+							?><input type="text" name="year" id="year" class="postbox" value="<?php echo(esc_attr($year))?>"><?php
 						},
 						'publication' 					// Post type
 					);
-					add_meta_box(
-						'web-link-one',                 	// Unique ID
-						'Link Web 1',      				// Box title
-						function($post){
-							$webLinkOne = get_post_meta($post->ID, 'web-link-one', true);
-							?><input type="text" name="web-link-one" id="web-link-one" class="postbox" value="<?php echo(esc_attr($webLinkOne))?>"><?php
-						},
-						'publication' 					// Post type
-					);
-					add_meta_box(
-						'image-one',                  // Unique ID
-						'Image 1',                    // Box title
-						function ($post) {
-							$image_one = get_post_meta($post->ID, 'image_one', true);
-							?>
-							<input type="text" name="image_one" id="image_one" class="postbox" value="<?php echo esc_attr($image_one) ?>">
-							<input type="button" value="Upload Image" class="upload_image_button" id="upload_image_one">
-							<?php
-						},
-						'publication'                 // Post type
-					);
-					add_meta_box(
-						'sub-title-two',                 	// Unique ID
-						'Subtitulo 2',      				// Box title
-						function($post){
-							$subTitleTwo = get_post_meta($post->ID, 'sub-title-two', true);
-							?><input type="text" name="sub-title-two" id="sub-title-two" class="postbox" value="<?php echo(esc_attr($subTitleTwo))?>"><?php
-						},
-						'publication' 					// Post type
-					);
-					add_meta_box(
-						'web-link-two',                 	// Unique ID
-						'Link Web 2',      				// Box title
-						function($post){
-							$webLinkTwo = get_post_meta($post->ID, 'web-link-two', true);
-							?><input type="text" name="web-link-two" id="web-link-two" class="postbox" value="<?php echo(esc_attr($webLinkTwo))?>"><?php
-						},
-						'publication' 					// Post type
-					);
-					add_meta_box(
-						'image-two',                  // Unique ID
-						'Image 2',                    // Box title
-						function ($post) {
-							$image_two = get_post_meta($post->ID, 'image_two', true);
-							?>
-							<input type="text" name="image_two" id="image_two" class="postbox" value="<?php echo esc_attr($image_two) ?>">
-							<input type="button" value="Upload Image" class="upload_image_button" id="upload_image_two">
-							<?php
-						},
-						'publication'                 // Post type
-					);
-					add_meta_box(
-						'sub-title-three',                 	// Unique ID
-						'Subtitulo 3',      				// Box title
-						function($post){
-							$subTitleThree = get_post_meta($post->ID, 'sub-title-three', true);
-							?><input type="text" name="sub-title-three" id="sub-title-three" class="postbox" value="<?php echo(esc_attr($subTitleThree))?>"><?php
-						},
-						'publication' 					// Post type
-					);
-					add_meta_box(
-						'web-link-three',                 	// Unique ID
-						'Link Web 3',      				// Box title
-						function($post){
-							$webLinkThree = get_post_meta($post->ID, 'web-link-three', true);
-							?><input type="text" name="web-link-three" id="web-link-three" class="postbox" value="<?php echo(esc_attr($webLinkThree))?>"><?php
-						},
-						'publication' 					// Post type
-					);
-					add_meta_box(
-						'image-three',                  // Unique ID
-						'Image 3',                      // Box title
-						function ($post) {
-							$image_three = get_post_meta($post->ID, 'image_three', true);
-							?>
-							<input type="text" name="image_three" id="image_three" class="postbox" value="<?php echo esc_attr($image_three) ?>">
-							<input type="button" value="Upload Image" class="upload_image_button" id="upload_image_three">
-							<?php
-						},
-						'publication'                   // Post type
-					);
-					add_meta_box(
-						'sub-title-four',                 	// Unique ID
-						'Subtitulo 4',      				// Box title
-						function($post){
-							$subTitleFour = get_post_meta($post->ID, 'sub-title-four', true);
-							?><input type="text" name="sub-title-four" id="sub-title-four" class="postbox" value="<?php echo(esc_attr($subTitleFour))?>"><?php
-						},
-						'publication' 					// Post type
-					);
-					add_meta_box(
-						'web-link-four',                 	// Unique ID
-						'Link Web 4',      				// Box title
-						function($post){
-							$webLinkFour = get_post_meta($post->ID, 'web-link-four', true);
-							?><input type="text" name="web-link-four" id="web-link-four" class="postbox" value="<?php echo(esc_attr($webLinkFour))?>"><?php
-						},
-						'publication' 					// Post type
-					);
-					add_meta_box(
-						'image-four',                  // Unique ID
-						'Image 4',                      // Box title
-						function ($post) {
-							$image_four = get_post_meta($post->ID, 'image_four', true);
-							?>
-							<input type="text" name="image_four" id="image_four" class="postbox" value="<?php echo esc_attr($image_four) ?>">
-							<input type="button" value="Upload Image" class="upload_image_button" id="upload_image_four">
-							<?php
-						},
-						'publication'                   // Post type
-					);
-					add_meta_box(
-						'sub-title-five',                 	// Unique ID
-						'Subtitulo 5',      				// Box title
-						function($post){
-							$subTitleFive = get_post_meta($post->ID, 'sub-title-five', true);
-							?><input type="text" name="sub-title-five" id="sub-title-five" class="postbox" value="<?php echo(esc_attr($subTitleFive))?>"><?php
-						},
-						'publication' 					// Post type
-					);
-					add_meta_box(
-						'web-link-five',                 	// Unique ID
-						'Link Web 5',      				// Box title
-						function($post){
-							$webLinkFive = get_post_meta($post->ID, 'web-link-five', true);
-							?><input type="text" name="web-link-five" id="web-link-five" class="postbox" value="<?php echo(esc_attr($webLinkFive))?>"><?php
-						},
-						'publication' 					// Post type
-					);
-					add_meta_box(
-						'image-five',                  // Unique ID
-						'Image 5',                      // Box title
-						function ($post) {
-							$image_five = get_post_meta($post->ID, 'image_five', true);
-							?>
-							<input type="text" name="image_five" id="image_five" class="postbox" value="<?php echo esc_attr($image_five) ?>">
-							<input type="button" value="Upload Image" class="upload_image_button" id="upload_image_five">
-							<?php
-						},
-						'publication'                   // Post type
-					);
+					
 
-				}*/
+				}
 			)
 		);
 	}
@@ -450,22 +289,12 @@ add_action( 'save_post', function($post_id) {
 	if ( 'publication' !== get_post_type( $post_id ) ) {
 		return;
 	}
+	if ( isset( $_POST['year'] ) ) {
+		$year = sanitize_text_field($_POST['year'] );
 
-	if ( isset( $_POST['sub-title-one'] ) ) {
-		$subTitleOne = sanitize_text_field($_POST['sub-title-one'] );
-
-		update_post_meta( $post_id, 'sub-title-one', $subTitleOne );
+		update_post_meta( $post_id, 'year', $year );
 	}
-	if ( isset( $_POST['web-link-one'] ) ) {
-		$webLinkOne = sanitize_text_field($_POST['web-link-one'] );
 
-		update_post_meta( $post_id, 'web-link-one', $webLinkOne );
-	}
-	if ( isset( $_POST['image-one'] ) ) {
-		$image_one = sanitize_text_field($_POST['image-one'] );
-
-		update_post_meta( $post_id, 'image-one', $image_one );
-	}
 
 } );
 
@@ -518,12 +347,12 @@ add_action(
 /*
  * Remove filter in order to prevent the unwanted addition of p tags in the frontend.
  */
-add_action(
-	'template_redirect',
-	function () {
-		remove_filter('the_content', 'wpautop');
-	}
-);
+// add_action(
+// 	'template_redirect',
+// 	function () {
+// 		remove_filter('the_content', 'wpautop');
+// 	}
+// );
 
 add_action(
 	'widgets_init',

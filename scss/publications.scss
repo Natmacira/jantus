@@ -22,6 +22,19 @@ body {
 			}
 		}
 
+		.info-book-inner-container {
+			font-size: 18px;
+			p, a, span, img {
+				display: block;
+			}
+
+			img {
+				@media (min-width: 1200px) {
+					min-width: 600px;
+				}
+			}
+		}
+
 		div.one-book-content,
 		div.two-book-content,
 		div.three-book-content,
@@ -52,11 +65,11 @@ body {
 				align-items: end;
 				justify-content: space-between;
 				padding-top: 18px;
-				padding-bottom: 10px;
 				text-transform: uppercase;
 				h3 {
 					font-size: 32px;
 					font-weight: 400;
+					padding-bottom: 18px;
 				}
 			}
 
