@@ -769,4 +769,31 @@ add_filter(
 );
 
 
+//video taxonomy
+function registrar_taxonomia_video() {
+    $labels = array(
+        'name'              => _x( 'Categoría', 'taxonomy general name' ),
+        'singular_name'     => _x( 'Video', 'taxonomy singular name' ),
+        'search_items'      => __( 'Buscar Videos' ),
+        'all_items'         => __( 'Categorías' ),
+        'parent_item'       => __( 'Video Padre' ),
+        'parent_item_colon' => __( 'Video Padre:' ),
+        'edit_item'         => __( 'Editar Video' ),
+        'update_item'       => __( 'Actualizar Video' ),
+        'add_new_item'      => __( 'Agregar Nueva Categoría' ),
+        'new_item_name'     => __( 'Nombre del Nuevo Video' ),
+        'menu_name'         => __( 'Videos' ),
+    );
 
+    $args = array(
+        'hierarchical'      => true, 
+        'labels'            => $labels,
+        'show_ui'           => true,
+        'show_admin_column' => true,
+        'query_var'         => true,
+        'rewrite'           => array( 'slug' => 'video' ), 
+    );
+
+    register_taxonomy( 'video', array( 'attachment' ), $args );
+}
+add_action( 'init', 'registrar_taxonomia_video' );

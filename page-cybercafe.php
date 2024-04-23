@@ -11,37 +11,34 @@
 remove_action('wp_enqueue_scripts', 'jantus_enqueue_scripts');
 $body_class = "page page-cybercafe";
 
-
-$nfts_data = array(
-	array(
-		'src' => get_stylesheet_directory_uri() . '/img/cybercafe/cybercafe-video-1.mp4',
-		'type' => 'video'
+// Realiza la WP_Query para obtener los videos de la categoría "video"
+$args = array(
+    'post_type' => 'attachment',
+	'post_status' => 'inherit',
+	'tax_query' => array(
+	    array(
+	        'taxonomy' => 'video', // Nombre de la taxonomía personalizada
+	        'field'    => 'slug', // Puedes usar 'id', 'slug' o 'name' dependiendo de cómo esté almacenado el término
+	        'terms'    => 'video', // Término de la taxonomía personalizada
+	    ),
 	),
-	array(
-		'src' => get_stylesheet_directory_uri() . '/img/cybercafe/cybercafe-video-2.mp4',
-		'type' => 'video'
-	),
-	array(
-		'src' => get_stylesheet_directory_uri() . '/img/cybercafe/cybercafe-video-3.mp4',
-		'type' => 'video'
-	),
-	array(
-		'src' => get_stylesheet_directory_uri() . '/img/cybercafe/cybercafe-video-4.mp4',
-		'type' => 'video'
-	),
-	array(
-		'src' => get_stylesheet_directory_uri() . '/img/cybercafe/cybercafe-video-5.mp4',
-		'type' => 'video'
-	),
-	array(
-		'src' => get_stylesheet_directory_uri() . '/img/cybercafe/cybercafe-video-6.mp4',
-		'type' => 'video'
-	),
-	array(
-		'src' => get_stylesheet_directory_uri() . '/img/cybercafe/cybercafe-video-7.mp4',
-		'type' => 'video'
-	)
+    'posts_per_page' => 5, // Obtener todos los videos de la categoría
 );
+
+$query = new WP_Query($args);
+
+// Almacena las URLs de los videos en una variable PHP
+$nfts_data = array();
+if ($query->have_posts()) {
+    while ($query->have_posts()) {
+        $query->the_post();
+        $nfts_data[] = array(
+			'src' => wp_get_attachment_url(get_the_ID()),
+			'type' => 'video'
+		);
+    }
+}
+wp_reset_postdata(); // Restaurar datos de la consulta original
 
 
 wp_enqueue_script('cybercafe', get_stylesheet_directory_uri() . '/js/cybercafe.js', array(), '1.0.0', true);
