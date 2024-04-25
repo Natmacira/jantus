@@ -83,6 +83,9 @@ get_header();
 	<button class="show-hide-controls chevron-button" aria-label="Mostrar controles">
 		<img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/cybercafe/show-controls.png'); ?>">
 	</button>
+	<button  class="show-hide-controls chevron-button play">
+		<p>play</p>
+	</button>
 </section>
 
 </main>

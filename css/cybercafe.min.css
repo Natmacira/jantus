@@ -813,4 +813,19 @@ body.page.page-cybercafe section#controls .chevron-button {
     -webkit-transition: transform .3s
 }
 
+
+body.page.page-cybercafe section#controls .chevron-button.play {
+
+    background: black;
+    color: lightgray;
+    border-radius: 6px;
+    padding: 6px;
+    text-transform: uppercase;
+    margin-top: 50px;
+    margin-left: 4px;
+    /* font-size: 13px; */
+    max-width: 72px;
+
+}
+
 /*# sourceMappingURL=style.min.css.map */
