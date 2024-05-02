@@ -83,7 +83,7 @@ get_header();
 	<button class="show-hide-controls chevron-button" aria-label="Mostrar controles">
 		<img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/cybercafe/show-controls.png'); ?>">
 	</button>
-	<button  class="show-hide-controls chevron-button play">
+	<button  class="play" id="play-btn">
 		<p>play</p>
 	</button>
 </section>
@@ -92,16 +92,16 @@ get_header();
 
 <footer class="cybercafe-footer">
 	<ul id="rrss">
-		<!-- <li>
-			<a href="https://www.instagram.com/jantus_" target="_blank" aria-label="Ir al Instagram de Jantus">
+		<li>
+			<a href="https://www.instagram.com/cutreluxorjantus?igsh=MTRzZmtoZHl3MW5idQ==" target="_blank" aria-label="Ir al Instagram de Jantus">
 				<img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/cybercafe/instagram.png'); ?>" />
 			</a>
 		</li>
 		<li>
-			<a href="https://twitter.com/jantus_art" target="_blank" aria-label="Ir al perfil de Twitter de Jantus">
+			<a href="https://twitter.com/jantus_" target="_blank" aria-label="Ir al perfil de Twitter de Jantus">
 				<img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/cybercafe/twitter.png'); ?>" />
 			</a>
-		</li> -->
+		</li>
 		<li>
 			<a href="https://www.youtube.com/channel/UCJ9e4sO1nlxais79BWPRJ7g" target="_blank" aria-label="Ir al canal de Youtube de Jantus">
 				<img src="<?php echo esc_attr(get_stylesheet_directory_uri() . '/img/cybercafe/youtube.png'); ?>" />

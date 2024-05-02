@@ -16,29 +16,45 @@ window.addEventListener('load', function () {
 	const randomBtn = document.querySelector('#random-btn');
 	let nfts = [];
 	let nftActual = '';
-
-	//Insertar archivo en HTML, segun tipo
 	const renderFile = file => {
 		const nftSection = document.querySelector('#nft');
-
+	
 		nftSection.innerHTML = '';
-
+	
 		if (file.type === 'image') {
 			const img = document.createElement('IMG');
 			img.src = file.src;
 			nftSection.appendChild(img);
 		}
-
+	
 		if (file.type === 'video') {
-			var video = document.createElement('VIDEO');
+			const video = document.createElement('VIDEO');
 			video.src = file.src;
 			video.autoplay = true;
 			video.loop = true;
 			video.muted = false;
 			video.setAttribute('playsinline', '');
 			nftSection.appendChild(video);
+	
+			// play button
+			const playBtn = document.getElementById('play-btn');
+	
+			playBtn.addEventListener('click', function() {
+				console.log('play');
+				video.play(); // This will start playing the video
+			});
+			// Add event listeners for video play and pause
+		 video.addEventListener('play', function() {
+			 playBtn.classList.add('hidden'); // Hide the play button when video is playing
+		 });
+	
+		 video.addEventListener('pause', function() {
+			 playBtn.classList.remove('hidden'); // Show the play button when video is paused
+		 });
 		}
+
 	};
+	
 
 	//Elegir NFT random y mostrar
 	const nftRandom = (resultadoAnterior, array) => {
@@ -122,4 +138,6 @@ window.addEventListener('load', function () {
 				break;
 		}
 	});
+
+
 });

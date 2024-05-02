@@ -803,7 +803,8 @@ body.page.page-cybercafe section#controls a#opensea-link:hover {
     transform: scale(1.05)
 }
 
-body.page.page-cybercafe section#controls .chevron-button {
+body.page.page-cybercafe section#controls .chevron-button,
+body.page.page-cybercafe section#controls .play {
     width: 80px;
     position: absolute;
     left: 100%;
@@ -814,7 +815,7 @@ body.page.page-cybercafe section#controls .chevron-button {
 }
 
 
-body.page.page-cybercafe section#controls .chevron-button.play {
+body.page.page-cybercafe section#controls .play {
 
     background: black;
     color: lightgray;
@@ -829,3 +830,7 @@ body.page.page-cybercafe section#controls .chevron-button.play {
 }
 
 /*# sourceMappingURL=style.min.css.map */
+
+body.page.page-cybercafe section#controls .play.hidden {
+    display: none;
+}
