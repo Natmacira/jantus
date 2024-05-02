@@ -112,6 +112,9 @@ get_header();
 	<a href="https://opensea.io/JANTUS" target="_blank" class="opensea-link">
 		OpenSea - Jantus &gt;&gt;&gt;
 	</a>
+	<a href="https://zora.co/@marcosgcutre" target="_blank" class="opensea-link zora">
+		Zora - Jantus &gt;&gt;&gt;
+	</a>
 </footer>
 <?php wp_footer(); ?>
 </body>

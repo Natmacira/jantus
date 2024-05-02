@@ -451,6 +451,10 @@ footer.cybercafe-footer a.opensea-link {
     text-decoration: underline;
     color: #00e6ff
 }
+footer.cybercafe-footer a.opensea-link.zora{
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
 
 footer .author {
     width: 100px;
